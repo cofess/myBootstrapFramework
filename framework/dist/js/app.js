@@ -164,7 +164,8 @@ $(function () {
 
   //Enable control sidebar
   if (o.enableControlSidebar) {
-    $.AdminLTE.controlSidebar.activate();
+    $.AdminLTE.controlSidebar.activate(o.controlSidebarOptions['toggleBtnSelector']);
+    //console.log(o.controlSidebarOptions['toggleBtnSelector']);
   }
 
   //Add slimscroll to navbar dropdown
@@ -441,26 +442,29 @@ function _init() {
    */
   $.AdminLTE.controlSidebar = {
     //instantiate the object
-    activate: function () {
+    activate: function (toggleBtn) {
       //Get the object
       var _this = this;
       //Update options
       var o = $.AdminLTE.options.controlSidebarOptions;
       //Get the sidebar
-      var sidebar = $(o.selector);
+      //var sidebar = $(o.selector);
+      var sidebar = $(document).find('.control-sidebar');
       //The toggle button
-      var btn = $(o.toggleBtnSelector);
+      //var btn = $(o.toggleBtnSelector);
 
       //Listen to the click event
-      btn.on('click', function (e) {
+      //btn.on('click', function (e) {
+      $(document).on('click', toggleBtn, function (e) {
         e.preventDefault();
         //If the sidebar is not open
-        if (!sidebar.hasClass('control-sidebar-open')
-          && !$('body').hasClass('control-sidebar-open')) {
+        if (!$(document).find(o.selector).hasClass('control-sidebar-open') && !$('body').hasClass('control-sidebar-open')) {
+          //alert(0);
           //Open the sidebar
-          _this.open(sidebar, o.slide);
+          _this.open(o, o.slide);
         } else {
-          _this.close(sidebar, o.slide);
+          //alert(1);
+          _this.close(o, o.slide);
         }
       });
 
@@ -479,10 +483,11 @@ function _init() {
       }
     },
     //Open the control sidebar
-    open: function (sidebar, slide) {
+    open: function (o, slide) {
       //Slide over content
       if (slide) {
-        sidebar.addClass('control-sidebar-open');
+        $(document).find(o.selector).addClass('control-sidebar-open');
+        //sidebar.addClass('control-sidebar-open');
       } else {
         //Push the content by adding the open class to the body instead
         //of the sidebar itself
@@ -490,9 +495,10 @@ function _init() {
       }
     },
     //Close the control sidebar
-    close: function (sidebar, slide) {
+    close: function (o, slide) {
       if (slide) {
-        sidebar.removeClass('control-sidebar-open');
+        $(document).find(o.selector).removeClass('control-sidebar-open');
+        //sidebar.removeClass('control-sidebar-open');
       } else {
         $('body').removeClass('control-sidebar-open');
       }
