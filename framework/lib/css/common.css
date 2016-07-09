@@ -361,7 +361,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 /*----------------------------------------------------
  * position
  *---------------------------------------------------*/
-.fixed { position: fixed }
+.fixed { /*position: fixed*/ }
 .abs { position: absolute }
 .relative { position: relative }
 .static { position: static }
