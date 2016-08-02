@@ -72,27 +72,27 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .bg-alpha { background-color: transparent!important }
 .bg-inverse, .bg-inverse a { color: #fff; }
 .btn.bg-inverse:hover, .btn.bg-inverse:focus, .btn.bg-inverse.focus{color:rgba(255,255,255,0.8)}
-.bg { background-color: #f6f6f6 }
-.bg-main { background-color: #00AA88 }
-.bg-sub { background-color: #00AAEE }
-.bg-light { background-color: #fafafa }
-.bg-black { background-color: #23282d }
-.bg-white { background-color: #FFF }
-.bg-primary { background-color: #367AB7 }
-.bg-primary-light { background-color: #5494D2 }
-.bg-primary-dark { background-color: #03619B }
-.bg-success { background-color: #479D47 }
-.bg-success-light { background-color: #5FB95E }
-.bg-success-dark { background-color: #25832F }
-.bg-info { background-color: #34B0D5 }
-.bg-info-light { background-color: #55CBF0 }
-.bg-info-dark { background-color: #0094B8 }
-.bg-warning { background-color: #EC971F }
-.bg-warning-light { background-color: #FFB241 }
-.bg-warning-dark { background-color: #CD7C00 }
-.bg-danger { background-color: #C9322E }
-.bg-danger-light { background-color: #E95046 }
-.bg-danger-dark { background-color: #AA0016 }
+.bg { background-color: #f6f6f6!important }
+.bg-main { background-color: #00AA88!important }
+.bg-sub { background-color: #00AAEE!important }
+.bg-light { background-color: #fafafa!important }
+.bg-black { background-color: #23282d!important }
+.bg-white { background-color: #FFF!important }
+.bg-primary { background-color: #367AB7!important }
+.bg-primary-light { background-color: #5494D2!important }
+.bg-primary-dark { background-color: #03619B!important }
+.bg-success { background-color: #479D47!important }
+.bg-success-light { background-color: #5FB95E!important }
+.bg-success-dark { background-color: #25832F!important }
+.bg-info { background-color: #34B0D5!important }
+.bg-info-light { background-color: #55CBF0!important }
+.bg-info-dark { background-color: #0094B8!important }
+.bg-warning { background-color: #EC971F!important }
+.bg-warning-light { background-color: #FFB241!important }
+.bg-warning-dark { background-color: #CD7C00!important }
+.bg-danger { background-color: #C9322E!important }
+.bg-danger-light { background-color: #E95046!important }
+.bg-danger-dark { background-color: #AA0016!important }
 /*----------------------------------------------------
  * z-index
  *---------------------------------------------------*/
@@ -468,11 +468,11 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .text-indent, .text-indent p, .text-indent div { text-indent: 2em;/*缩进*/ }
 /*text wrap*/
 .text-nowrap { /*display: block;*/ max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; -moz-binding: url('ellipsis.xml'); /*兼容火狐浏览器*/ }
-.text-nowrap-1x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; -webkit-box-flex: 1; height: inherit; }
-.text-nowrap-2x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-.text-nowrap-3x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-.text-nowrap-4x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 4; }
-.text-nowrap-5x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 5; }
+.text-nowrap-1x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; -webkit-box-flex: 1;line-height: 24px;height: 24px;word-break: break-all !important; word-wrap: break-word !important; }
+.text-nowrap-2x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 24px;height: 48px;word-break: break-all !important; word-wrap: break-word !important;}
+.text-nowrap-3x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-height: 24px;height: 72px;word-break: break-all !important; word-wrap: break-word !important;}
+.text-nowrap-4x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-height: 24px;height: 96px;word-break: break-all !important; word-wrap: break-word !important;}
+.text-nowrap-5x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-height: 24px;height: 120px;word-break: break-all !important; word-wrap: break-word !important;}
 /*----------------------------------------------------
  * thumb
  *---------------------------------------------------*/
