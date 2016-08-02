@@ -37,7 +37,6 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 /*css shadow*/
 .shadow-box { -moz-box-shadow: 0 0 12px rgba(171,139,110,.38); -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38); box-shadow: 0 0 12px rgba(171,139,110,.38); }
 .shadow-no { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-.shadow-hover:hover { -moz-box-shadow: 0 0 12px rgba(171,139,110,.38); -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38); box-shadow: 0 0 12px rgba(171,139,110,.38); }
 /*----------------------------------------------------
  * color
  *---------------------------------------------------*/
