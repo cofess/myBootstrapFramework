@@ -26,6 +26,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1;
 }
+.icon-left {margin: 7px 14px 0 0 !important;float: left !important;}
 /*pull*/
 .pull-in { margin-left: 15px; margin-right: 15px; }
 .pull-out { margin: -10px -15px; }
