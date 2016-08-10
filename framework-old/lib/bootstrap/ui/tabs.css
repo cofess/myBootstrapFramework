@@ -1,0 +1,65 @@
+/*board tab*/
+.board-tab {margin: 60px auto; height: 500px; background: #fff; }
+.board-tab .nav-tabs { position: relative; margin: 40px auto; margin-bottom: 0; box-sizing: border-box; }
+.board-tab > div.board-inner { background: #fafafa; background-size: 30%; }
+.board-tab p.narrow { width: 60%; margin: 10px auto; }
+.board-tab .liner { height: 2px; background: #ddd; position: absolute; width: 80%; margin: 0 auto; left: 0; right: 0; top: 50%; z-index: 1; }
+.board-tab .nav-tabs > li.active > a, .board-tab .nav-tabs > li.active > a:hover, .board-tab .nav-tabs > li.active > a:focus { color: #555555; cursor: default; /* background-color: #ffffff; */ border: 0; border-bottom-color: transparent; }
+.board-tab span.round-tabs { width: 70px; height: 70px; line-height: 70px; display: inline-block; border-radius: 100px; background: white; z-index: 2; position: absolute; left: 0; text-align: center; font-size: 25px; }
+.board-tab span.round-tabs.one { color: rgb(34, 194, 34); border: 2px solid rgb(34, 194, 34); }
+.board-tab li.active span.round-tabs.one { background: #fff !important; border: 2px solid #ddd; color: rgb(34, 194, 34); }
+.board-tab span.round-tabs.two { color: #febe29; border: 2px solid #febe29; }
+.board-tab li.active span.round-tabs.two { background: #fff !important; border: 2px solid #ddd; color: #febe29; }
+.board-tab span.round-tabs.three { color: #3e5e9a; border: 2px solid #3e5e9a; }
+.board-tab li.active span.round-tabs.three { background: #fff !important; border: 2px solid #ddd; color: #3e5e9a; }
+span.round-tabs.four { color: #f1685e; border: 2px solid #f1685e; }
+.board-tab li.active span.round-tabs.four { background: #fff !important; border: 2px solid #ddd; color: #f1685e; }
+.board-tab span.round-tabs.five { color: #999; border: 2px solid #999; }
+.board-tab li.active span.round-tabs.five { background: #fff !important; border: 2px solid #ddd; color: #999; }
+.board-tab .nav-tabs > li.active > a span.round-tabs { background: #fafafa; }
+.board-tab .nav-tabs > li { width: 20%; }
+.board-tab li:after { content: " "; position: absolute; left: 45%; opacity: 0; margin: 0 auto; bottom: 0px; border: 5px solid transparent; border-bottom-color: #ddd; transition: 0.1s ease-in-out; }
+.board-tab li.active:after { content: " "; position: absolute; left: 45%; opacity: 1; margin: 0 auto; bottom: 0px; border: 10px solid transparent; border-bottom-color: #ddd; }
+.board-tab .nav-tabs > li a { width: 70px; height: 70px; margin: 20px auto; border-radius: 100%; padding: 0; }
+.board-tab .nav-tabs > li a:hover { background: transparent; }
+.board-tab .tab-pane { position: relative; padding-top: 50px; }
+.btn-outline-rounded { padding: 10px 40px; margin: 20px 0; border: 2px solid transparent; border-radius: 25px; }
+ @media( max-width : 585px ) {
+.board-tab { width: 90%; height: auto !important; }
+.board-tab span.round-tabs { font-size: 16px; width: 50px; height: 50px; line-height: 50px; }
+.board-tab .tab-content .head { font-size: 20px; }
+.board-tab .nav-tabs > li a { width: 50px; height: 50px; line-height: 50px; }
+.board-tab li.active:after { content: " "; position: absolute; left: 35%; }
+.board-tab .btn-outline-rounded { padding: 12px 20px; }
+}
+/*center-tabs*/
+.center-tabs .nav-tabs { clear: both; display: inline-block; float: none !important; margin: 0 auto!important; text-align: center; }
+.center-tabs .nav-tabs li { display: inline-block; }
+.center-tabs .nav-tabs li a { display: block; }
+.panel.center-tabs .panel-heading { text-align: center; }
+.panel.center-tabs .panel-heading .nav-tabs { margin: -16px auto!important; }
+/******************************************
+Bootstrap Line Tabs - Bootsnipp.com
+******************************************/
+/* Tabs panel */
+.tabbable-panel { border: 1px solid #eee; }
+/* Default mode */
+.tabbable-line > .nav-tabs { border: none;border-bottom: 1px solid #eee;}
+.tabbable-line > .nav-tabs.has-rb > li {border-right: 1px solid #eee;}
+.tabbable-line > .nav-tabs > li { padding: 5px 15px; }
+.tabbable-line > .nav-tabs > li > a { border: 0; margin-right: 0; color: #737373; }
+.tabbable-line > .nav-tabs > li > a > i { color: #a6a6a6; }
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover { border-bottom: 1px solid #fbcdcf; }
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a { border: 0; background: none !important; color: #333333; }
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i { color: #a6a6a6; }
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu { margin-top: 0px; }
+.tabbable-line > .nav-tabs > li.active { border-bottom: 1px solid #f3565d; position: relative; }
+.tabbable-line > .nav-tabs > li.active > a { border: 0; color: #333333;background-color:transparent!important }
+.tabbable-line > .nav-tabs > li.active > a > i { color: #404040; }
+.tabbable-line > .tab-content {padding: 15px; }
+/* Below tabs mode */
+.tabbable-line.tabs-below > .nav-tabs { border: none;border-top: 1px solid #eee;}
+.tabbable-line.tabs-below > .nav-tabs > li { border-top: 1px solid transparent;margin-top:-1px; }
+.tabbable-line.tabs-below > .nav-tabs > li:hover { border-bottom: 0; border-top: 1px solid #fbcdcf; }
+.tabbable-line.tabs-below > .nav-tabs > li.active { border-bottom: 0; border-top: 1px solid #f3565d; }
+/* Tabs panel end here*/

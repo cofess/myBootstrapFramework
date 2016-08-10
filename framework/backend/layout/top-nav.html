@@ -10,7 +10,7 @@
 <link data-include="../common/head.html">
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue-light layout-top-nav">
 <div class="wrapper">
 
   <header class="main-header">
@@ -56,7 +56,8 @@
               <!-- Menu toggle button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-envelope-o"></i>
-                <span class="label label-success">4</span>
+                <span class="label"><span class="noti-dot"> <span class="dot"></span> <span class="pulse"></span> </span></span>
+                <!--<span class="label label-success">4</span>-->
               </a>
               <ul class="dropdown-menu">
                 <li class="header">You have 4 messages</li>
@@ -67,7 +68,7 @@
                       <a href="#">
                         <div class="pull-left">
                           <!-- User Image -->
-                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          <img src="../../dist/img/user-160x160.png" class="img-circle" alt="User Image">
                         </div>
                         <!-- Message title and timestamp -->
                         <h4>
@@ -151,14 +152,14 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="../../dist/img/user-160x160.png" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs">Alexander Pierce</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
                 <li class="user-header">
-                  <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="../../dist/img/user-160x160.png" class="img-circle" alt="User Image">
 
                   <p>
                     Alexander Pierce - Web Developer
@@ -189,6 +190,18 @@
                     <a href="#" class="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
+              </ul>
+            </li>
+            <!-- flag -->
+            <li>
+              <a href="#" class="dropdown-toggle text-dark" data-toggle="dropdown"> <img src="../../lib/images/blank.gif" class="flag flag-us" alt="United States"> <span> US</span> <i class="fa fa-angle-down"></i> </a>
+              <ul class="dropdown-menu pull-right">
+                <li class="active">
+                  <a href="javascript:void(0);"><img src="../../lib/images/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><img src="../../lib/images/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
+                </li>             
               </ul>
             </li>
           </ul>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-panel</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">Panel</h1>
+  </div>
+</div>
+<div class="container">
+  <h3 class="page-header">Bootstrap default panel style</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel default</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel primary</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel success</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel info</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel warning</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel danger</h3>
+        </div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer"> Panel footer </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading"> <span class="fa fa-list fa-fw"></span>Sortable Lists
+      <div class="pull-right action-buttons">
+        <div class="btn-group pull-right">
+          <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"> <span class="fa fa-cog fa-fw"></span> </button>
+          <ul class="dropdown-menu slidedown">
+            <li><a href="#"><span class="fa fa-pencil fa-fw"></span>Edit</a></li>
+            <li><a href="#"><span class="fa fa-trash fa-fw"></span>Delete</a></li>
+            <li><a href="#"><span class="fa fa-flag fa-fw"></span>Flag</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body p-no">
+      <ul class="list-group mb-no">
+        <li class="list-group-item">
+          <div class="checkbox checkbox-inline">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"> List group item heading </label>
+          </div>
+          <div class="pull-right action-buttons"> <a href="#"><span class="fa fa-pencil fa-fw"></span></a> <a href="#" class="text-danger"><span class="fa fa-trash fa-fw"></span></a> <a href="#" class="flag"><span class="fa fa-flag fa-fw"></span></a> </div>
+        </li>
+        <li class="list-group-item">
+          <div class="checkbox checkbox-inline">
+            <input type="checkbox" id="checkbox2" />
+            <label for="checkbox2"> List group item heading 1 </label>
+          </div>
+          <div class="pull-right action-buttons"> <a href="#"><span class="fa fa-pencil fa-fw"></span></a> <a href="#" class="text-danger"><span class="fa fa-trash fa-fw"></span></a> <a href="#" class="flag"><span class="fa fa-flag fa-fw"></span></a> </div>
+        </li>
+        <li class="list-group-item">
+          <div class="checkbox checkbox-inline">
+            <input type="checkbox" id="checkbox3" />
+            <label for="checkbox3"> List group item heading 2 </label>
+          </div>
+          <div class="pull-right action-buttons"> <a href="#"><span class="fa fa-pencil fa-fw"></span></a> <a href="#" class="text-danger"><span class="fa fa-trash fa-fw"></span></a> <a href="#" class="flag"><span class="fa fa-flag fa-fw"></span></a> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="panel-footer">
+      <div class="row">
+        <div class="col-md-6">
+          <h6> Total Count <span class="label label-info">25</span></h6>
+        </div>
+        <div class="col-md-6">
+          <ul class="pagination pagination-sm pull-right m-no">
+            <li class="disabled"><a href="javascript:void(0)">«</a></li>
+            <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="javascript:void(0)">»</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          News <span class="badge">32</span> </header>
+        <section class="panel-body">
+          <article class="media">
+            <div class="pull-left"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-bold fa-stack-1x text-white"></i> </span> </div>
+            <div class="media-body"> <a href="#" class="h4">Bootstrap 3: What you need to know</a> <small class="block m-t-xs">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</small> <em class="text-xs">Posted on <span class="text-danger">Feb 23, 2013</span></em> </div>
+          </article>
+          <div class="line pull-in"></div>
+          <article class="media">
+            <div class="pull-left"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x text-info"></i> <i class="fa fa-file-o fa-stack-1x text-white"></i> </span> </div>
+            <div class="media-body"> <a href="#" class="h4">Bootstrap documents</a> <small class="block m-t-xs">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</small> <em class="text-xs">Posted on <span class="text-danger">Feb 12, 2013</span></em> </div>
+          </article>
+          <div class="line pull-in"></div>
+          <article class="media">
+            <div class="pull-left"> <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x icon-muted"></i> <i class="fa fa-mobile fa-stack-1x text-white"></i> </span> </div>
+            <div class="media-body"> <a href="#" class="h4 text-success">Mobile first html/css framework</a> <small class="block m-t-xs">Bootstrap, Ratchet</small> <em class="text-xs">Posted on <span class="text-danger">Feb 05, 2013</span></em> </div>
+          </article>
+        </section>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section class="panel panel-info">
+        <header class="panel-heading">
+          Quick link </header>
+        <div class="list-group bg-white"> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-envelope"></i> Inbox </a> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-eye"></i> Profile visits </a> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-phone"></i> Call </a> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-comments-o"></i> Messages </a> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-bookmark"></i> Bookmarks </a> <a href="#" class="list-group-item"> <i class="fa fa-fw fa-bell"></i> Notifications </a> </div>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <section class="panel panel-success">
+        <header class="panel-heading"> Connection </header>
+        <ul class="list-group alt">
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"></span>
+              <div class="pull-right text-success mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Chris Fox</a></div>
+                <small class="text-muted">about 2 minutes ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"></span>
+              <div class="pull-right text-muted mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Amanda Conlan</a></div>
+                <small class="text-muted">about 2 hours ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"></span>
+              <div class="pull-right text-warning mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Dan Doorack</a></div>
+                <small class="text-muted">3 days ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"></span>
+              <div class="pull-right text-danger mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Lauren Taylor</a></div>
+                <small class="text-muted">about 2 minutes ago</small> </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="panel panel-default">
+        <header class="panel-heading"> <span class="label label-success">15</span> Inbox </header>
+        <section class="panel-body">
+          <article class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"></span>
+            <div class="media-body block">
+              <div class="pull-right media-xs text-center text-muted"> <strong class="h4">12:18</strong><br>
+                <small class="label label-danger">pm</small> </div>
+              <a href="#" class="h4">Bootstrap 3 released</a> <small class="block"><a href="#" class="">John Smith</a> <span class="label label-success">Circle</span></small> <small class="block mt-sm">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</small> </div>
+          </article>
+          <div class="line pull-in"></div>
+          <article class="media"> <span class="pull-left thumb-sm"><i class="fa fa-file-o fa-3x icon-muted"></i></span>
+            <div class="media-body block">
+              <div class="pull-right media-xs text-center text-muted"> <strong class="h4">17</strong><br>
+                <small class="label label-default">feb</small> </div>
+              <a href="#" class="h4">Bootstrap documents</a> <small class="block"><a href="#" class="">John Smith</a> <span class="label label-info">Friends</span></small> <small class="block mt-sm">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</small> </div>
+          </article>
+          <div class="line pull-in"></div>
+          <article class="media">
+            <div class="media-body block">
+              <div class="pull-right media-xs text-center text-muted"> <strong class="h4">09</strong><br>
+                <small class="label label-default">jan</small> </div>
+              <a href="#" class="h4 text-success">Mobile first html/css framework</a> <small class="block mt-sm">Bootstrap, Ratchet</small> </div>
+          </article>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+<section class="bg-black pv-xl">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="panel panel-default panel-card">
+          <div class="panel-heading"> <img src="../../assets/images/temp/avatar-image.jpg" />
+            <button class="btn btn-primary btn-sm" role="button">Follow</button>
+          </div>
+          <div class="panel-figure"> <img class="img-responsive img-circle" src="../../assets/images/avatar/avatar.png" /> </div>
+          <div class="panel-body text-center">
+            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">@Maridlcrmn</a></h4>
+            <small>A short description goes here.</small> </div>
+          <div class="panel-thumbnails">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage8.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage9.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage10.png" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="panel panel-default panel-card">
+          <div class="panel-heading"> <img src="../../assets/images/temp/music-player4.jpg" />
+            <button class="btn btn-primary btn-sm" role="button">Follow</button>
+          </div>
+          <div class="panel-figure"> <img class="img-responsive img-circle" src="../../assets/images/avatar/avatar1.png" /> </div>
+          <div class="panel-body text-center">
+            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">@Maridlcrmn</a></h4>
+            <small>A short description goes here.</small> </div>
+          <div class="panel-thumbnails">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage8.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage9.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage10.png" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="panel panel-default panel-card">
+          <div class="panel-heading"> <img src="../../assets/images/temp/music-player5.jpg" />
+            <button class="btn btn-primary btn-sm" role="button">Follow</button>
+          </div>
+          <div class="panel-figure"> <img class="img-responsive img-circle" src="../../assets/images/avatar/avatar2.png" /> </div>
+          <div class="panel-body text-center">
+            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">@Maridlcrmn</a></h4>
+            <small>A short description goes here.</small> </div>
+          <div class="panel-thumbnails">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage8.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage9.png" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="../../assets/images/temp/tabimage10.png" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="panel panel-default panel-card">
+          <div class="panel-heading"> <img src="../../assets/images/temp/music-player6.jpg" />
+            <button class="btn btn-primary btn-sm" role="button">Follow</button>
+          </div>
+          <div class="panel-figure"> <img class="img-responsive img-circle" src="../../assets/images/avatar/avatar3.png" /> </div>
+          <div class="panel-body text-center">
+            <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">@Maridlcrmn</a></h4>
+            <small>A short description goes here.</small> </div>
+          <div class="panel-thumbnails">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="http://placemi.com/sqfuk/60x60" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="http://placemi.com/71mf8/60x60" /> </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="thumbnail"> <img src="http://placemi.com/1pdrw/60x60" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg pv-xl">
+<div class="container">
+<div class="col-sm-6 col-md-4 "> 
+  <div id="profile-widget" class="panel panel-default">
+    <div class="panel-heading p-no"> <img src="../../assets/images/temp/lion.jpg"></div>
+    <div class="panel-body">
+      <div class="media"> <a class="pull-left" href="#"> <img class="media-object b p-xxs img-circle thumb-md" src="../../assets/images/avatar/avatar.png"> </a>
+        <div class="media-body">
+          <h2 class="media-heading">John Raymons</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+      </div>
+    </div>
+    <div class="panel-footer p-no">
+      <div class="btn-group btn-group-justified"> <a class="btn btn-danger r-no" role="button"><i class="fa fa-eye"></i> 172</a> <a class="btn btn-primary r-no" role="button"><i class="fa fa-comment"></i> 34</a> <a class="btn btn-info r-no" role="button"><i class="fa fa-heart"></i> 210</a> </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>

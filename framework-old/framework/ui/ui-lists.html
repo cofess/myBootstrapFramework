@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-list列表样式</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">Lists</h1>
+  </div>
+</div>
+<div class="container"> 
+  <!-- Lists -->
+  <h3>内联列表</h3>
+  <p>通过设置 <code>display: inline-block;</code> 并添加少量的内补（padding），将所有元素放置于同一行。</p>
+  <div class="bs-example" data-example-id="list-inline">
+    <ul class="list-inline">
+      <li>Lorem ipsum</li>
+      <li>Phasellus iaculis</li>
+      <li>Nulla volutpat</li>
+    </ul>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+  </div>
+  <h3>描述</h3>
+  <p>带有描述的短语列表。</p>
+  <div class="bs-example" data-example-id="simple-dl">
+    <dl>
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre>
+  </div>
+  <h4>水平排列的描述</h4>
+  <p><code>.dl-horizontal</code> 可以让 <code>&lt;dl&gt;</code> 内的短语及其描述排在一行。开始是像 <code>&lt;dl&gt;</code> 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。</p>
+  <div class="bs-example" data-example-id="horizontal-dl">
+    <dl class="dl-horizontal">
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      <dt>Felis euismod semper eget lacinia</dt>
+      <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+    </dl>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre>
+  </div>
+  <div class="callout callout-info" id="callout-type-dl-truncate">
+    <h4>自动截断</h4>
+    <p>通过 <code>text-overflow</code> 属性，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。</p>
+  </div>
+</div>
+<div class="container">
+  <h3 class="page-header">无样式列表</h3>
+  <p class="doc-readme">添加list-unstyled样式，可以去除列表样式效果。</p>
+  <div class="bs-example">
+    <ul class="list-unstyled">
+      <li>拼图前端框架，是一款开源的专业网页前端UI解决方案。</li>
+      <li>是HTML、CSS、Javascrip三者结合的前端框架。</li>
+      <li>配合js效果，提供了拼图的CSS、HTML标准。</li>
+      <li>方便个性化、人性化的前端设计方法。</li>
+      <li>受到设计师、前端工程师、程序员及网页设计初学者的喜爱。
+        <ul>
+          <li>拼图前端框架，是一款开源的专业网页前端UI解决方案。</li>
+          <li>是HTML、CSS、Javascrip三者结合的前端框架。</li>
+          <li>配合js效果，提供了拼图的CSS、HTML标准。</li>
+          <li>方便个性化、人性化的前端设计方法。</li>
+          <li>受到设计师、前端工程师、程序员及网页设计初学者的喜爱。</li>
+        </ul>
+      </li>
+      <li>拼图框架提供了CSS的重定义、元件样式的预设。</li>
+      <li>拼图框架提供了CSS的重定义、元件样式的预设、样式组件、风格模块及Javascript效果。</li>
+      <li>丰富了页面效果，同时让前端设计简单化、傻瓜化。</li>
+      <li>任何初学者都可快速建设美观、简洁的页面。</li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <h1 class="page-header">列表样式</h1>
+  <div class="row custom-row-space">
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-disc">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-square">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-alpha">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-decimal">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-cn">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-check list-empty">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-plus list-empty">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-remove list-empty">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row custom-row-space mtop20">
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-check list-full">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-plus list-full">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ul class="list-mark list-remove list-full">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row custom-row-space mtop20">
+    <div class="col-sm-12 col-lg-4">
+      <ol class="list-circle-num list-empty">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ol>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ol class="list-circle-num list-full">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ol>
+    </div>
+    <div class="col-sm-12 col-lg-4"> </div>
+  </div>
+  <div class="row custom-row-space mtop20">
+    <div class="col-sm-12 col-lg-4">
+      <ol class="list-square-num list-empty">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ol>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <ol class="list-square-num list-full">
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+        <li>Curabitur a augue a justo pharetra </li>
+      </ol>
+    </div>
+    <div class="col-sm-12 col-lg-4"> </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="list-group"> 
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge badge-empty">201</span> <i class="fa fa-envelope icon-muted fa-fw"></i> Inbox </a> 
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">5021</span> <i class="fa fa-eye icon-muted fa-fw"></i> Profile visits </a> 	  
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-success">14</span> <i class="fa fa-phone icon-muted fa-fw"></i> Call </a> 
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-dark">20</span> <i class="fa fa-comments-o icon-muted fa-fw"></i> Messages </a> 			      
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-warning">14</span> <i class="fa fa-bookmark icon-muted fa-fw"></i> Bookmarks </a>     
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">30</span> <i class="fa fa-bell icon-muted fa-fw"></i> Notifications </a>      
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-danger">10</span> <i class="fa fa-clock-o icon-muted fa-fw"></i> Watch </a> </div>
+    </div>
+    <div class="col-sm-4">
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          <div class="input-group text-sm">
+            <input type="text" class="input-sm form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <ul class="list-group alt">
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+              <div class="pull-right text-success mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Chris Fox</a></div>
+                <small class="text-muted">about 2 minutes ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+              <div class="pull-right text-muted mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Amanda Conlan</a></div>
+                <small class="text-muted">about 2 hours ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+              <div class="pull-right text-warning mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Dan Doorack</a></div>
+                <small class="text-muted">3 days ago</small> </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+              <div class="pull-right text-danger mt-sm"> <i class="fa fa-circle"></i> </div>
+              <div class="media-body">
+                <div><a href="#">Lauren Taylor</a></div>
+                <small class="text-muted">about 2 minutes ago</small> </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="col-md-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-primary">facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+              <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+            </div>
+          </div>
+  </div>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>
