@@ -75,8 +75,8 @@
 .label-price-table .dl .coupon .code { letter-spacing: 1px; border-radius: 4px; margin-top: 10px; padding: 10px 15px; color: #f1c40f; background: #f0f0f0; }
 /*label-price-table end here*/
 /*ptable*/
-.ptable { margin-left: -1px; position: relative; }
-.ptable:hover, .ptable.active { margin-top: -10px; -moz-box-shadow: 0 0 12px rgba(171,139,110,.38); -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38); box-shadow: 0 0 12px rgba(171,139,110,.38); }
+.ptable { margin-left: -1px; position: relative;transition:0.5s;-moz-transition:0.5s;-webkit-transition:0.5s;-o-transition:0.5s;}
+.ptable:hover, .ptable.active { margin-top: -10px; -moz-box-shadow: 0 0 12px rgba(171,139,110,.38); -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38); box-shadow: 0 0 12px rgba(171,139,110,.38);transition:0.5s;-moz-transition:0.5s;-webkit-transition:0.5s;-o-transition:0.5s; }
 .ptable-header { padding: 10px 15px; color: #fff; }
 .ptable-price { padding: 25px; color: #fff; }
 .ptable-price h1, .ptable-price p { margin: 0; text-align: center; }
@@ -193,7 +193,6 @@
 .price .intro p { color: #fff; color: rgba(255,255,255,0.7); }
 .price .option { background: #fff; margin-right: 1em; padding: 3em 2em; position: relative; overflow: hidden }
 .price .option h3 { margin: 0 0 .5em; }
-.price .option h2 { margin: 1em 0 .5em; }
 .price .option h2 span { font-weight: 100; font-size: .6em }
 .price .option ul { list-style: none; padding: 0; margin: 0 0 1em }
 .price .option .button { display: block; float: none; margin: 0 1em; }
