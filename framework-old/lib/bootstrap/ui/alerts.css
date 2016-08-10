@@ -1,0 +1,9 @@
+.alert.well{padding: 15px;}
+.alert.well.alert-dismissable, .alert.well.alert-dismissible{padding-right: 35px;}
+.alert.dark .alert-link{color:#fff;font-weight: bold;}
+/*--------------Cool Alerts Alternate Color------------------*/
+.alert-info.dark { border-color: #46b8da;background: #5bc0de;color: #fff; }
+.alert-success.dark { border-color: #4cae4c;background: #5cb85c;color: #fff; }
+.alert-warning.dark { border-color: #eea236;background: #f0ad4e;color: #fff; }
+.alert-danger.dark { border-color: #d43f3a;background: #d9534f;color: #fff; }
+/*--------------Cool Alerts Alternate Color end here------------------*/

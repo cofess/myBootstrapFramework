@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>modules-AnimatedHeader</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<!-- prettify.css 代码高亮 -->
+<link href="../../lib/modules/prettify/prettify.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<header class="banner">
+  <nav class="container">
+    <h1 class="logo">Headhesive.js</h1>
+  </nav>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Headhesive.js</h1>
+    <p class="hero__snippet">创建一个按需显示头部。指定当你浏览器滚动到某个位置时显示。</p>
+    <ul class="btn-list">
+      <li class="btn-list__item"><a class="btn btn-white btn-outline" href="https://github.com/markgoodyear/headhesive/archive/master.zip">Download</a></li>
+      <li class="btn-list__item"><a class="btn btn-white btn-outline" href="https://github.com/markgoodyear/headhesive/tree/master">GitHub</a></li>
+    </ul>
+  </div>
+</section>
+<a id="showHere"></a>
+<div class="container bs-container">
+  <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="user-content-headhesivejs" class="anchor" href="#headhesivejs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Headhesive.js</h1>
+
+<blockquote>
+<p>An on-demand sticky header.</p>
+</blockquote>
+
+<h2>
+<a name="user-content-what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is it?</h2>
+
+<p>Headhesive.js creates an on-demand sticky header. Specify when you want your header to become fixed and the rest is magic. <a href="http://markgoodyear.com/labs/headhesive/">View demo</a>.</p>
+
+<h2>
+<a name="user-content-bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower</h2>
+
+<p>Install <code>Headhesive.js</code> with Bower:</p>
+
+<pre><code>$ bower install headhesive.js
+</code></pre>
+
+<h2>
+<a name="user-content-how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use?</h2>
+
+<p>Headhesive.js is a standalone JavaScript plugin with no dependancies. Include the <a href="/markgoodyear/headhesive.js/blob/master/dist/headhesive.min.js"><code>headhesive.min.js</code></a> <em>(from the <a href="/markgoodyear/headhesive.js/blob/master/dist"><code>dist/</code></a> folder)</em> in the footer of your page and initialise it:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">// Create a new instance of Headhesive</span>
+<span class="kd">var</span> <span class="nx">headhesive</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Headhesive</span><span class="p">(</span><span class="s1">'.header'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="user-content-styling-headhesivejs" class="anchor" href="#styling-headhesivejs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Styling Headhesive.js</h3>
+
+<p>Headhesive.js doesn't inject any CSS styles so you can use your own to completely control how your sticky element behaves. An <a href="/markgoodyear/headhesive.js/blob/master/demo/css/headhesive.css">example is provided in the demo</a>.</p>
+
+<h2>
+<a name="user-content-options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>Customise how Headhesive works by passing in custom options.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">// Options</span>
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">offset</span><span class="o">:</span> <span class="mi">500</span>
+<span class="p">}</span>
+
+<span class="c1">// Create a new instance of Headhesive and pass in some options</span>
+<span class="kd">var</span> <span class="nx">header</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Headhesive</span><span class="p">(</span><span class="s1">'.header'</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="user-content-defaults" class="anchor" href="#defaults" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defaults</h3>
+
+<div class="highlight highlight-javascript"><pre><span class="p">{</span>
+    <span class="c1">// Scroll offset. Accepts Number or "String" (for class/ID)</span>
+    <span class="nx">offset</span><span class="o">:</span> <span class="mi">300</span><span class="p">,</span> <span class="c1">// OR — offset: '.classToActivateAt',</span>
+
+    <span class="c1">// Custom classes</span>
+    <span class="nx">classes</span><span class="o">:</span> <span class="p">{</span>
+
+        <span class="c1">// Cloned elem class</span>
+        <span class="nx">clone</span><span class="o">:</span> <span class="s1">'headhesive'</span><span class="p">,</span>
+
+        <span class="c1">// Stick class</span>
+        <span class="nx">stick</span><span class="o">:</span> <span class="s1">'headhesive--stick'</span><span class="p">,</span>
+
+        <span class="c1">// Unstick class</span>
+        <span class="nx">unstick</span><span class="o">:</span> <span class="s1">'headhesive--unstick'</span>
+    <span class="p">},</span>
+
+    <span class="c1">// Throttle scroll event to fire every 250ms to improve performace</span>
+    <span class="nx">throttle</span><span class="o">:</span> <span class="mi">250</span><span class="p">,</span>
+
+    <span class="c1">// Callbacks</span>
+    <span class="nx">onInit</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+    <span class="nx">onStick</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+    <span class="nx">onUnstick</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+    <span class="nx">onDestroy</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="user-content-destroy-method" class="anchor" href="#destroy-method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Destroy method</h2>
+
+<p>To destroy an instance of Headhesive.js, you can call the destroy method:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">header</span><span class="p">.</span><span class="nx">destroy</span><span class="p">();</span>
+</pre></div>
+
+<h2>
+<a name="user-content-browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser support</h2>
+
+<p>IE9+ and modern browsers.</p>
+
+<h2>
+<a name="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Headesive.js is licensed under the MIT License.</p>
+
+<h2>
+<a name="user-content-demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>There is a demo available in the <a href="/markgoodyear/headhesive.js/blob/master/demo">demo folder</a> and online at <a href="http://markgoodyear.com/labs/headhesive/">http://markgoodyear.com/labs/headhesive/</a>.</p>
+</article>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+<!--headhesive-->
+<link href="../../lib/modules/headhesive/headhesive.css" rel="stylesheet">
+<script type="text/javascript" src="../../lib/modules/headhesive/headhesive.min.js"></script> 
+<script>
+
+        // Set options
+        var options = {
+            offset: '#showHere',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+    </script> 
+<!--代码高亮--> 
+<script src="../../lib/modules/prettify/prettify.min.js"></script> 
+<script type="text/javascript">
+ jQuery(document).ready(function($){
+   $(window).load(function(){
+     $("pre").addClass("prettyprint linenums");
+     prettyPrint();
+   })
+ });
+</script>
+</body>
+</html>

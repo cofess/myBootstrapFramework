@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-buttons</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">Buttons</h1>
+  </div>
+</div>
+<div class="container">
+  <h3 class="text-center">Color Variations</h3>
+  <div class="row mb-sm text-center">
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-primary</code>
+        <div class="btn-primary pv-lg">#337ab7</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-success</code>
+        <div class="btn-success pv-lg">#5cb85c</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-info</code>
+        <div class="btn-info pv-lg">#5bc0de</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-warning</code>
+        <div class="btn-warning pv-lg">#f0ad4e</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-danger</code>
+        <div class="btn-danger pv-lg">#d9534f</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="row"> <code>.btn-dark</code>
+        <div class="btn-dark pv-lg">#5a6a7a</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="container">
+  <h3 class="page-header">Social buttons</h3>
+  <div class="doc-buttons">
+    <p id="social-buttons"> 
+    <a href="#" class="btn btn-round btn-primary mb-xs"><i class="so-facebook"></i> Facebook</a>    
+    <a href="#" class="btn btn-round btn-info mb-xs"><i class="so-twitter"></i> Twitter</a>  
+    <a href="#" class="btn btn-round bg-blue-800 bg-inverse mb-xs"><i class="so-google"></i> Google</a>
+    <a href="#" class="btn btn-round btn-danger mb-xs"><i class="so-google-plus"></i> Google+</a>
+    <a href="#" class="btn btn-round bg-cyan-800 bg-inverse mb-xs"><i class="so-linkedin"></i> linkedin</a> 
+    <a href="#" class="btn btn-round bg-red-800 bg-inverse mb-xs"><i class="so-pinterest"></i> pinterest</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-github-circled"></i> github</a>
+    <a href="#" class="btn btn-round bg-pink-300 bg-inverse mb-xs"><i class="so-dribbble"></i> dribbble</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-gmail text-danger"></i> Gmail</a>
+    <a href="#" class="btn btn-round bg-deep-orange-600 bg-inverse mb-xs"><i class="so-soundcloud"></i> soundcloud</a>
+    <a href="#" class="btn btn-round btn-default color-light-blue-800 mb-xs"><i class="so-paypal"></i> paypal</a>
+    <a href="#" class="btn btn-round bg-amber-500 color-black mb-xs"><i class="so-amazon"></i> amazon</a>
+    <a href="#" class="btn btn-round btn-info mb-xs"><i class="so-skype"></i> skype</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-cloudapp"></i> cloudapp</a>
+    <a href="#" class="btn btn-round bg-green-900 bg-inverse mb-xs"><i class="so-forrst"></i> forrst</a>
+    <a href="#" class="btn btn-round bg-green-500 bg-inverse mb-xs"><i class="so-spotify"></i> spotify</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-instapaper"></i> instapaper</a>
+    <a href="#" class="btn btn-round bg-deep-orange-600 bg-inverse mb-xs"><i class="so-smashmag"></i> smashmag</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-dropbox color-light-blue-800"></i> dropbox</a>
+    <a href="#" class="btn btn-round btn-dark mb-xs"><i class="so-appstore"></i> appstore</a>
+    <a href="#" class="btn btn-round btn-primary mb-xs"><i class="so-macstore"></i> macstore</a>
+    <a href="#" class="btn btn-round bg-lime-500 bg-inverse mb-xs"><i class="so-android"></i> android</a>
+    <a href="#" class="btn btn-round bg-green-500 bg-inverse mb-xs"><i class="so-evernote"></i> evernote</a>
+    <a href="#" class="btn btn-round bg-red-800 bg-inverse mb-xs"><i class="so-quora"></i> quora</a>
+    <a href="#" class="btn btn-round btn-primary mb-xs"><i class="so-lanyrd"></i> lanyrd</a>
+    <a href="#" class="btn btn-round bg-red-800 bg-inverse mb-xs"><i class="so-lastfm"></i> lastfm</a>
+    <a href="#" class="btn btn-round bg-red-600 bg-inverse mb-xs"><i class="so-yelp"></i> yelp</a>
+    <a href="#" class="btn btn-round btn-info mb-xs"><i class="so-foursquare"></i> foursquare</a>
+    <a href="#" class="btn btn-round bg-deep-orange-700 bg-inverse mb-xs"><i class="so-klout"></i> klout</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-wikipedia"></i> wikipedia</a>
+    <a href="#" class="btn btn-round bg-blue-grey-400 bg-inverse mb-xs"><i class="so-disqus"></i> disqus</a>
+    <a href="#" class="btn btn-round btn-info mb-xs"><i class="so-intensedebate"></i> intensedebate</a>
+    <a href="#" class="btn btn-round bg-cyan-600 bg-inverse mb-xs"><i class="so-vimeo"></i> vimeo</a>
+    <a href="#" class="btn btn-round btn-dark mb-xs"><i class="so-scribd"></i> scribd</a>
+    <a href="#" class="btn btn-round btn-dark mb-xs"><i class="so-wordpress"></i> wordpress</a>
+    <a href="#" class="btn btn-round bg-pink-400 bg-inverse mb-xs"><i class="so-songkick"></i> songkick</a>
+    <a href="#" class="btn btn-round bg-amber-200 color-amber-900 mb-xs"><i class="so-posterous"></i> posterous</a>
+    <a href="#" class="btn btn-round bg-red-400 bg-inverse mb-xs"><i class="so-eventbrite"></i> eventbrite</a>
+    <a href="#" class="btn btn-round bg-light-green-400 bg-inverse mb-xs"><i class="so-flattr"></i> flattr</a>
+    <a href="#" class="btn btn-round btn-default mb-xs"><i class="so-plancast"></i> plancast</a>
+    <a href="#" class="btn btn-round bg-red-700 bg-inverse mb-xs"><i class="so-youtube"></i> youtube</a>
+    </p>
+    <p id="social-buttons"> 
+    <a href="#" class="btn btn-sm btn-primary mb-xs"><i class="so-facebook mr-no"></i></a>    
+    <a href="#" class="btn btn-sm btn-info mb-xs"><i class="so-twitter"></i></a>  
+    <a href="#" class="btn btn-sm bg-blue-800 bg-inverse mb-xs"><i class="so-google"></i></a>
+    <a href="#" class="btn btn-sm btn-danger mb-xs"><i class="so-google-plus"></i></a>
+    <a href="#" class="btn btn-sm bg-cyan-800 bg-inverse mb-xs"><i class="so-linkedin"></i></a> 
+    <a href="#" class="btn btn-sm bg-red-800 bg-inverse mb-xs"><i class="so-pinterest"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-github-circled"></i></a>
+    <a href="#" class="btn btn-sm bg-pink-300 bg-inverse mb-xs"><i class="so-dribbble"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-gmail text-danger"></i></a>
+    <a href="#" class="btn btn-sm bg-deep-orange-600 bg-inverse mb-xs"><i class="so-soundcloud"></i></a>
+    <a href="#" class="btn btn-sm btn-default color-light-blue-800 mb-xs"><i class="so-paypal"></i></a>
+    <a href="#" class="btn btn-sm bg-amber-500 color-black mb-xs"><i class="so-amazon"></i></a>
+    <a href="#" class="btn btn-sm btn-info mb-xs"><i class="so-skype"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-cloudapp"></i></a>
+    <a href="#" class="btn btn-sm bg-green-900 bg-inverse mb-xs"><i class="so-forrst"></i></a>
+    <a href="#" class="btn btn-sm bg-green-500 bg-inverse mb-xs"><i class="so-spotify"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-instapaper"></i></a>
+    <a href="#" class="btn btn-sm bg-deep-orange-600 bg-inverse mb-xs"><i class="so-smashmag"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-dropbox color-light-blue-800"></i></a>
+    <a href="#" class="btn btn-sm btn-dark mb-xs"><i class="so-appstore"></i></a>
+    <a href="#" class="btn btn-sm btn-primary mb-xs"><i class="so-macstore"></i></a>
+    <a href="#" class="btn btn-sm bg-lime-500 bg-inverse mb-xs"><i class="so-android"></i></a>
+    <a href="#" class="btn btn-sm bg-green-500 bg-inverse mb-xs"><i class="so-evernote"></i></a>
+    <a href="#" class="btn btn-sm bg-red-800 bg-inverse mb-xs"><i class="so-quora"></i></a>
+    <a href="#" class="btn btn-sm btn-primary mb-xs"><i class="so-lanyrd"></i></a>
+    <a href="#" class="btn btn-sm bg-red-800 bg-inverse mb-xs"><i class="so-lastfm"></i></a>
+    <a href="#" class="btn btn-sm bg-red-600 bg-inverse mb-xs"><i class="so-yelp"></i></a>
+    <a href="#" class="btn btn-sm btn-info mb-xs"><i class="so-foursquare"></i></a>
+    <a href="#" class="btn btn-sm bg-deep-orange-700 bg-inverse mb-xs"><i class="so-klout"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-wikipedia"></i></a>
+    <a href="#" class="btn btn-sm bg-blue-grey-400 bg-inverse mb-xs"><i class="so-disqus"></i></a>
+    <a href="#" class="btn btn-sm btn-info mb-xs"><i class="so-intensedebate"></i></a>
+    <a href="#" class="btn btn-sm bg-cyan-600 bg-inverse mb-xs"><i class="so-vimeo"></i></a>
+    <a href="#" class="btn btn-sm btn-dark mb-xs"><i class="so-scribd"></i></a>
+    <a href="#" class="btn btn-sm btn-dark mb-xs"><i class="so-wordpress"></i></a>
+    <a href="#" class="btn btn-sm bg-pink-400 bg-inverse mb-xs"><i class="so-songkick"></i></a>
+    <a href="#" class="btn btn-sm bg-amber-200 color-amber-900 mb-xs"><i class="so-posterous"></i></a>
+    <a href="#" class="btn btn-sm bg-red-400 bg-inverse mb-xs"><i class="so-eventbrite"></i></a>
+    <a href="#" class="btn btn-sm bg-light-green-400 bg-inverse mb-xs"><i class="so-flattr"></i></a>
+    <a href="#" class="btn btn-sm btn-default mb-xs"><i class="so-plancast"></i></a>
+    <a href="#" class="btn btn-sm bg-red-700 bg-inverse mb-xs"><i class="so-youtube"></i></a>
+    </p>
+    <p id="social-buttons"> 
+    <a href="#" class="btn btn-circle btn-primary mb-xs"><i class="so-facebook mr-no"></i></a>    
+    <a href="#" class="btn btn-circle btn-info mb-xs"><i class="so-twitter"></i></a>  
+    <a href="#" class="btn btn-circle bg-blue-800 bg-inverse mb-xs"><i class="so-google"></i></a>
+    <a href="#" class="btn btn-circle btn-danger mb-xs"><i class="so-google-plus"></i></a>
+    <a href="#" class="btn btn-circle bg-cyan-800 bg-inverse mb-xs"><i class="so-linkedin"></i></a> 
+    <a href="#" class="btn btn-circle bg-red-800 bg-inverse mb-xs"><i class="so-pinterest"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-github-circled"></i></a>
+    <a href="#" class="btn btn-circle bg-pink-300 bg-inverse mb-xs"><i class="so-dribbble"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-gmail text-danger"></i></a>
+    <a href="#" class="btn btn-circle bg-deep-orange-600 bg-inverse mb-xs"><i class="so-soundcloud"></i></a>
+    <a href="#" class="btn btn-circle btn-default color-light-blue-800 mb-xs"><i class="so-paypal"></i></a>
+    <a href="#" class="btn btn-circle bg-amber-500 color-black mb-xs"><i class="so-amazon"></i></a>
+    <a href="#" class="btn btn-circle btn-info mb-xs"><i class="so-skype"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-cloudapp"></i></a>
+    <a href="#" class="btn btn-circle bg-green-900 bg-inverse mb-xs"><i class="so-forrst"></i></a>
+    <a href="#" class="btn btn-circle bg-green-500 bg-inverse mb-xs"><i class="so-spotify"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-instapaper"></i></a>
+    <a href="#" class="btn btn-circle bg-deep-orange-600 bg-inverse mb-xs"><i class="so-smashmag"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-dropbox color-light-blue-800"></i></a>
+    <a href="#" class="btn btn-circle btn-dark mb-xs"><i class="so-appstore"></i></a>
+    <a href="#" class="btn btn-circle btn-primary mb-xs"><i class="so-macstore"></i></a>
+    <a href="#" class="btn btn-circle bg-lime-500 bg-inverse mb-xs"><i class="so-android"></i></a>
+    <a href="#" class="btn btn-circle bg-green-500 bg-inverse mb-xs"><i class="so-evernote"></i></a>
+    <a href="#" class="btn btn-circle bg-red-800 bg-inverse mb-xs"><i class="so-quora"></i></a>
+    <a href="#" class="btn btn-circle btn-primary mb-xs"><i class="so-lanyrd"></i></a>
+    <a href="#" class="btn btn-circle bg-red-800 bg-inverse mb-xs"><i class="so-lastfm"></i></a>
+    <a href="#" class="btn btn-circle bg-red-600 bg-inverse mb-xs"><i class="so-yelp"></i></a>
+    <a href="#" class="btn btn-circle btn-info mb-xs"><i class="so-foursquare"></i></a>
+    <a href="#" class="btn btn-circle bg-deep-orange-700 bg-inverse mb-xs"><i class="so-klout"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-wikipedia"></i></a>
+    <a href="#" class="btn btn-circle bg-blue-grey-400 bg-inverse mb-xs"><i class="so-disqus"></i></a>
+    <a href="#" class="btn btn-circle btn-info mb-xs"><i class="so-intensedebate"></i></a>
+    <a href="#" class="btn btn-circle bg-cyan-600 bg-inverse mb-xs"><i class="so-vimeo"></i></a>
+    <a href="#" class="btn btn-circle btn-dark mb-xs"><i class="so-scribd"></i></a>
+    <a href="#" class="btn btn-circle btn-dark mb-xs"><i class="so-wordpress"></i></a>
+    <a href="#" class="btn btn-circle bg-pink-400 bg-inverse mb-xs"><i class="so-songkick"></i></a>
+    <a href="#" class="btn btn-circle bg-amber-200 color-amber-900 mb-xs"><i class="so-posterous"></i></a>
+    <a href="#" class="btn btn-circle bg-red-400 bg-inverse mb-xs"><i class="so-eventbrite"></i></a>
+    <a href="#" class="btn btn-circle bg-light-green-400 bg-inverse mb-xs"><i class="so-flattr"></i></a>
+    <a href="#" class="btn btn-circle btn-default mb-xs"><i class="so-plancast"></i></a>
+    <a href="#" class="btn btn-circle bg-red-700 bg-inverse mb-xs"><i class="so-youtube"></i></a>
+    </p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="page-header">Button options</h4>
+      <div class="doc-buttons">
+        <p>
+        <a href="#" class="btn btn-default">Default</a> 
+        <a href="#" class="btn btn-primary">Primary</a> 
+        <a href="#" class="btn btn-success">Success</a> 
+        <a href="#" class="btn btn-info">Info</a> 
+        <a href="#" class="btn btn-warning">Warning</a> 
+        <a href="#" class="btn btn-danger">Danger</a> 
+        <a href="#" class="btn btn-dark">Dark</a> 
+        <a href="#" class="btn btn-default disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Button shadow</h4>
+      <div class="doc-buttons">
+        <p>
+        <a href="#" class="btn btn-default btn-shadow">Default</a> 
+        <a href="#" class="btn btn-primary btn-shadow">Primary</a> 
+        <a href="#" class="btn btn-success btn-shadow">Success</a> 
+        <a href="#" class="btn btn-info btn-shadow">Info</a> 
+        <a href="#" class="btn btn-warning btn-shadow">Warning</a> 
+        <a href="#" class="btn btn-danger btn-shadow">Danger</a> 
+        <a href="#" class="btn btn-dark btn-shadow">Dark</a> 
+        <a href="#" class="btn btn-default btn-shadow disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Button large shadow</h4>
+      <div class="doc-buttons">
+        <p>
+        <a href="#" class="btn btn-default btn-lg btn-shadow">Default</a> 
+        <a href="#" class="btn btn-primary btn-lg btn-shadow">Primary</a> 
+        <a href="#" class="btn btn-success btn-lg btn-shadow">Success</a> 
+        <a href="#" class="btn btn-info btn-lg btn-shadow">Info</a></p>
+        <p>
+        <a href="#" class="btn btn-warning btn-lg btn-shadow">Warning</a> 
+        <a href="#" class="btn btn-danger btn-lg btn-shadow">Danger</a> 
+        <a href="#" class="btn btn-dark btn-lg btn-shadow">Dark</a> 
+        <a href="#" class="btn btn-default btn-lg btn-shadow disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Outline Rounded button</h4>
+      <div class="doc-buttons">
+        <p>
+        <a href="#" class="btn btn-default btn-outline btn-round">Default</a> 
+        <a href="#" class="btn btn-primary btn-outline btn-round">Primary</a> 
+        <a href="#" class="btn btn-success btn-outline btn-round">Success</a> 
+        <a href="#" class="btn btn-info btn-outline btn-round">Info</a> 
+        <a href="#" class="btn btn-warning btn-outline btn-round">Warning</a> 
+        <a href="#" class="btn btn-danger btn-outline btn-round">Danger</a> 
+        <a href="#" class="btn btn-dark btn-outline btn-round">Dark</a> 
+        <a href="#" class="btn btn-default btn-outline btn-round disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Outline dashed Rounded button</h4>
+      <div class="doc-buttons">
+        <p>
+        <a href="#" class="btn btn-default btn-outline btn-round b-dashed">Default</a> 
+        <a href="#" class="btn btn-primary btn-outline btn-round b-dashed">Primary</a> 
+        <a href="#" class="btn btn-success btn-outline btn-round b-dashed">Success</a> 
+        <a href="#" class="btn btn-info btn-outline btn-round b-dashed">Info</a> 
+        <a href="#" class="btn btn-warning btn-outline btn-round b-dashed">Warning</a> 
+        <a href="#" class="btn btn-danger btn-outline btn-round b-dashed">Danger</a> 
+        <a href="#" class="btn btn-dark btn-outline btn-round b-dashed">Dark</a> 
+        <a href="#" class="btn btn-default btn-outline btn-round b-dashed disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Rounded button</h4>
+      <div class="doc-buttons">
+        <p><a href="#" class="btn btn-default btn-round">Default</a> <a href="#" class="btn btn-primary btn-round">Primary</a> <a href="#" class="btn btn-success btn-round">Success</a> <a href="#" class="btn btn-info btn-round">Info</a> <a href="#" class="btn btn-warning btn-round">Warning</a> <a href="#" class="btn btn-danger btn-round">Danger</a> <a href="#" class="btn btn-dark btn-round">Dark</a> <a href="#" class="btn btn-default btn-round disabled">Disabled</a></p>
+      </div>
+      <h4 class="page-header">Button size</h4>
+      <div class="doc-buttons">
+        <p> <a href="#" class="btn btn-default btn-lg">Large button</a> </p>
+        <p> <a href="#" class="btn btn-default">Default button</a> </p>
+        <p> <a href="#" class="btn btn-default btn-sm">Small button</a> </p>
+        <p> <a href="#" class="btn btn-default btn-xs">Extra small button</a> </p>
+      </div>
+      <h4 class="page-header">Outlined square buttons</h4>
+      <div class="doc-buttons">
+        <p><a href="#" class="btn btn-squared btn-primary">Demo Primary Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-success">Demo Success Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-info">Demo Info Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-warning">Demo Warning Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-danger">Demo Danger Button</a></p>
+      </div>
+      <div class="doc-buttons">
+        <p><a href="#" class="btn btn-squared btn-block btn-primary">Demo Block Primary Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-block btn-success">Demo Block Success Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-block btn-info">Demo Block Info Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-block btn-warning">Demo Block Warning Button</a></p>
+        <p><a href="#" class="btn btn-squared btn-block btn-danger">Demo Block Danger Button</a></p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4 class="page-header">Button with icon</h4>
+      <div class="doc-buttons">
+        <p> <a href="#" class="btn btn-default"><i class="fa fa-html5"></i> Html5</a> <a href="#" class="btn btn-info"><i class="fa fa-css3"></i> CSS3</a> </p>
+        <p><a href="#" class="btn btn-default btn-lg btn-block"><i class="fa fa-bars pull-right"></i> Block button with icon</a></p>
+        <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-bars pull-left"></i> Block button with icon</a></p>
+        <h4 class="page-header">Justified button groups</h4>
+        <div class="btn-group btn-group-justified"> <a href="#" class="btn btn-primary">Left</a> <a href="#" class="btn btn-info">Middle</a> <a href="#" class="btn btn-success">Right</a> </div>
+        <h4 class="page-header">Button components</h4>
+        <p> <a href="#moreless" class="btn btn-sm btn-default" data-toggle="class:show"> <i class="fa fa-plus text"></i> <span class="text">More</span> <i class="fa fa-minus text-active"></i> <span class="text-active">Less</span> </a> </p>
+        <p> <a class="btn btn-default" id="btn-1" href="#btn-1" data-toggle="class:btn-success"> <i class="fa fa-cloud-upload text"></i> <span class="text">Upload</span> <i class="fa fa-check text-active"></i> <span class="text-active">Success</span> </a> <a class="btn btn-default" data-toggle="button"> <i class="fa fa-heart-o text"></i> <i class="fa fa-heart text-active text-danger"></i> </a> <a class="btn btn-default" data-toggle="button"> <span class="text"> <i class="fa fa-thumbs-up text-success"></i> 25 </span> <span class="text-active"> <i class="fa fa-thumbs-down text-danger"></i> 10 </span> </a>
+          <button class="btn btn-success" data-toggle="class:show inline" data-target="#spin" data-loading-text="Saving...">Save</button>
+          <i class="fa fa-spinner fa-spin hide" id="spin"></i> </p>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-sm btn-info active">
+            <input type="radio" name="options">
+            <i class="fa fa-check text-active"></i> Male </label>
+          <label class="btn btn-sm btn-success">
+            <input type="radio" name="options">
+            <i class="fa fa-check text-active"></i> Female </label>
+          <label class="btn btn-sm btn-primary">
+            <input type="radio" name="options">
+            <i class="fa fa-check text-active"></i> N/A </label>
+        </div>
+      </div>
+      <h4 class="page-header">Circle Button</h4>
+      <div class="doc-buttons">
+        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i></button>
+        <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i></button>
+        <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i></button>
+        <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i></button>
+        <h2>lg</h2>
+        <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-list"></i></button>
+        <button type="button" class="btn btn-success btn-circle btn-lg"><i class="fa fa-link"></i></button>
+        <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-warning btn-circle btn-lg"><i class="fa fa-times"></i></button>
+        <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-heart"></i></button>
+        <h2>xl</h2>
+        <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i></button>
+        <button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-link"></i></button>
+        <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-times"></i></button>
+        <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i></button>
+        <h2>xl</h2>
+        <button type="button" class="btn btn-default btn-outline btn-circle btn-xl"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-primary btn-outline btn-circle btn-xl"><i class="fa fa-list"></i></button>
+        <button type="button" class="btn btn-success btn-outline btn-circle btn-xl"><i class="fa fa-link"></i></button>
+        <button type="button" class="btn btn-info btn-outline btn-circle btn-xl"><i class="fa fa-check"></i></button>
+        <button type="button" class="btn btn-warning btn-outline btn-circle btn-xl"><i class="fa fa-times"></i></button>
+        <button type="button" class="btn btn-danger btn-outline btn-circle btn-xl"><i class="fa fa-heart"></i></button>
+      </div>
+      <h4 class="page-header">Cool Buttons With Labels</h4>
+      <div class="doc-buttons">
+        <button type="button" class="btn btn-labeled btn-success"> <span class="btn-label"><i class="fa fa-check"></i></span>Success</button>
+        <button type="button" class="btn btn-labeled btn-danger"> <span class="btn-label"><i class="fa fa-times"></i></span>Cancel</button>
+        <br />
+        <button type="button" class="btn btn-labeled btn-warning"> <span class="btn-label"><i class="fa fa-bookmark"></i></span>Bookmark</button>
+        <button type="button" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="fa fa-camera"></i></span>Camera</button>
+        <br />
+        <button type="button" class="btn btn-labeled btn-default"> <span class="btn-label"><i class="fa fa-chevron-left"></i></span>Left</button>
+        <button type="button" class="btn btn-labeled btn-default"> <span class="btn-label"><i class="fa fa-chevron-right"></i></span> Right</button>
+        <br />
+        <button type="button" class="btn btn-labeled btn-success"> <span class="btn-label"><i class="fa fa-thumbs-up"></i></span>Thumbs
+        Up</button>
+        <button type="button" class="btn btn-labeled btn-danger"> <span class="btn-label"><i class="fa fa-thumbs-down"></i></span>Thumbs
+        Down</button>
+        <br />
+        <button type="button" class="btn btn-labeled btn-info"> <span class="btn-label"><i class="fa fa-refresh"></i></span>Refresh</button>
+        <button type="button" class="btn btn-labeled btn-danger"> <span class="btn-label"><i class="fa fa-trash-o"></i></span>Trash</button>
+        <br />
+        <a class="btn btn-success btn-labeled" href="http://www.jquery2dotnet.com" role="button"> <span class="btn-label"><i class="fa fa-info-circle"></i></span>Info Web</a> </div>
+      <h4 class="page-header">Group buttons</h4>
+      <div class="doc-buttons">
+        <div class="ui-group-buttons"> <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button"><i class="fa fa-thumbs-up"></i></a>
+          <div class="or"></div>
+          <a href="http://www.jquery2dotnet.com" class="btn btn-danger" role="button"><i class="fa fa-thumbs-down"></i></a> </div>
+        <div class="ui-group-buttons"> <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button"><i class="fa fa-floppy-o"></i></a>
+          <div class="or"></div>
+          <a href="http://www.jquery2dotnet.com" class="btn btn-danger" role="button"><i class="fa fa-trash-o"></i></a> </div>
+        <br />
+        <br />
+        <div class="ui-group-buttons"> <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button"><i class="fa fa-check"></i> Sign Up</a>
+          <div class="or"></div>
+          <a href="http://www.jquery2dotnet.com" class="btn btn-default" role="button"><i class="fa fa-times"></i> Reset</a> </div>
+        <br />
+        <br />
+        <div class="ui-group-buttons">
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+          <div class="or or-lg"></div>
+          <button type="button" class="btn btn-success btn-lg">Large button</button>
+        </div>
+        <br />
+        <br />
+        <div class="ui-group-buttons">
+          <button type="button" class="btn btn-primary">Default</button>
+          <div class="or"></div>
+          <button type="button" class="button btn btn-success">Success</button>
+        </div>
+        <br />
+        <br />
+        <div class="ui-group-buttons">
+          <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          <div class="or or-sm"></div>
+          <button type="button" class="btn btn-success btn-sm">Small button</button>
+        </div>
+        <br />
+        <br />
+        <div class="ui-group-buttons">
+          <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+          <div class="or or-xs"></div>
+          <button type="button" class="btn btn-success btn-xs">Extra small button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>

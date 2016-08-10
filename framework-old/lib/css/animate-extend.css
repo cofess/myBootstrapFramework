@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*动画animated*/
+.animate { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+/*a, a:before, a:after { -webkit-transition-property: background color; -webkit-transition-duration: .2s; -webkit-transition-timing-function: ease; -moz-transition-property: background color; -moz-transition-duration: .2s; -moz-transition-timing-function: ease; -o-transition-property: background color; -o-transition-duration: .2s; -o-transition-timing-function: ease; transition-property: background color; transition-duration: .2s; transition-timing-function: ease; }*/
+/*鼠标经过动画*/
+.bounce-hover:hover{-webkit-animation-name:bounce;-moz-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;}
+.flash-hover:hover{-webkit-animation-name:flash;-moz-animation-name:flash;-ms-animation-name:flash;animation-name:flash;}
+.pulse-hover:hover{-webkit-animation-name:pulse;-moz-animation-name:pulse;-ms-animation-name:pulse;animation-name:pulse;}
+.rubberBand-hover:hover{-webkit-animation-name:rubberBand;-moz-animation-name:rubberBand;-ms-animation-name:rubberBand;animation-name:rubberBand;}
+.shake-hover:hover{-webkit-animation-name:shake;-moz-animation-name:shake;-ms-animation-name:shake;animation-name:shake;}
+.swing-hover:hover{-webkit-animation-name:swing;-moz-animation-name:swing;-ms-animation-name:swing;animation-name:swing;}
+.wobble-hover:hover{-webkit-animation-name:wobble;-moz-animation-name:wobble;-ms-animation-name:wobble;animation-name:wobble;}
+.tada-hover:hover{-webkit-animation-name:tada;-moz-animation-name:tada;-ms-animation-name:tada;animation-name:tada;}
+
+/*旋转*/
+.rotate,.rotate-hover{-webkit-animation:2s infinite linear;-moz-animation:2s infinite linear;-ms-animation:2s infinite linear;animation:2s infinite linear;}
+.rotate,.rotate-hover:hover{-webkit-animation-name:a-rotate;-moz-animation-name:a-rotate;-ms-animation-name:a-rotate;animation-name:a-rotate;}
+@-webkit-keyframes a-rotate{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(359deg);}}
+@-moz-keyframes a-rotate{0%{-moz-transform:rotate(0deg);}100%{-moz-transform:rotate(359deg);}}
+@-ms-keyframes a-rotate{0%{-ms-transform:rotate(0deg);}100%{-ms-transform:rotate(359deg);}}
+@keyframes a-rotate{0%{transform:rotate(0deg);}100%{transform:rotate(359deg);}}
+
+
+@-webkit-keyframes slideDown { 0% {
+-webkit-transform:translateY(-6em)
+}
+100% {
+-webkit-transform:translateY(0)
+}
+}
+@-moz-keyframes slideDown { 0% {
+-moz-transform:translateY(-6em)
+}
+100% {
+-moz-transform:translateY(0)
+}
+}
+@-o-keyframes slideDown { 0% {
+-o-transform:translateY(-6em)
+}
+100% {
+-o-transform:translateY(0)
+}
+}
+@keyframes slideDown { 0% {
+transform:translateY(-6em)
+}
+100% {
+transform:translateY(0)
+}
+}
+.animated.slideDown { -webkit-animation-name: slideDown; -moz-animation-name: slideDown; -o-animation-name: slideDown; animation-name: slideDown }
+@-webkit-keyframes slideUp { 0% {
+-webkit-transform:translateY(0)
+}
+100% {
+-webkit-transform:translateY(-6em)
+}
+}
+@-moz-keyframes slideUp { 0% {
+-moz-transform:translateY(0)
+}
+100% {
+-moz-transform:translateY(-6em)
+}
+}
+@-o-keyframes slideUp { 0% {
+-o-transform:translateY(0)
+}
+100% {
+-o-transform:translateY(-6em)
+}
+}
+@keyframes slideUp { 0% {
+transform:translateY(0)
+}
+100% {
+transform:translateY(-6em)
+}
+}
+.animated.slideUp { -webkit-animation-name: slideUp; -moz-animation-name: slideUp; -o-animation-name: slideUp; animation-name: slideUp }

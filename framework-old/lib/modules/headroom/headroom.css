@@ -1,0 +1,60 @@
+/*动画animated*/
+@charset "utf-8";
+@-webkit-keyframes slideDown { 0% {
+-webkit-transform:translateY(-6em)
+}
+100% {
+-webkit-transform:translateY(0)
+}
+}
+@-moz-keyframes slideDown { 0% {
+-moz-transform:translateY(-6em)
+}
+100% {
+-moz-transform:translateY(0)
+}
+}
+@-o-keyframes slideDown { 0% {
+-o-transform:translateY(-6em)
+}
+100% {
+-o-transform:translateY(0)
+}
+}
+@keyframes slideDown { 0% {
+transform:translateY(-6em)
+}
+100% {
+transform:translateY(0)
+}
+}
+.animated.slideDown { -webkit-animation-name: slideDown; -moz-animation-name: slideDown; -o-animation-name: slideDown; animation-name: slideDown }
+@-webkit-keyframes slideUp { 0% {
+-webkit-transform:translateY(0)
+}
+100% {
+-webkit-transform:translateY(-6em)
+}
+}
+@-moz-keyframes slideUp { 0% {
+-moz-transform:translateY(0)
+}
+100% {
+-moz-transform:translateY(-6em)
+}
+}
+@-o-keyframes slideUp { 0% {
+-o-transform:translateY(0)
+}
+100% {
+-o-transform:translateY(-6em)
+}
+}
+@keyframes slideUp { 0% {
+transform:translateY(0)
+}
+100% {
+transform:translateY(-6em)
+}
+}
+.animated.slideUp { -webkit-animation-name: slideUp; -moz-animation-name: slideUp; -o-animation-name: slideUp; animation-name: slideUp }

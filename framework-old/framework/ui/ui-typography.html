@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-typography排版</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">typography排版</h1>
+  </div>
+</div>
+<div class="container"> 
+  <!-- Headings -->
+  <h2 id="type-headings">标题</h2>
+  <p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+  <div class="bs-example bs-example-type" data-example-id="simple-headings">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Bootstrap heading</h1></td>
+          <td class="type-info">Semibold 36px</td>
+        </tr>
+        <tr>
+          <td><h2>h2. Bootstrap heading</h2></td>
+          <td class="type-info">Semibold 30px</td>
+        </tr>
+        <tr>
+          <td><h3>h3. Bootstrap heading</h3></td>
+          <td class="type-info">Semibold 24px</td>
+        </tr>
+        <tr>
+          <td><h4>h4. Bootstrap heading</h4></td>
+          <td class="type-info">Semibold 18px</td>
+        </tr>
+        <tr>
+          <td><h5>h5. Bootstrap heading</h5></td>
+          <td class="type-info">Semibold 14px</td>
+        </tr>
+        <tr>
+          <td><h6>h6. Bootstrap heading</h6></td>
+          <td class="type-info">Semibold 12px</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/h6&gt;</span></code></pre>
+  </div>
+  <p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+  <div class="bs-example bs-example-type" data-example-id="small-headings">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Bootstrap heading <small>Secondary text</small></h1></td>
+        </tr>
+        <tr>
+          <td><h2>h2. Bootstrap heading <small>Secondary text</small></h2></td>
+        </tr>
+        <tr>
+          <td><h3>h3. Bootstrap heading <small>Secondary text</small></h3></td>
+        </tr>
+        <tr>
+          <td><h4>h4. Bootstrap heading <small>Secondary text</small></h4></td>
+        </tr>
+        <tr>
+          <td><h5>h5. Bootstrap heading <small>Secondary text</small></h5></td>
+        </tr>
+        <tr>
+          <td><h6>h6. Bootstrap heading <small>Secondary text</small></h6></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span></code></pre>
+  </div>
+  
+  <!-- Body copy .lead -->
+  <h3>中心内容</h3>
+  <p>通过添加 <code>.lead</code> 类可以让段落突出显示。</p>
+  <div class="bs-example" data-example-id="lead-copy">
+    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre>
+  </div>
+  
+  <!-- Inline text elements -->
+  <h2 id="type-inline-text">内联文本元素</h2>
+  <h3>Marked text</h3>
+  <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-mark">
+    <p>You can use the mark tag to
+      <mark>highlight</mark>
+      text.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html">You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.</code></pre>
+  </div>
+  <p>利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。</p>
+  
+  <!-- Abbreviations -->
+  <h2 id="type-abbreviations">缩略语</h2>
+  <p>当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <code>&lt;abbr&gt;</code> 元素的增强样式。缩略语元素带有 <code>title</code> 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。</p>
+  <h3>基本缩略语</h3>
+  <div class="bs-example" data-example-id="simple-abbr">
+    <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;</span></code></pre>
+  </div>
+  <h3>首字母缩略语</h3>
+  <p>为缩略语添加 <code>.initialism</code> 类，可以让 font-size 变得稍微小些。</p>
+  <div class="bs-example" data-example-id="simple-initialism">
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span></code></pre>
+  </div>
+  
+  <!-- Addresses -->
+  <h2 id="type-addresses">地址</h2>
+  <p>让联系信息以最接近日常使用的格式呈现。在每行结尾添加 <code>&lt;br&gt;</code> 可以保留需要的样式。</p>
+  <div class="bs-example" data-example-id="simple-address">
+    <address>
+    <strong>Twitter, Inc.</strong><br>
+    795 Folsom Ave, Suite 600<br>
+    San Francisco, CA 94107<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+    <address>
+    <strong>Full Name</strong><br>
+    <a href="mailto:#">first.last@example.com</a>
+    </address>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+  795 Folsom Ave, Suite 600<span class="nt">&lt;br&gt;</span>
+  San Francisco, CA 94107<span class="nt">&lt;br&gt;</span>
+  <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (123) 456-7890
+<span class="nt">&lt;/address&gt;</span>
+
+<span class="nt">&lt;address&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Full Name<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:#"</span><span class="nt">&gt;</span>first.last@example.com<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/address&gt;</span></code></pre>
+  </div>
+</div>
+<div class="container">
+  <h3>文本行距</h3>
+  <div class="bs-example"><strong>超级小行距16px(.hl-xxs)：</strong>
+    <p class="hl-xxs">拼图：国内优秀的HTML、CSS、JS跨屏响应式开源前端框架，使用最新浏览器技术，为快速的前端开发提供一系列的文本、图标、媒体、表格、表单、按钮、菜单、网格系统等样式工具包，占用资源小，使用拼图可以快速构建简洁、优雅而且自动适应手机、平板、桌面电脑等设备的前端界面，让前端开发像玩游戏一样快乐而轻松。</p>
+    <strong>超小行距18px(.hl-xs)：</strong>
+    <p class="hl-xs">拼图前端框架在传统CSS框架的基本上，增加了HTML5、CSS3、JS等技术组合应用，应用最新的浏览器技术，同时兼容较早的浏览器，新旧结合，承前启后，开发者只需把框架文件引入到项目中，就可以初现快速的共同开发，改变以往建立PC网站同时，再建立手机网站的局面，实现一站响应所有设备，大大提高了开发效率。</p>
+    <strong>小行距20px(.hl-sm)：</strong>
+    <p class="hl-sm">拼图前端框架在传统CSS框架的基本上，增加了HTML5、CSS3、JS等技术组合应用，应用最新的浏览器技术，同时兼容较早的浏览器，新旧结合，承前启后，开发者只需把框架文件引入到项目中，就可以初现快速的共同开发，改变以往建立PC网站同时，再建立手机网站的局面，实现一站响应所有设备，大大提高了开发效率。</p>
+    <strong>默认24px(.hl)：</strong>
+    <p class="hl">移动优先、跨屏响应：拼图以移动设备为基点，优先适应于移动设备；从移动设备扩大到平板、桌面电脑等设备，实现跨屏响应，兼容桌面浏览器的同时，更适应了移动互联网的潮流。</p>
+    <strong>中等行距32px(.hl-md)：</strong>
+    <p class="hl-md">组件丰富、海量插件：拼图前端框架重新定义了CSS基础、常用元件及JS组件，可快速构架前端界面，实现跨屏响应。同时兼容所有jQuery插件，在项目中可以灵活使用，让前端开发如虎添翼。</p>
+    <strong>大行距48px(.hl-lg)：</strong>
+    <p class="hl-lg">组件丰富、海量插件：拼图前端框架重新定义了CSS基础、常用元件及JS组件，可快速构架前端界面，实现跨屏响应。同时兼容所有jQuery插件，在项目中可以灵活使用，让前端开发如虎添翼。</p>
+    <strong>超大行距60px(.hl-xl)：</strong>
+    <p class="hl-xl">轻量高效、国产开源：拼图基于应用广泛jQuery插件，轻量高效；相对于国外的前端框架，拼图前端框架侧重于对中文的支持，符合国人的视觉及体验，实现到国内主流浏览器的支持，减少兼容性测试时间，提高开发效率。</p>
+    <strong>超级大行距100px(.hl-xxl)：</strong>
+    <p class="hl-xxl">轻量高效、国产开源：拼图基于应用广泛jQuery插件，轻量高效；相对于国外的前端框架，拼图前端框架侧重于对中文的支持，符合国人的视觉及体验，实现到国内主流浏览器的支持，减少兼容性测试时间，提高开发效率。</p>
+  </div>
+</div>
+<div class="container">
+  <h3>段落首行缩进</h3>
+  <div class="bs-example">
+    <p class="text-indent"><code>.text-indent</code>拼图：国内优秀的HTML、CSS、JS跨屏响应式开源前端框架，使用最新浏览器技术，为快速的前端开发提供一系列的文本、图标、媒体、表格、表单、按钮、菜单、网格系统等样式工具包，占用资源小，使用拼图可以快速构建简洁、优雅而且自动适应手机、平板、桌面电脑等设备的前端界面，让前端开发像玩游戏一样快乐而轻松。</p>
+  </div>
+</div>
+<section>
+  <div class="divider">
+    <div class="box"><span class="fa fa-angle-down"></span></div>
+  </div>
+  <div class="divider min">
+    <div class="box"><span class="fa fa-angle-down"></span></div>
+  </div>
+  <div class="bg-amber-500 pv-lg text-center">我是分隔线</div>
+</section>
+<div class="container bs-container">
+  <div class="row">
+    <h1 class="page-header">Dividers分割线</h1>
+    <hr class="half-rule">
+    <hr>
+    <hr class="border-blue-500">
+    <hr class="border-red-500">
+    <hr class="border-green-500">
+    <hr class="inner-separator">
+    <div class="col-xs-12">
+      <hr class="hrOr">
+      <span class="spanOr">or</span> </div>
+  </div>
+  <div class="headline">
+    <h3>headline default</h3>
+  </div>
+  <div class="headline-info">
+    <h3>headline info</h3>
+  </div>
+  <div class="headline-primary">
+    <h3>headline primary</h3>
+  </div>
+  <div class="headline-success">
+    <h3>headline success</h3>
+  </div>
+  <div class="headline-warning">
+    <h3>headline warning</h3>
+  </div>
+  <div class="headline-danger">
+    <h3>headline danger</h3>
+  </div>
+  <div class="headline-dark">
+    <h3>headline dark</h3>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+    <h2 class="text-center">colored line</h2>
+    <div class="colored-line bg-red-500"></div>
+    </div>
+    <div class="col-md-6">
+    <h2>colored line left</h2>
+    <div class="colored-line bg-blue-500 pull-left"></div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="page-header">Letter</h2>
+  <div class="row">
+   <div class="col-md-3">
+      <p class="dropcap">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="col-md-3">
+      <p class="dropcap has-color">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="col-md-3">
+      <p class="dropcap circle">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="col-md-3">
+      <p class="dropcap square">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="col-md-3">
+      <p class="dropcap has-bg square">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="col-md-3">
+      <p class="dropcap has-bg circle">There are many variations of passages of 
+        Lorem Ipsum available, but the majority have 
+        suffered alteration in some form, by injected 
+        humour, or randomised words which don't look even 
+        slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text.</p>
+    </div>
+  </div>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>

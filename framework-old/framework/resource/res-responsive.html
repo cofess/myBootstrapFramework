@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>资源-Responsive响应式资源</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="jumbotron masthead pb-no mb-no">
+  <div class="container">
+    <h1>Responsive响应式资源</h1>
+    <p class="lead">Bootstrap相关优质项目推荐<br>
+      <small>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</small> </p>
+  </div>
+</div>
+<section class="panel panel-default no-shadow bb-none">
+  <header class="panel-heading">
+    <ul class="nav nav-tabs container" style="margin:-11px auto">
+      <li class="active"><a href="#frame" data-toggle="tab">框架</a></li>
+      <li class=""><a href="#bootstrap-extend" data-toggle="tab">Bootstrap Extend</a></li>
+      <li class=""><a href="#responsive" data-toggle="tab">响应式相关资源</a></li>
+    </ul>
+  </header>
+  <div class="panel-body">
+    <div class="tab-content container"> 
+      <!--tab-pane-->
+      <div class="tab-pane active" id="frame">
+        <div class="projects">
+          <h2 class="page-header">Bootstrap<small>（Bootstrap是Twitter推出的一个用于前端开发的开源工具包。）</small></h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail"> <a href="http://www.bootcss.com/" title="Bootstrap框架" target="_blank"><img data-src="holder.js/100%x200/text:Bootstrap框架"></a>
+                <div class="caption">
+                  <h2><a href="http://www.bootcss.com/">Bootstrap中文</a></h2>
+                  <p> 简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。 </p>
+                </div>
+                <div class="github-widget" data-repo="twbs/bootstrap" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail"> <a href="http://fontawesome.io/" title="Font Awesome" target="_blank"><img data-src="holder.js/100%x200/text:Font Awesome"></a>
+                <div class="caption">
+                  <p>Font Awesome 是一套完美的图标字体,主要目的是和 Bootstrap 搭配使用。</p>
+                </div>
+                <div class="github-widget" data-repo="FortAwesome/Font-Awesome" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail"> <a href="http://daneden.github.io/animate.css/" title="animate.css" target="_blank"><img data-src="holder.js/100%x200/text:animate.css"></a>
+                <div class="caption">
+                  <p>Animate.css是由DanEden制作的各种CSS3动画的合集。</p>
+                </div>
+                <div class="github-widget" data-repo="daneden/animate.css" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Ratchet<small>（Ratchet是Twitter推出的一个用于移动应用程序原型开发框架）</small></h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail"> <a href="http://goratchet.com/" title="Ratchet移动应用开发框架" target="_blank"><img data-src="holder.js/100%x200/text:Ratchet移动应用开发框架"></a>
+                <div class="caption">
+                  <h2><a href="http://cnratchet.com/">Ratchet中文</a></h2>
+                  <p> Ratchet是一款免费的开源工具,主要功能是,使用简单的HTML、CSS和JS组件就能构建出移动应用程序原型。</p>
+                </div>
+                <div class="github-widget" data-repo="twbs/ratchet" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/projects--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="bootstrap-extend"> 
+        <!--projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 时间日期类组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://eonasdan.github.io/bootstrap-datetimepicker/" title="Bootstrap Datetimepicker" target="_blank">Bootstrap Datetimepicker</a></h2>
+                  <p>Datetimepicker是一个基于Bootstrap的简单日期/时间选择控件。</p>
+                </div>
+                <div class="github-widget" data-repo="Eonasdan/bootstrap-datetimepicker" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://bootstrap-calendar.azurewebsites.net/" title="bootstrap-calendar" target="_blank">bootstrap-calendar</a></h2>
+                  <p>基于Bootstrap的日历插件</p>
+                </div>
+                <div class="github-widget" data-repo="Serhioromano/bootstrap-calendar" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.dangrossman.info/2012/08/20/a-date-range-picker-for-twitter-bootstrap/" title="bootstrap-daterangepicker" target="_blank">bootstrap-daterangepicker</a></h2>
+                  <p>bootstrap-daterangepicker基于Bootstrap框架的日期范围选择控件,配合highcharts使用</p>
+                </div>
+                <div class="github-widget" data-repo="dangrossman/bootstrap-daterangepicker" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 表单数据类组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/Jowin/Datatables-Bootstrap3" title="Bootstrap Datatables" target="_blank">Bootstrap Datatables</a></h2>
+                  <p>Bootstrap3 样式数据表插件Datatables</p>
+                </div>
+                <div class="github-widget" data-repo="Jowin/Datatables-Bootstrap3" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://vitalets.github.io/x-editable/" title="x-editable" target="_blank">x-editable</a></h2>
+                  <p>X-editable 让你能够创建和编辑任意页面元素,支持 Bootstrap、jQuery UI 和纯jQuery 等引擎一起使用。</p>
+                </div>
+                <div class="github-widget" data-repo="vitalets/x-editable" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://mimo84.github.io/bootstrap-maxlength/" title="Bootstrap Maxlength" target="_blank">Bootstrap Maxlength</a></h2>
+                  <p>Bootstrap Maxlength 控制输入字符长度的插件</p>
+                </div>
+                <div class="github-widget" data-repo="mimo84/bootstrap-maxlength" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://bootstrapvalidator.com/" title="BootstrapValidator" target="_blank">BootstrapValidator</a></h2>
+                  <p>The best jQuery plugin to validate form fields. Designed to use with Bootstrap 3</p>
+                </div>
+                <div class="github-widget" data-repo="nghuuphuoc/bootstrapvalidator" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/mrlong/bootstrap3-validation.js" title="bootstrap3-validation.js" target="_blank">bootstrap3-validation.js</a></h2>
+                  <p>bootstrap3 validation国人写的表单验证插件</p>
+                </div>
+                <div class="github-widget" data-repo="mrlong/bootstrap3-validation.js" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 多媒体类组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://bootsnipp.com/snippets/featured/magnifying-glass-for-images" title="Bootstrap Magnify放大镜效果" target="_blank">Bootstrap Magnify放大镜效果</a></h2>
+                  <p>Small bootstrap js plugin to enhance porte-folios and image galleries.</p>
+                </div>
+                <div class="github-widget" data-repo="marcaube/bootstrap-magnify" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://blueimp.github.io/Bootstrap-Image-Gallery/" title="Bootstrap Image Gallery" target="_blank">Bootstrap Image Gallery</a></h2>
+                  <p>Bootstrap Image Gallery 是 Bootstrap 模态对话框的一个扩展,用于实现相册浏览功能,支持按键导航,幻灯片展示以及全屏浏览。</p>
+                </div>
+                <div class="github-widget" data-repo="blueimp/Bootstrap-Image-Gallery" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://html5-ninja.com/#/item/Bootstrap-video-player-jQuery-plugin/5" title="Bootstrap-video-player-jQuery-plugin" target="_blank">Bootstrap-video-player-jQuery-plugin</a></h2>
+                  <p>基于Bootstrap UI可定制的HTML5视频播放器的jQuery插件</p>
+                </div>
+                <div class="github-widget" data-repo="html5-ninja/Bootstrap-video-player-jQuery-plugin" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 导航菜单类组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://jhfrench.github.io/bootstrap-tree/docs/example.html" title="Bootstrap Tree" target="_blank">Bootstrap Tree</a></h2>
+                  <p>Bootstrap Tree简单的树形菜单</p>
+                </div>
+                <div class="github-widget" data-repo="jhfrench/bootstrap-tree" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/jonmiles/bootstrap-treeview" title="Bootstrap Treeview" target="_blank">Bootstrap Treeview</a></h2>
+                  <p>Bootstrap Treeview树形目录菜单</p>
+                </div>
+                <div class="github-widget" data-repo="jonmiles/bootstrap-treeview" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://zgs225.github.io/easy-tree/" title="easy-tree" target="_blank">easy-tree</a></h2>
+                  <p>A jquery and bootstrap basic tree view plugin, easily use.</p>
+                </div>
+                <div class="github-widget" data-repo="zgs225/easy-tree" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://cameronspear.com/demos/bootstrap-hover-dropdown/" title="Bootstrap Hover Dropdown" target="_blank">Bootstrap Hover Dropdown</a></h2>
+                  <p>Bootstrap 鼠标悬停下拉菜单，良好的用户体验。</p>
+                </div>
+                <div class="github-widget" data-repo="CWSpear/bootstrap-hover-dropdown" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/djokodonev/bootstrap-multilevel-dropdown" title="bootstrap-multilevel-dropdown" target="_blank">bootstrap-multilevel-dropdown</a></h2>
+                  <p>bootstrap 3 Multilevel Dropdowns</p>
+                </div>
+                <div class="github-widget" data-repo="djokodonev/bootstrap-multilevel-dropdown" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/choquo/bootstrap-mega-menu" title="bootstrap-mega-menu" target="_blank">bootstrap-mega-menu</a></h2>
+                  <p>Mega menu and dropdown in same menu w/bootstrap3</p>
+                </div>
+                <div class="github-widget" data-repo="choquo/bootstrap-mega-menu" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="https://github.com/fontenele/bootstrap-navbar-dropdowns" title="bootstrap-navbar-dropdowns" target="_blank">bootstrap-navbar-dropdowns</a></h2>
+                  <p>Navbar with multiple dropdowns (childrens)</p>
+                </div>
+                <div class="github-widget" data-repo="fontenele/bootstrap-navbar-dropdowns" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 向导提示类组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://bootstraptour.com/" title="Bootstrap Tour" target="_blank">Bootstrap Tour</a></h2>
+                  <p>BOOTSTRAP-TOUR 快速构建产品介绍的Bootstrap提示框(类似软件启动时的“每日一问”)。</p>
+                </div>
+                <div class="github-widget" data-repo="sorich87/bootstrap-tour" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://vadimg.com/twitter-bootstrap-wizard-example/" title="Bootstrap Wizard" target="_blank">Bootstrap Wizard</a></h2>
+                  <p>Bootstrap Wizard步骤向导插件</p>
+                </div>
+                <div class="github-widget" data-repo="VinceG/twitter-bootstrap-wizard" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://lipis.github.io/bootstrap-sweetalert/" title="SweetAlert for Bootstrap" target="_blank">SweetAlert for Bootstrap</a></h2>
+                  <p>A beautiful replacement for JavaScript's "alert"</p>
+                </div>
+                <div class="github-widget" data-repo="lipis/bootstrap-sweetalert" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">Bootstrap 其他相关组件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://zombiej.github.io/bootstrap-components-3.0/" title="Bootstrap Components" target="_blank">Bootstrap Components</a></h2>
+                  <p>Bootstrap v3拓展组件库</p>
+                </div>
+                <div class="github-widget" data-repo="zombieJ/bootstrap-components-3.0" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.minddust.com/project/bootstrap-progressbar" title="Bootstrap Progressbar" target="_blank">Bootstrap Progressbar</a></h2>
+                  <p>Bootstrap Progressbar拓展Bootstrap默认进度条的插件</p>
+                </div>
+                <div class="github-widget" data-repo="minddust/bootstrap-progressbar" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://openam.github.io/bootstrap-responsive-tabs/" title="Bootstrap Responsive Tabs" target="_blank">Bootstrap Responsive Tabs</a></h2>
+                  <p>响应选项卡切换到可折叠的组件（手风琴）调整浏览器窗口大小时。</p>
+                </div>
+                <div class="github-widget" data-repo="openam/bootstrap-responsive-tabs" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://maxwells.github.io/bootstrap-tags.html" title="bootstrap-tags" target="_blank">bootstrap-tags</a></h2>
+                  <p>Boostrap-themed jquery tag interface</p>
+                </div>
+                <div class="github-widget" data-repo="maxwells/bootstrap-tags" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://xoxco.com/projects/code/tagsinput/" title="jQuery-Tags-Input" target="_blank">jQuery-Tags-Input</a></h2>
+                  <p>Magically convert a simple text input into a cool tag list with this jQuery plugin.</p>
+                </div>
+                <div class="github-widget" data-repo="xoxco/jQuery-Tags-Input" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://plugins.krajee.com/star-rating" title="bootstrap-star-rating" target="_blank">bootstrap-star-rating</a></h2>
+                  <p>A simple yet powerful JQuery star rating plugin with fractional rating support. </p>
+                </div>
+                <div class="github-widget" data-repo="kartik-v/bootstrap-star-rating" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://jschr.github.io/bootstrap-modal/bs3.html" title="bootstrap-modal" target="_blank">bootstrap-modal</a></h2>
+                  <p>Extends the default Bootstrap Modal class. Responsive, stackable, ajax and more.</p>
+                </div>
+                <div class="github-widget" data-repo="jschr/bootstrap-modal" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://nakupanda.github.io/bootstrap3-dialog/" title="bootstrap3-dialog" target="_blank">bootstrap3-dialog</a></h2>
+                  <p>Make use of Twitter Bootstrap's modal more monkey-friendly.</p>
+                </div>
+                <div class="github-widget" data-repo="nakupanda/bootstrap3-dialog" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <div class="projects-header page-header">
+            <h2>Bootstrap extend Css</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://awesome-bootstrap-checkbox.okendoken.com/demo/index.html" title="Awesome Bootstrap Checkbox" target="_blank">Awesome Bootstrap Checkbox</a></h2>
+                  <p>Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.</p>
+                </div>
+                <div class="github-widget" data-repo="flatlogic/awesome-bootstrap-checkbox" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://jasonxiang.com/bootstrap-navbar-addon/" title="navbar-fixed-left" target="_blank">navbar-fixed-left</a></h2>
+                  <p>使 bootstrap 3 的 navbar 支持 .navbar-fixed-left 布局。</p>
+                </div>
+                <div class="github-widget" data-repo="xiangming/bootstrap-navbar-addon" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3" title="Multi level dropdown menu BS3 Css" target="_blank">Multi level dropdown menu BS3 Css</a></h2>
+                  <p>Bootstrap 3.0.0 Snippet by msurguy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://elvery.net/demo/responsive-tables/#no-more-tables" title="Responsive Tables" target="_blank">No More Tables<small>（Responsive Tables）</small></a></h2>
+                  <p>A quick and dirty look at some techniques for designing responsive table layouts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://awesome-bootstrap-checkbox.okendoken.com/demo/index.html" title="Awesome Bootstrap Checkbox" target="_blank">Awesome Bootstrap Checkbox</a></h2>
+                  <p>Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.</p>
+                </div>
+                <div class="github-widget" data-repo="flatlogic/awesome-bootstrap-checkbox" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://dbtek.github.io/bootstrap-vertical-tabs/demo.html" title="Bootstrap Vertical Tabs" target="_blank">Bootstrap Vertical Tabs</a></h2>
+                  <p>Missing vertical tabs component for bootstrap. </p>
+                </div>
+                <div class="github-widget" data-repo="dbtek/bootstrap-vertical-tabs" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/projects--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="responsive"> 
+        <!--projects-->
+        <div class="projects">
+          <h2 class="page-header">响应式导航插件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.berriart.com/sidr/" title="Sidr" target="_blank">Sidr</a></h2>
+                  <p>Sidr 是一个非常容易使用的响应式菜单jQuery插件，展示方式侧边，支持左右sidbar。</p>
+                </div>
+                <div class="github-widget" data-repo="artberri/sidr" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://jasonweaver.name/lab/flexiblenavigation/" title="flexnav" target="_blank">flexnav</a></h2>
+                  <p>FlexNav 这个自适应屏幕菜单插件支持多级，展示方式：垂直</p>
+                </div>
+                <div class="github-widget" data-repo="indyplanets/flexnav" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://vadikom.github.io/smartmenus/src/demo/" title="smartmenus" target="_blank">smartmenus</a></h2>
+                  <p>SmartMenus 响应式菜单插件的展示方式支持水平、垂直两种。</p>
+                </div>
+                <div class="github-widget" data-repo="vadikom/smartmenus" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://adnantopal.github.io/slimmenu/" title="slimmenu" target="_blank">slimmenu</a></h2>
+                  <p>SlimMenu– 这是一个很轻量级的jQuery插件,可以用来方便地创建极具响应性的导航菜单。</p>
+                </div>
+                <div class="github-widget" data-repo="adnantopal/slimmenu" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://tinynav.viljamis.com/" title="TinyNav.js" target="_blank">TinyNav.js</a></h2>
+                  <p>TinyNav.js 响应式设计导航jQuery插件，展示方式：下拉选择框。</p>
+                </div>
+                <div class="github-widget" data-repo="viljamis/TinyNav.js" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://mmenu.frebsite.nl/" title="jQuery.mmenu" target="_blank">jQuery.mmenu</a></h2>
+                  <p>jQuery.mmenu是一个可以在任何移动或web布局上复制行为的插件。这个插件使用一些定制的选项将无序列表转化为有序菜单及子菜单。Mmenu通过open、colse及切换等简单函数来控制菜单。</p>
+                </div>
+                <div class="github-widget" data-repo="BeSite/jQuery.mmenu" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.meanthemes.com/plugins/meanmenu/" title="meanMenu" target="_blank">meanMenu</a></h2>
+                  <p>MeanMenu 一个自适应屏幕宽度的响应式导航菜单，展示方式：垂直下拉菜单</p>
+                </div>
+                <div class="github-widget" data-repo="meanthemes/meanMenu" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">瀑布流插件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://masonry.desandro.com/" title="masonry" target="_blank">masonry</a></h2>
+                  <p>Masonry是一款很好用的jquery网页布局插件,它可以去掉不同高度div之间的空白,让你的网页看上去更加的整齐、漂亮</p>
+                </div>
+                <div class="github-widget" data-repo="desandro/masonry" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.wookmark.com/jquery-plugin/" title="Wookmark" target="_blank">Wookmark</a></h2>
+                  <p>Wookmark jQuery plugin 是一个用来实现现在很流行的瀑布流的网页布局效果的 jQuery 插件。开发者可使用该插件轻松实现浏览器和窗口的大小检测，并自动对网页的元素进行重新排版。</p>
+                </div>
+                <div class="github-widget" data-repo="GBKS/Wookmark-jQuery" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://isotope.metafizzy.co/" title="isotope" target="_blank">isotope</a></h2>
+                  <p>Isotope是一款实现动态布局的精致jQuery插件,是单独的CSS无法实现的,而且他可以通过jQuery选择器来控制元素的显示与隐藏等。</p>
+                </div>
+                <div class="github-widget" data-repo="metafizzy/isotope" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://vnjs.net/www/project/freewall/" title="freewall" target="_blank">freewall</a></h2>
+                  <p> Freewall是一个跨浏览器和响应式的jQuery插件,以帮助您创建多种类型的网格布局:灵活布局,图像布局,嵌套网格,流体网格,Metro风格布局</p>
+                </div>
+                <div class="github-widget" data-repo="kombai/freewall" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">响应式幻灯片插件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.bootcss.com/p/unslider/" title="unslider" target="_blank">unslider</a></h2>
+                  <p>Unslider 一个超小的 jQuery轮播（slider）插件</p>
+                </div>
+                <div class="github-widget" data-repo="idiot/unslider" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.pixedelic.com/plugins/camera/" title="Camera slideshow" target="_blank">Camera slideshow</a></h2>
+                  <p>响应式 jQuery 幻灯片插件 - Camera，其设计的目标是要让产品界面能够响应用户的行为，提高用户体验。</p>
+                </div>
+                <div class="github-widget" data-repo="pixedelic/Camera" data-issues="false"></div>
+              </div>
+            </div> 
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.owlgraphic.com/owlcarousel/" title="Owl Carousel" target="_blank">Owl Carousel</a></h2>
+                  <p>支持触屏操作的响应式jQuery幻灯/旋转木马：OWL Carousel</p>
+                </div>
+                <div class="github-widget" data-repo="OwlFonk/OwlCarousel" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row">
+          	<div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.owlcarousel.owlgraphic.com/" title="Owl Carousel2" target="_blank">Owl Carousel2</a></h2>
+                  <p>支持触屏操作的响应式jQuery幻灯/旋转木马：OWL Carousel</p>
+                </div>
+                <div class="github-widget" data-repo="OwlFonk/OwlCarousel2" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.woothemes.com/flexslider/" title="FlexSlider" target="_blank">FlexSlider</a></h2>
+                  <p>FlexSlider是一个轻量级的jQuery内容滚动插件,压缩后只有4KB大小。</p>
+                </div>
+                <div class="github-widget" data-repo="woothemes/FlexSlider" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://slidesjs.com/" title="slides" target="_blank">slides</a></h2>
+                  <p>Slides – 是一个简单的,容易定制和风格化,的jQuery幻灯片插件。</p>
+                </div>
+                <div class="github-widget" data-repo="nathansearles/Slides" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">滚动事件插件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://imakewebthings.com/jquery-waypoints/" title="waypoints" target="_blank">waypoints</a></h2>
+                  <p>Waypoints 是一个 jQuery 用来实现捕获各种滚动事件的插件,例如实现无翻页的内容浏览,或者固定某个元素不让滚动等等。</p>
+                </div>
+                <div class="github-widget" data-repo="imakewebthings/jquery-waypoints" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://plugins.compzets.com/animatescroll/" title="Animate Scroll" target="_blank">Animate Scroll</a></h2>
+                  <p>Animate Scroll 是一个简单的jQuery插件,它用来为滚动增加延迟效果. 可以自定义滚动样式(30多种滚动效果)和滚动速度. </p>
+                </div>
+                <div class="github-widget" data-repo="ramswaroop/animatescroll.js" data-issues="false"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://demonstration.easy-development.com/story-box/" title="Story Box" target="_blank">Story Box</a></h2>
+                  <p>CSS 3 Animations Triggered while scrolling<br> 
+<a>http://demonstration.easy-development.com/story-box</a></p>
+                </div>
+                <div class="github-widget" data-repo="easy-development/jquery-story-box" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">视差滚动插件</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.jalxob.com/cool-kitten" title="Cool Kitten-响应式视差滚动框架" target="_blank">Cool Kitten-响应式视差滚动框架</a></h2>
+                  <p>Cool Kitten 是一个具备视差滚动特效的响应式框架,由 Jalxob编写,是 Github上的开源项目。</p>
+                </div>
+                <div class="github-widget" data-repo="jalxob/cool-kitten" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/projects-->
+        <div class="projects">
+          <h2 class="page-header">响应式窗口</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h2><a href="http://www.1st-hacks.com/demo/" title="Responsive iFrame" target="_blank">Responsive iFrame</a></h2>
+                  <p>Boost your browser sizing features. One click away to see it on other devices!</p>
+                </div>
+                <div class="github-widget" data-repo="xexiu/Responsive_iFrame" data-issues="false"></div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div><!--/projects--> 
+      </div>
+      <!--/tab-pane--> 
+    </div>
+  </div>
+</section>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+<script src="../../lib/modules/githubRepo/jquery.githubRepoWidget.min.js"></script> 
+<!--图像占位符--> 
+<script src="../../lib/modules/holder/holder.min.js"></script>
+</body>
+</html>

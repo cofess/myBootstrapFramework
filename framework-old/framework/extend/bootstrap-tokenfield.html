@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>bootstrap-extend-tokenfield</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">bootstrap-tokenfield</h1>
+  </div>
+</div>
+<div class="container bs-container">
+  <h3 class="page-header">Installation</h3>
+  <p>Requirements: jQuery 1.9+, Bootstrap 3+ (only CSS)</p>
+  <ol class="task-list">
+    <li>Install via npm or bower (recommended) or manually download the package</li>
+    <li>Include <code>dist/bootstrap-tokenfield.js</code> or <code>dist/bootstrap-tokenfield.min.js</code> in your HTML</li>
+    <li>Include <code>dist/css/bootstrap-tokenfield.css</code> in your HTML</li>
+  </ol>
+  <h3 class="page-header">Usage</h3>
+  <pre>$('input').tokenfield()</pre>
+  <h3 class="page-header">Examples</h3>
+  <p>Create elegant taggable fields with copy/paste and keyboard support.</p>
+  <p><strong>Using jQuery UI Autocomplete</strong></p>
+  <div class="bs-example">
+    <div class="form-group">
+      <input type="text" class="form-control" id="tokenfield-1" value="red,green,blue" placeholder="Type something and hit enter" />
+    </div>
+  </div>
+  <pre>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;tokenfield&quot; value=&quot;red,green,blue&quot; /&gt;</pre>
+  <pre>
+  $('#tokenfield').tokenfield({
+  autocomplete: {
+    source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+    delay: 100
+  },
+  showAutocompleteOnFocus: true
+})
+  </pre>
+  <p><strong>Using Twitter Typeahead</strong></p>
+  <div class="bs-example">
+    <div class="form-group">
+      <input type="text" class="form-control" id="tokenfield-typeahead" value="red,green,blue" placeholder="Type something and hit enter" />
+    </div>
+  </div>
+  <pre>&lt;input type="text" class="form-control" id="tokenfield-typeahead" value="red,green,blue" /&gt;</pre>
+  <pre>
+var engine = new Bloodhound({
+  local: [{value: 'red'}, {value: 'blue'}, {value: 'green'} , {value: 'yellow'}, {value: 'violet'}, {value: 'brown'}, {value: 'purple'}, {value: 'black'}, {value: 'white'}],
+  datumTokenizer: function(d) {
+    return Bloodhound.tokenizers.whitespace(d.value);
+  },
+  queryTokenizer: Bloodhound.tokenizers.whitespace
+});
+
+engine.initialize();
+
+$('#tokenfield-typeahead').tokenfield({
+  typeahead: [null, { source: engine.ttAdapter() }]
+});
+  </pre>
+  <h3 class="page-header">Options</h3>
+  <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-minLength=""</code>.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="width: 100px;">Name</th>
+          <th style="width: 50px;">type</th>
+          <th style="width: 100px;">default</th>
+          <th>description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tokens</td>
+          <td>string, array</td>
+          <td><code>[]</code></td>
+          <td>Tokens (or tags). Can be a string with comma-separated values (<code>"one,two,three"</code>), an array of strings (<code>["one","two","three"]</code>), or an array of objects (<code>[{ value: "one", label: "Einz" }, { value: "two", label: "Zwei" }]</code>)</td>
+        </tr>
+        <tr>
+          <td>limit</td>
+          <td>int</td>
+          <td><code>0</code></td>
+          <td>Maximum number of tokens allowed. 0 = unlimited.</td>
+        </tr>
+        <tr>
+          <td>minLength</td>
+          <td>int</td>
+          <td><code>0</code></td>
+          <td>Minimum length required for token value.</td>
+        </tr>
+        <tr>
+          <td>minWidth</td>
+          <td>int</td>
+          <td><code>60</code></td>
+          <td>Minimum input field width. In pixels.</td>
+        </tr>
+        <tr>
+          <td>autocomplete</td>
+          <td>object</td>
+          <td><code>{}</code></td>
+          <td>jQuery UI Autocomplete options</td>
+        </tr>
+        <tr>
+          <td>showAutocompleteOnFocus</td>
+          <td>boolean</td>
+          <td><code>false</code></td>
+          <td>Whether to show autocomplete suggestions menu on focus or not. Works only for jQuery UI Autocomplete, as Typeahead has no support for this kind of behavior.</td>
+        </tr>
+        <tr>
+          <td>typeahead</td>
+          <td>array</td>
+          <td><code>[]</code></td>
+          <td>Arguments for Twitter Typeahead. The first argument should be an options hash (or <code>null</code> if you want to use the defaults). The second argument should be a dataset. You can add multiple datasets: <code>typeahead: [options, dataset1, dataset2]</code></td>
+        </tr>
+        <tr>
+          <td>createTokensOnBlur</td>
+          <td>boolean</td>
+          <td><code>false</code></td>
+          <td>Whether to turn input into tokens when tokenfield loses focus or not.</td>
+        </tr>
+        <tr>
+          <td>delimiter</td>
+          <td>string, array</td>
+          <td><code>','</code></td>
+          <td>A character or an array of characters that will trigger token creation on keypress event. Defaults to ',' (comma). Note - this does not affect Enter or Tab keys, as they are handled in the keydown event. The first delimiter will be used as a separator when getting the list of tokens or copy-pasting tokens.</td>
+        </tr>
+        <tr>
+          <td>beautify</td>
+          <td>boolean</td>
+          <td><code>true</code></td>
+          <td>Whether to insert spaces after each token when getting a comma-separated list of tokens. This affects both value returned by <code>getTokensList()<code> and the value of the original input field.</td>
+        </tr>
+        <tr>
+          <td>inputType</td>
+          <td>string</td>
+          <td><code>'text'</code></td>
+          <td>HTML type attribute for the token input. This is useful for specifying an HTML5 input type like <code>'email'</code>, <code>'url'</code> or <code>'tel'</code> which allows mobile browsers to show a specialized virtual keyboard optimized for different types of input. This only sets the type of the visible token input but does not touch the original input field. So you may set the original input to have <code>type="text"</code> but set this inputType option to <code>'email'</code> if you only want to take advantage of the email style keyboard on mobile, but don't want to enable HTML5 native email validation on the original hidden input.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bs-callout bs-callout-info">
+    <h4>Data attributes for individual tokenfields</h4>
+    <p>Options for individual tokenfields can alternatively be specified through the use of data attributes, as explained above.</p>
+  </div>
+  <div class="bs-callout bs-callout-info">
+    <h4>Styling Twitter Typeahead </h4>
+    <p>Twitter Typeahead comes with no default styling. Make sure to include <a href="https://gist.github.com/ragulka/6388201">tokenfield-typeahead.css</a> on your page.</p>
+  </div>
+  <h3 class="page-header">Methods</h3>
+  <h4>.tokenfield(options)</h4>
+  <p>Initializes an input with a tokenfield.</p>
+  <pre>$('#myField').tokenfield();</pre>
+  <h4>.tokenfield('setTokens', tokens)</h4>
+  <p>Manually set the tokenfield content (replacing the old content)</p>
+  <pre>
+$('#myField').tokenfield('setTokens', 'blue,red,white');
+$('#myField').tokenfield('setTokens', ['blue','red','white']);
+$('#myField').tokenfield('setTokens', [{ value: "blue", label: "Blau" }, { value: "red", label: "Rot" }]);</pre>
+  <h4>.tokenfield('createToken', token)</h4>
+  <p>Manually create a token and append it to the input</p>
+  <pre>
+$('#myField').tokenfield('createToken', 'purple');
+$('#myField').tokenfield('createToken', { value: 'violet', label: 'Violet' });</pre>
+  <h4>.tokenfield('getTokens', active)</h4>
+  <p>Get an array of tokens from the input. Set <code>active</code> to true to return only selected tokens.</p>
+  <pre>$('#myField').tokenfield('getTokens');</pre>
+  <h4>.tokenfield('getTokensList', delimiter, beautify, active)</h4>
+  <p>Get a comma-separated list of the tokens from the input. You can use an alternative separator by supplying also a <code>delimiter</code> argument. Setting <code>beautify</code> to false will prevent adding a space after each token. Set <code>active</code> to true to return only selected tokens.</p>
+  <pre>$('#myField').tokenfield('getTokensList');
+$('#myField').tokenfield('getTokensList', '; ');</pre>
+  <h4>.tokenfield('disable')</h4>
+  <p>Disable tokenfield (just like a normal input field)</p>
+  <pre>$('#myField').tokenfield('disable');</pre>
+  <h4>.tokenfield('enable')</h4>
+  <p>Enable tokenfield (just like a normal input field)</p>
+  <pre>$('#myField').tokenfield('enable');</pre>
+  <h4>.tokenfield('readonly')</h4>
+  <p>Make tokenfield a readonly field (just like a normal input field)</p>
+  <pre>$('#myField').tokenfield('readonly');</pre>
+  <h4>.tokenfield('writeable')</h4>
+  <p>Make tokenfield writeable (just like a normal input field)</p>
+  <pre>$('#myField').tokenfield('writeable');</pre>
+  <h4>.tokenfield('destroy')</h4>
+  <p>Destroy tokenfield and restore original input</p>
+  <pre>$('#myField').tokenfield('destroy');</pre>
+  <div class="bs-callout bs-callout-info">
+    <h4>Accessing original input</h4>
+    <p>Though not recommended, you can access the original input field like so: <code>$('#tokenfield').data('bs.tokenfield').$input</code></p>
+    <p>You can also set new options for the autocomplete or typehead objects from the original input above like so: <code>$('#tokenfield').data('bs.tokenfield').$input.autocomplete({source: new_array})</code></p>
+  </div>
+  <h3 class="page-header">Events</h3>
+  <p>Tokenfield exposes a few events for hooking into it's functionality.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="width: 150px;">Event</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tokenfield:initialize</td>
+          <td>Fires after Tokenfield has been initialized.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:createtoken</td>
+          <td>This event fires when a token is all set up to be created, but before it is inserted into the DOM and event listeners are attached. You can use this event to manipulate token value and label by changing the appropriate values of <code>attrs</code> property of the event. See below for an example. Calling <code>event.preventDefault()</code> or doing <code>return false</code> in the event handler will prevent the token from being created.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:createdtoken</td>
+          <td>This event is fired after the token has been created. Here, <code>attrs</code> property of the event is also available, but is basically read-only. You can also get a direct reference to the token DOM object via <code>e.relatedTarget</code>. The example below uses this to set an 'invalid' class on the newly created token if it does not pass validation.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:edittoken</td>
+          <td>This event is fired just before a token is about to be edited. This allows you to manipluate the input field value before it is created. Again, to do this, manipluate the <code>attrs</code> property of the event. Here you can also access the token DOM object with <code>e.relatedTarget</code>. Calling <code>event.preventDefault()</code> or doing <code>return false</code> in the event handler will prevent the token from being edited.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:editedtoken</td>
+          <td>This event is fired when a token is ready for being edited. It means that the token has been replaced by an input field.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:removetoken</td>
+          <td>This event is fired right before a token is removed. Here you can also access the token DOM object with <code>e.relatedTarget</code>. Calling <code>event.preventDefault()</code> or doing <code>return false</code> in the event handler will prevent the token from being removed. You can access token label and value by checking the <code>attrs</code> property of the event. Also, <code>e.relatedTarget</code> is a reference to the token DOM object.</td>
+        </tr>
+        <tr>
+          <td>tokenfield:removedtoken</td>
+          <td>This event is fired right after a token is removed from the DOM. You can access token label and value by checking the <code>attrs</code> property of the event.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The example below is pretty comprehensive. Here, we split user input into two parts: name and email. Then, we validate the email and if it is not valid, we add an <code>invalid</code> class to the token.</p>
+  <p>When the user starts to edit the token, we merge token value and label together again.</p>
+  <div class="bs-example">
+    <input type="text" class="form-control" id="tokenfield-2" data-tokens="me|me@example.com,you@example.com,not really an email" />
+  </div>
+  <pre>
+      $('#tokenfield')
+      
+      .on('tokenfield:createtoken', function (e) {
+      var data = e.attrs.value.split('|')
+      e.attrs.value = data[1] || data[0]
+      e.attrs.label = data[1] ? data[0] + ' (' + data[1] + ')' : data[0]
+      })
+      
+      .on('tokenfield:createdtoken', function (e) {
+      // Über-simplistic e-mail validation
+      var re = /\S+@\S+\.\S+/
+      var valid = re.test(e.attrs.value)
+      if (!valid) {
+      $(e.relatedTarget).addClass('invalid')
+      }
+      })
+      
+      .on('tokenfield:edittoken', function (e) {
+      if (e.attrs.label !== e.attrs.value) {
+      var label = e.attrs.label.split(' (')
+      e.attrs.value = label[0] + '|' + e.attrs.value
+      }
+      })
+      
+      .on('tokenfield:removedtoken', function (e) {
+      alert('Token removed! Token value was: ' + e.attrs.value)
+      })
+      
+      .tokenfield()
+     </pre>
+  <h3 class="page-header">Keyboard support</h3>
+  <p>Tokenfield includes support for manipulating tokens via keyboard</p>
+  <h4>left, right arrow keys</h4>
+  <p>Arrow keys will move between active tokens. Try it out: click on one of the tokens and press left and right arrow keys</p>
+  <h4>Backspace and delete</h4>
+  <p>You can delete a selected token with backspace or delete keys. Try it out now:</p>
+  <h4>Ctrl + A / Cmd + A, Ctrl + C / Cmd + C, Ctrl + V, Cmd + V</h4>
+  <p>If You have one token selected, you can select all tokens with the keyboard. Then, you can copy the tokens using keyboard. You can also paste tokens to another field.</p>
+  <div class="bs-example">
+    <input type="text" class="form-control token-example-field" value="try,pressing,backspace" />
+  </div>
+  <h3 class="page-header">Copy &amp; paste support</h3>
+  <p>You can copy tokens from a tokenfield and paste them to any other field as comma-separated values. When you paste to another tokenfield, they will become tokens there, aswell!</p>
+  <p>Try it out, copy the following to the field below: violet,yellow,brown</p>
+  <div class="bs-example">
+    <input type="text" class="form-control token-example-field" value="copy,and,paste" />
+  </div>
+  <h3 id="validation-states" class="page-header">Validation states</h3>
+  <p>Tokenfield also supports all the default validation states from Bootstrap</p>
+  <form class="bs-example">
+    <div class="form-group has-success">
+      <label class="control-label" for="inputSuccess">Input with success</label>
+      <input type="text" class="form-control token-example-field" id="inputSuccess" value="red,green,blue" />
+    </div>
+    <div class="form-group has-warning">
+      <label class="control-label" for="inputWarning">Input with warning</label>
+      <input type="text" class="form-control token-example-field" id="inputWarning" value="red,green,blue">
+    </div>
+    <div class="form-group has-error">
+      <label class="control-label" for="inputError">Input with error</label>
+      <input type="text" class="form-control token-example-field" id="inputError" value="red,green,blue">
+    </div>
+  </form>
+  <h3 id="various-examples">Various examples of using tokenfield</h3>
+  <p>Using tokenfield with input groups</p>
+  <form class="bs-example bs-example-form" role="form">
+    <div class="input-group"> <span class="input-group-addon">Tags:</span>
+      <input type="text" class="form-control token-example-field" value="cool,nice,great" />
+    </div>
+    <br>
+    <div class="input-group">
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+      <span class="input-group-addon"><i class="fa fa-star"></i></span> </div>
+    <br>
+    <div class="input-group"> <span class="input-group-addon">Tags:</span>
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+      <span class="input-group-addon"><i class="fa fa-star"></i></span> </div>
+  </form>
+  <p>Using tokenfield with input group checkboxes and radio buttons</p>
+  <form class="bs-example bs-example-form" role="form">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group"> <span class="input-group-addon">
+          <input type="checkbox">
+          </span>
+          <input type="text" class="form-control token-example-field" value="red,green,blue" />
+        </div>
+        <!-- /input-group --> 
+      </div>
+      <!-- /.col-lg-6 -->
+      <div class="col-lg-6">
+        <div class="input-group"> <span class="input-group-addon">
+          <input type="radio">
+          </span>
+          <input type="text" class="form-control token-example-field" value="red,green,blue" />
+        </div>
+        <!-- /input-group --> 
+      </div>
+      <!-- /.col-lg-6 --> 
+    </div>
+  </form>
+  <p>Using tokenfield with buttons in input groups</p>
+  <form class="bs-example bs-example-form" role="form">
+    <div class="input-group">
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+      <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Go!</button>
+      </span> </div>
+    <br>
+    <div class="input-group">
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1"> <span class="caret"></span> </button>
+        <ul class="dropdown-menu pull-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+  <p>Using tokenfield with different sizes</p>
+  <form class="bs-example bs-example-form" role="form">
+    <input type="text" class="form-control input-lg token-example-field" value="red,green,blue" />
+    <input type="text" class="form-control token-example-field" value="red,green,blue" />
+    <input type="text" class="form-control input-sm token-example-field" value="red,green,blue" />
+    <br>
+    <div class="input-group input-group-lg"> <span class="input-group-addon">@</span>
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+    </div>
+    <div class="input-group"> <span class="input-group-addon">@</span>
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+    </div>
+    <div class="input-group input-group-sm"> <span class="input-group-addon">@</span>
+      <input type="text" class="form-control token-example-field" value="red,green,blue" />
+    </div>
+  </form>
+  <p>Disabled tokenfield</p>
+  <form class="bs-example bs-example-form" role="form">
+    <input type="text" class="form-control token-example-field" value="red,green,blue" disabled="disabled" />
+  </form>
+  <p>Disabled fieldset with tokenfield</p>
+  <form class="bs-example bs-example-form" role="form">
+    <fieldset disabled>
+      <div class="form-group">
+        <label for="disabledTextInput">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      </div>
+      <div class="form-group">
+        <label for="disabledTokenfield">Disabled tokenfield</label>
+        <input type="text" id="disabledTokenfield" class="form-control token-example-field" value="red,green,blue" />
+      </div>
+    </fieldset>
+  </form>
+  <p>Tokenfield in inline form</p>
+  <form class="bs-example form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInlineTags">Tags</label>
+      <input type="text" id="exampleInlineTags" class="form-control token-example-field" value="red,green,blue" placeholder="Enter tags" />
+    </div>
+    <button type="submit" class="btn btn-default">Search</button>
+  </form>
+  <p>Tokenfield in horizontal form</p>
+  <form class="bs-example form-horizontal">
+    <div class="form-group">
+      <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputTags1" class="col-lg-2 control-label">Tags</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control token-example-field" id="inputTags1" placeholder="Tags" value="some,tags">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-offset-2 col-lg-10">
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </div>
+    </div>
+  </form>
+  <p>Tokenfield with fluid and fixed widths (50%, 300px, etc...)</p>
+  <form class="bs-example bs-example-form" role="form">
+    <div class="form-group">
+      <label for="example-fluid-tokenfield">Width: 50% (from stylesheet)</label>
+      <input type="text" id="example-fluid-tokenfield" class="form-control token-example-field fluid-tokenfield" value="red,green,blue" />
+    </div>
+    <div class="form-group">
+      <label for="example-fixed-tokenfield">Width: 300px (from stylesheet)</label>
+      <input type="text" id="example-fixed-tokenfield" class="form-control token-example-field fixed-tokenfield" value="red,green,blue" />
+    </div>
+    <div class="form-group">
+      <label for="example-fixed-tokenfield-2">Width: 400px (inline)</label>
+      <input type="text" id="example-fixed-tokenfield-2" class="form-control token-example-field" value="red,green,blue"/>
+    </div>
+  </form>
+  <p>Tokenfield with RTL direction</p>
+  <form class="bs-example bs-example-form" role="form">
+    <input type="text" class="form-control token-example-field" value="red,green,blue" style="direction:rtl" />
+  </form>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+<!--jquery-ui-->
+<link href="../../lib/js/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet">
+<script src="../../lib/js/jquery-ui-1.11.2/jquery-ui.min.js"></script> 
+<!--tokenfield-->
+<link href="../../lib/bootstrap/extend/tokenfield/css/tokenfield-typeahead.min.css" rel="stylesheet">
+<link href="../../lib/bootstrap/extend/tokenfield/css/bootstrap-tokenfield.min.css" rel="stylesheet">
+<script src="../../lib/bootstrap/extend/tokenfield/bootstrap-tokenfield.min.js"></script> 
+<!--autocomplete--> 
+<script src="../../lib/modules/autocomplete/typeahead.bundle.min.js"></script> 
+<script src="../../lib/bootstrap/extend/tokenfield/bootstrap-tokenfield-config.js"></script> 
+<!-- prettify.css 代码高亮 -->
+<link href="../../lib/modules/prettify/prettify.css" rel="stylesheet">
+<script src="../../lib/modules/prettify/prettify.min.js"></script> 
+<script type="text/javascript">
+ jQuery(document).ready(function($){
+   $(window).load(function(){
+     $("pre").addClass("prettyprint linenums");
+     prettyPrint();
+   })
+ });
+</script>
+</body>
+</html>

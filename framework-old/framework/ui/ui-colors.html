@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-background</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">Colors</h1>
+  </div>
+</div>
+<div class="container">
+  <h1 class="page-header">Bootstrap Background Colors</h1>
+  <p class="bg-info m-no p-xs">bg-info</p>
+  <p class="bg-primary m-no p-xs">bg-primary</p>
+  <p class="bg-warning m-no p-xs">bg-warning</p>
+  <p class="bg-success m-no p-xs">bg-success</p>
+  <p class="bg-danger m-no p-xs">bg-danger</p>
+</div>
+<div class="container">
+  <h1 class="page-header">Material Background Colors</h1>
+  <div class="row">
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-red-500 m-no p-xs"><p>Red</p> <p class="text-right text-xxs">@red-500</p></h3>
+      <p class="bg-red-50 m-no p-xs">red 50</p>
+      <p class="bg-red-100 m-no p-xs">red 100</p>
+      <p class="bg-red-200 m-no p-xs">red 200</p>
+      <p class="bg-red-300 m-no p-xs">red 300</p>
+      <p class="bg-red-400 m-no p-xs">red 400</p>
+      <p class="bg-red-500 m-no p-xs">red 500</p>
+      <p class="bg-red-600 m-no p-xs">red 600</p>
+      <p class="bg-red-700 m-no p-xs">red 700</p>
+      <p class="bg-red-800 m-no p-xs">red 800</p>
+      <p class="bg-red-900 m-no p-xs">red 900</p>
+      <p class="bg-red-a100 m-no p-xs">red A100</p>
+      <p class="bg-red-a200 m-no p-xs">red A200</p>
+      <p class="bg-red-a400 m-no p-xs">red A400</p>
+      <p class="bg-red-a700 m-no p-xs">red A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-pink-500 m-no p-xs"><p>pink</p> <p class="text-right text-xxs">@pink-500</p></h3>
+      <p class="bg-pink-50 m-no p-xs">pink 50</p>
+      <p class="bg-pink-100 m-no p-xs">pink 100</p>
+      <p class="bg-pink-200 m-no p-xs">pink 200</p>
+      <p class="bg-pink-300 m-no p-xs">pink 300</p>
+      <p class="bg-pink-400 m-no p-xs">pink 400</p>
+      <p class="bg-pink-500 m-no p-xs">pink 500</p>
+      <p class="bg-pink-600 m-no p-xs">pink 600</p>
+      <p class="bg-pink-700 m-no p-xs">pink 700</p>
+      <p class="bg-pink-800 m-no p-xs">pink 800</p>
+      <p class="bg-pink-900 m-no p-xs">pink 900</p>
+      <p class="bg-pink-a100 m-no p-xs">pink A100</p>
+      <p class="bg-pink-a200 m-no p-xs">pink A200</p>
+      <p class="bg-pink-a400 m-no p-xs">pink A400</p>
+      <p class="bg-pink-a700 m-no p-xs">pink A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-purple-500 m-no p-xs"><p>purple</p> <p class="text-right text-xxs">@purple-500</p></h3>
+      <p class="bg-purple-50 m-no p-xs">purple 50</p>
+      <p class="bg-purple-100 m-no p-xs">purple 100</p>
+      <p class="bg-purple-200 m-no p-xs">purple 200</p>
+      <p class="bg-purple-300 m-no p-xs">purple 300</p>
+      <p class="bg-purple-400 m-no p-xs">purple 400</p>
+      <p class="bg-purple-500 m-no p-xs">purple 500</p>
+      <p class="bg-purple-600 m-no p-xs">purple 600</p>
+      <p class="bg-purple-700 m-no p-xs">purple 700</p>
+      <p class="bg-purple-800 m-no p-xs">purple 800</p>
+      <p class="bg-purple-900 m-no p-xs">purple 900</p>
+      <p class="bg-purple-a100 m-no p-xs">purple A100</p>
+      <p class="bg-purple-a200 m-no p-xs">purple A200</p>
+      <p class="bg-purple-a400 m-no p-xs">purple A400</p>
+      <p class="bg-purple-a700 m-no p-xs">purple A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-deep-purple-500 m-no p-xs"><p>Deep-purple</p> <p class="text-right text-xxs">@deep-purple-500</p></h3>
+      <p class="bg-deep-purple-50 m-no p-xs">deep-purple 50</p>
+      <p class="bg-deep-purple-100 m-no p-xs">deep-purple 100</p>
+      <p class="bg-deep-purple-200 m-no p-xs">deep-purple 200</p>
+      <p class="bg-deep-purple-300 m-no p-xs">deep-purple 300</p>
+      <p class="bg-deep-purple-400 m-no p-xs">deep-purple 400</p>
+      <p class="bg-deep-purple-500 m-no p-xs">deep-purple 500</p>
+      <p class="bg-deep-purple-600 m-no p-xs">deep-purple 600</p>
+      <p class="bg-deep-purple-700 m-no p-xs">deep-purple 700</p>
+      <p class="bg-deep-purple-800 m-no p-xs">deep-purple 800</p>
+      <p class="bg-deep-purple-900 m-no p-xs">deep-purple 900</p>
+      <p class="bg-deep-purple-a100 m-no p-xs">deep-purple A100</p>
+      <p class="bg-deep-purple-a200 m-no p-xs">deep-purple A200</p>
+      <p class="bg-deep-purple-a400 m-no p-xs">deep-purple A400</p>
+      <p class="bg-deep-purple-a700 m-no p-xs">deep-purple A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-indigo-500 m-no p-xs"><p>Indigo</p> <p class="text-right text-xxs">@indigo-500</p></h3>
+      <p class="bg-indigo-50 m-no p-xs">indigo 50</p>
+      <p class="bg-indigo-100 m-no p-xs">indigo 100</p>
+      <p class="bg-indigo-200 m-no p-xs">indigo 200</p>
+      <p class="bg-indigo-300 m-no p-xs">indigo 300</p>
+      <p class="bg-indigo-400 m-no p-xs">indigo 400</p>
+      <p class="bg-indigo-500 m-no p-xs">indigo 500</p>
+      <p class="bg-indigo-600 m-no p-xs">indigo 600</p>
+      <p class="bg-indigo-700 m-no p-xs">indigo 700</p>
+      <p class="bg-indigo-800 m-no p-xs">indigo 800</p>
+      <p class="bg-indigo-900 m-no p-xs">indigo 900</p>
+      <p class="bg-indigo-a100 m-no p-xs">indigo A100</p>
+      <p class="bg-indigo-a200 m-no p-xs">indigo A200</p>
+      <p class="bg-indigo-a400 m-no p-xs">indigo A400</p>
+      <p class="bg-indigo-a700 m-no p-xs">indigo A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-blue-500 m-no p-xs"><p>Blue</p> <p class="text-right text-xxs">@blue-500</p></h3>
+      <p class="bg-blue-50 m-no p-xs">blue 50</p>
+      <p class="bg-blue-100 m-no p-xs">blue 100</p>
+      <p class="bg-blue-200 m-no p-xs">blue 200</p>
+      <p class="bg-blue-300 m-no p-xs">blue 300</p>
+      <p class="bg-blue-400 m-no p-xs">blue 400</p>
+      <p class="bg-blue-500 m-no p-xs">blue 500</p>
+      <p class="bg-blue-600 m-no p-xs">blue 600</p>
+      <p class="bg-blue-700 m-no p-xs">blue 700</p>
+      <p class="bg-blue-800 m-no p-xs">blue 800</p>
+      <p class="bg-blue-900 m-no p-xs">blue 900</p>
+      <p class="bg-blue-a100 m-no p-xs">blue A100</p>
+      <p class="bg-blue-a200 m-no p-xs">blue A200</p>
+      <p class="bg-blue-a400 m-no p-xs">blue A400</p>
+      <p class="bg-blue-a700 m-no p-xs">blue A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-light-blue-500 m-no p-xs"><p>Light-blue</p> <p class="text-right text-xxs">@light-blue-500</p></h3>
+      <p class="bg-light-blue-50 m-no p-xs">light-blue 50</p>
+      <p class="bg-light-blue-100 m-no p-xs">light-blue 100</p>
+      <p class="bg-light-blue-200 m-no p-xs">light-blue 200</p>
+      <p class="bg-light-blue-300 m-no p-xs">light-blue 300</p>
+      <p class="bg-light-blue-400 m-no p-xs">light-blue 400</p>
+      <p class="bg-light-blue-500 m-no p-xs">light-blue 500</p>
+      <p class="bg-light-blue-600 m-no p-xs">light-blue 600</p>
+      <p class="bg-light-blue-700 m-no p-xs">light-blue 700</p>
+      <p class="bg-light-blue-800 m-no p-xs">light-blue 800</p>
+      <p class="bg-light-blue-900 m-no p-xs">light-blue 900</p>
+      <p class="bg-light-blue-a100 m-no p-xs">light-blue A100</p>
+      <p class="bg-light-blue-a200 m-no p-xs">light-blue A200</p>
+      <p class="bg-light-blue-a400 m-no p-xs">light-blue A400</p>
+      <p class="bg-light-blue-a700 m-no p-xs">light-blue A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-cyan-500 m-no p-xs"><p>Cyan</p> <p class="text-right text-xxs">@cyan-500</p></h3>
+      <p class="bg-cyan-50 m-no p-xs">cyan 50</p>
+      <p class="bg-cyan-100 m-no p-xs">cyan 100</p>
+      <p class="bg-cyan-200 m-no p-xs">cyan 200</p>
+      <p class="bg-cyan-300 m-no p-xs">cyan 300</p>
+      <p class="bg-cyan-400 m-no p-xs">cyan 400</p>
+      <p class="bg-cyan-500 m-no p-xs">cyan 500</p>
+      <p class="bg-cyan-600 m-no p-xs">cyan 600</p>
+      <p class="bg-cyan-700 m-no p-xs">cyan 700</p>
+      <p class="bg-cyan-800 m-no p-xs">cyan 800</p>
+      <p class="bg-cyan-900 m-no p-xs">cyan 900</p>
+      <p class="bg-cyan-a100 m-no p-xs">cyan A100</p>
+      <p class="bg-cyan-a200 m-no p-xs">cyan A200</p>
+      <p class="bg-cyan-a400 m-no p-xs">cyan A400</p>
+      <p class="bg-cyan-a700 m-no p-xs">cyan A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-teal-500 m-no p-xs"><p>Teal</p> <p class="text-right text-xxs">@teal-500</p></h3>
+      <p class="bg-teal-50 m-no p-xs">teal 50</p>
+      <p class="bg-teal-100 m-no p-xs">teal 100</p>
+      <p class="bg-teal-200 m-no p-xs">teal 200</p>
+      <p class="bg-teal-300 m-no p-xs">teal 300</p>
+      <p class="bg-teal-400 m-no p-xs">teal 400</p>
+      <p class="bg-teal-500 m-no p-xs">teal 500</p>
+      <p class="bg-teal-600 m-no p-xs">teal 600</p>
+      <p class="bg-teal-700 m-no p-xs">teal 700</p>
+      <p class="bg-teal-800 m-no p-xs">teal 800</p>
+      <p class="bg-teal-900 m-no p-xs">teal 900</p>
+      <p class="bg-teal-a100 m-no p-xs">teal A100</p>
+      <p class="bg-teal-a200 m-no p-xs">teal A200</p>
+      <p class="bg-teal-a400 m-no p-xs">teal A400</p>
+      <p class="bg-teal-a700 m-no p-xs">teal A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-green-500 m-no p-xs"><p>Green</p> <p class="text-right text-xxs">@green-500</p></h3>
+      <p class="bg-green-50 m-no p-xs">green 50</p>
+      <p class="bg-green-100 m-no p-xs">green 100</p>
+      <p class="bg-green-200 m-no p-xs">green 200</p>
+      <p class="bg-green-300 m-no p-xs">green 300</p>
+      <p class="bg-green-400 m-no p-xs">green 400</p>
+      <p class="bg-green-500 m-no p-xs">green 500</p>
+      <p class="bg-green-600 m-no p-xs">green 600</p>
+      <p class="bg-green-700 m-no p-xs">green 700</p>
+      <p class="bg-green-800 m-no p-xs">green 800</p>
+      <p class="bg-green-900 m-no p-xs">green 900</p>
+      <p class="bg-green-a100 m-no p-xs">green A100</p>
+      <p class="bg-green-a200 m-no p-xs">green A200</p>
+      <p class="bg-green-a400 m-no p-xs">green A400</p>
+      <p class="bg-green-a700 m-no p-xs">green A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-light-green-500 m-no p-xs"><p>Light-green</p> <p class="text-right text-xxs">@light-green-500</p></h3>
+      <p class="bg-light-green-50 m-no p-xs">light-green 50</p>
+      <p class="bg-light-green-100 m-no p-xs">light-green 100</p>
+      <p class="bg-light-green-200 m-no p-xs">light-green 200</p>
+      <p class="bg-light-green-300 m-no p-xs">light-green 300</p>
+      <p class="bg-light-green-400 m-no p-xs">light-green 400</p>
+      <p class="bg-light-green-500 m-no p-xs">light-green 500</p>
+      <p class="bg-light-green-600 m-no p-xs">light-green 600</p>
+      <p class="bg-light-green-700 m-no p-xs">light-green 700</p>
+      <p class="bg-light-green-800 m-no p-xs">light-green 800</p>
+      <p class="bg-light-green-900 m-no p-xs">light-green 900</p>
+      <p class="bg-light-green-a100 m-no p-xs">light-green A100</p>
+      <p class="bg-light-green-a200 m-no p-xs">light-green A200</p>
+      <p class="bg-light-green-a400 m-no p-xs">light-green A400</p>
+      <p class="bg-light-green-a700 m-no p-xs">light-green A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-lime-500 m-no p-xs"><p>Lime</p> <p class="text-right text-xxs">@lime-500</p></h3>
+      <p class="bg-lime-50 m-no p-xs">lime 50</p>
+      <p class="bg-lime-100 m-no p-xs">lime 100</p>
+      <p class="bg-lime-200 m-no p-xs">lime 200</p>
+      <p class="bg-lime-300 m-no p-xs">lime 300</p>
+      <p class="bg-lime-400 m-no p-xs">lime 400</p>
+      <p class="bg-lime-500 m-no p-xs">lime 500</p>
+      <p class="bg-lime-600 m-no p-xs">lime 600</p>
+      <p class="bg-lime-700 m-no p-xs">lime 700</p>
+      <p class="bg-lime-800 m-no p-xs">lime 800</p>
+      <p class="bg-lime-900 m-no p-xs">lime 900</p>
+      <p class="bg-lime-a100 m-no p-xs">lime A100</p>
+      <p class="bg-lime-a200 m-no p-xs">lime A200</p>
+      <p class="bg-lime-a400 m-no p-xs">lime A400</p>
+      <p class="bg-lime-a700 m-no p-xs">lime A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-yellow-500 m-no p-xs"><p>Yellow</p> <p class="text-right text-xxs">@yellow-500</p></h3>
+      <p class="bg-yellow-50 m-no p-xs">yellow 50</p>
+      <p class="bg-yellow-100 m-no p-xs">yellow 100</p>
+      <p class="bg-yellow-200 m-no p-xs">yellow 200</p>
+      <p class="bg-yellow-300 m-no p-xs">yellow 300</p>
+      <p class="bg-yellow-400 m-no p-xs">yellow 400</p>
+      <p class="bg-yellow-500 m-no p-xs">yellow 500</p>
+      <p class="bg-yellow-600 m-no p-xs">yellow 600</p>
+      <p class="bg-yellow-700 m-no p-xs">yellow 700</p>
+      <p class="bg-yellow-800 m-no p-xs">yellow 800</p>
+      <p class="bg-yellow-900 m-no p-xs">yellow 900</p>
+      <p class="bg-yellow-a100 m-no p-xs">yellow A100</p>
+      <p class="bg-yellow-a200 m-no p-xs">yellow A200</p>
+      <p class="bg-yellow-a400 m-no p-xs">yellow A400</p>
+      <p class="bg-yellow-a700 m-no p-xs">yellow A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-amber-500 m-no p-xs"><p>Amber</p> <p class="text-right text-xxs">@amber-500</p></h3>
+      <p class="bg-amber-50 m-no p-xs">amber 50</p>
+      <p class="bg-amber-100 m-no p-xs">amber 100</p>
+      <p class="bg-amber-200 m-no p-xs">amber 200</p>
+      <p class="bg-amber-300 m-no p-xs">amber 300</p>
+      <p class="bg-amber-400 m-no p-xs">amber 400</p>
+      <p class="bg-amber-500 m-no p-xs">amber 500</p>
+      <p class="bg-amber-600 m-no p-xs">amber 600</p>
+      <p class="bg-amber-700 m-no p-xs">amber 700</p>
+      <p class="bg-amber-800 m-no p-xs">amber 800</p>
+      <p class="bg-amber-900 m-no p-xs">amber 900</p>
+      <p class="bg-amber-a100 m-no p-xs">amber A100</p>
+      <p class="bg-amber-a200 m-no p-xs">amber A200</p>
+      <p class="bg-amber-a400 m-no p-xs">amber A400</p>
+      <p class="bg-amber-a700 m-no p-xs">amber A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-orange-500 m-no p-xs"><p>Orange</p> <p class="text-right text-xxs">@orange-500</p></h3>
+      <p class="bg-orange-50 m-no p-xs">orange 50</p>
+      <p class="bg-orange-100 m-no p-xs">orange 100</p>
+      <p class="bg-orange-200 m-no p-xs">orange 200</p>
+      <p class="bg-orange-300 m-no p-xs">orange 300</p>
+      <p class="bg-orange-400 m-no p-xs">orange 400</p>
+      <p class="bg-orange-500 m-no p-xs">orange 500</p>
+      <p class="bg-orange-600 m-no p-xs">orange 600</p>
+      <p class="bg-orange-700 m-no p-xs">orange 700</p>
+      <p class="bg-orange-800 m-no p-xs">orange 800</p>
+      <p class="bg-orange-900 m-no p-xs">orange 900</p>
+      <p class="bg-orange-a100 m-no p-xs">orange A100</p>
+      <p class="bg-orange-a200 m-no p-xs">orange A200</p>
+      <p class="bg-orange-a400 m-no p-xs">orange A400</p>
+      <p class="bg-orange-a700 m-no p-xs">orange A700</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-deep-orange-500 m-no p-xs"><p>Deep-orange</p> <p class="text-right text-xxs">@deep-orange-500</p></h3>
+      <p class="bg-deep-orange-50 m-no p-xs">deep-orange 50</p>
+      <p class="bg-deep-orange-100 m-no p-xs">deep-orange 100</p>
+      <p class="bg-deep-orange-200 m-no p-xs">deep-orange 200</p>
+      <p class="bg-deep-orange-300 m-no p-xs">deep-orange 300</p>
+      <p class="bg-deep-orange-400 m-no p-xs">deep-orange 400</p>
+      <p class="bg-deep-orange-500 m-no p-xs">deep-orange 500</p>
+      <p class="bg-deep-orange-600 m-no p-xs">deep-orange 600</p>
+      <p class="bg-deep-orange-700 m-no p-xs">deep-orange 700</p>
+      <p class="bg-deep-orange-800 m-no p-xs">deep-orange 800</p>
+      <p class="bg-deep-orange-900 m-no p-xs">deep-orange 900</p>
+      <p class="bg-deep-orange-a100 m-no p-xs">deep-orange A100</p>
+      <p class="bg-deep-orange-a200 m-no p-xs">deep-orange A200</p>
+      <p class="bg-deep-orange-a400 m-no p-xs">deep-orange A400</p>
+      <p class="bg-deep-orange-a700 m-no p-xs">deep-orange A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-brown-500 m-no p-xs"><p>Brown</p> <p class="text-right text-xxs">@brown-500</p></h3>
+      <p class="bg-brown-50 m-no p-xs">brown 50</p>
+      <p class="bg-brown-100 m-no p-xs">brown 100</p>
+      <p class="bg-brown-200 m-no p-xs">brown 200</p>
+      <p class="bg-brown-300 m-no p-xs">brown 300</p>
+      <p class="bg-brown-400 m-no p-xs">brown 400</p>
+      <p class="bg-brown-500 m-no p-xs">brown 500</p>
+      <p class="bg-brown-600 m-no p-xs">brown 600</p>
+      <p class="bg-brown-700 m-no p-xs">brown 700</p>
+      <p class="bg-brown-800 m-no p-xs">brown 800</p>
+      <p class="bg-brown-900 m-no p-xs">brown 900</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-blue-grey-500 m-no p-xs"><p>Blue-grey</p> <p class="text-right text-xxs">@blue-grey-500</p></h3>
+      <p class="bg-blue-grey-50 m-no p-xs">blue-grey 50</p>
+      <p class="bg-blue-grey-100 m-no p-xs">blue-grey 100</p>
+      <p class="bg-blue-grey-200 m-no p-xs">blue-grey 200</p>
+      <p class="bg-blue-grey-300 m-no p-xs">blue-grey 300</p>
+      <p class="bg-blue-grey-400 m-no p-xs">blue-grey 400</p>
+      <p class="bg-blue-grey-500 m-no p-xs">blue-grey 500</p>
+      <p class="bg-blue-grey-600 m-no p-xs">blue-grey 600</p>
+      <p class="bg-blue-grey-700 m-no p-xs">blue-grey 700</p>
+      <p class="bg-blue-grey-800 m-no p-xs">blue-grey 800</p>
+      <p class="bg-blue-grey-900 m-no p-xs">blue-grey 900</p>
+    </div>
+    <div class="col-md-3 bg-inverse row">
+      <h3 class="bg-grey-500 m-no p-xs"><p>Grey</p> <p class="text-right text-xxs">@grey-500</p></h3>
+      <p class="bg-grey-50 m-no p-xs">grey 50</p>
+      <p class="bg-grey-100 m-no p-xs">grey 100</p>
+      <p class="bg-grey-200 m-no p-xs">grey 200</p>
+      <p class="bg-grey-300 m-no p-xs">grey 300</p>
+      <p class="bg-grey-400 m-no p-xs">grey 400</p>
+      <p class="bg-grey-500 m-no p-xs">grey 500</p>
+      <p class="bg-grey-600 m-no p-xs">grey 600</p>
+      <p class="bg-grey-700 m-no p-xs">grey 700</p>
+      <p class="bg-grey-800 m-no p-xs">grey 800</p>
+      <p class="bg-grey-900 m-no p-xs">grey 900</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="page-header">Material Border Colors</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <h3 class="b border-red-500 p-xs"><p>Red</p> <p class="text-right text-xxs">@red-500</p></h3>
+      <p class="b border-red-50 p-xs">red 50</p>
+      <p class="b border-red-100 p-xs">red 100</p>
+      <p class="b border-red-200 p-xs">red 200</p>
+      <p class="b border-red-300 p-xs">red 300</p>
+      <p class="b border-red-400 p-xs">red 400</p>
+      <p class="b border-red-500 p-xs">red 500</p>
+      <p class="b border-red-600 p-xs">red 600</p>
+      <p class="b border-red-700 p-xs">red 700</p>
+      <p class="b border-red-800 p-xs">red 800</p>
+      <p class="b border-red-900 p-xs">red 900</p>
+      <p class="b border-red-a100 p-xs">red A100</p>
+      <p class="b border-red-a200 p-xs">red A200</p>
+      <p class="b border-red-a400 p-xs">red A400</p>
+      <p class="b border-red-a700 p-xs">red A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-pink-500 p-xs"><p>pink</p> <p class="text-right text-xxs">@pink-500</p></h3>
+      <p class="b border-pink-50 p-xs">pink 50</p>
+      <p class="b border-pink-100 p-xs">pink 100</p>
+      <p class="b border-pink-200 p-xs">pink 200</p>
+      <p class="b border-pink-300 p-xs">pink 300</p>
+      <p class="b border-pink-400 p-xs">pink 400</p>
+      <p class="b border-pink-500 p-xs">pink 500</p>
+      <p class="b border-pink-600 p-xs">pink 600</p>
+      <p class="b border-pink-700 p-xs">pink 700</p>
+      <p class="b border-pink-800 p-xs">pink 800</p>
+      <p class="b border-pink-900 p-xs">pink 900</p>
+      <p class="b border-pink-a100 p-xs">pink A100</p>
+      <p class="b border-pink-a200 p-xs">pink A200</p>
+      <p class="b border-pink-a400 p-xs">pink A400</p>
+      <p class="b border-pink-a700 p-xs">pink A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-purple-500 p-xs"><p>purple</p> <p class="text-right text-xxs">@purple-500</p></h3>
+      <p class="b border-purple-50 p-xs">purple 50</p>
+      <p class="b border-purple-100 p-xs">purple 100</p>
+      <p class="b border-purple-200 p-xs">purple 200</p>
+      <p class="b border-purple-300 p-xs">purple 300</p>
+      <p class="b border-purple-400 p-xs">purple 400</p>
+      <p class="b border-purple-500 p-xs">purple 500</p>
+      <p class="b border-purple-600 p-xs">purple 600</p>
+      <p class="b border-purple-700 p-xs">purple 700</p>
+      <p class="b border-purple-800 p-xs">purple 800</p>
+      <p class="b border-purple-900 p-xs">purple 900</p>
+      <p class="b border-purple-a100 p-xs">purple A100</p>
+      <p class="b border-purple-a200 p-xs">purple A200</p>
+      <p class="b border-purple-a400 p-xs">purple A400</p>
+      <p class="b border-purple-a700 p-xs">purple A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-deep-purple-500 p-xs"><p>Deep-purple</p> <p class="text-right text-xxs">@deep-purple-500</p></h3>
+      <p class="b border-deep-purple-50 p-xs">deep-purple 50</p>
+      <p class="b border-deep-purple-100 p-xs">deep-purple 100</p>
+      <p class="b border-deep-purple-200 p-xs">deep-purple 200</p>
+      <p class="b border-deep-purple-300 p-xs">deep-purple 300</p>
+      <p class="b border-deep-purple-400 p-xs">deep-purple 400</p>
+      <p class="b border-deep-purple-500 p-xs">deep-purple 500</p>
+      <p class="b border-deep-purple-600 p-xs">deep-purple 600</p>
+      <p class="b border-deep-purple-700 p-xs">deep-purple 700</p>
+      <p class="b border-deep-purple-800 p-xs">deep-purple 800</p>
+      <p class="b border-deep-purple-900 p-xs">deep-purple 900</p>
+      <p class="b border-deep-purple-a100 p-xs">deep-purple A100</p>
+      <p class="b border-deep-purple-a200 p-xs">deep-purple A200</p>
+      <p class="b border-deep-purple-a400 p-xs">deep-purple A400</p>
+      <p class="b border-deep-purple-a700 p-xs">deep-purple A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="b border-indigo-500 p-xs"><p>Indigo</p> <p class="text-right text-xxs">@indigo-500</p></h3>
+      <p class="b border-indigo-50 p-xs">indigo 50</p>
+      <p class="b border-indigo-100 p-xs">indigo 100</p>
+      <p class="b border-indigo-200 p-xs">indigo 200</p>
+      <p class="b border-indigo-300 p-xs">indigo 300</p>
+      <p class="b border-indigo-400 p-xs">indigo 400</p>
+      <p class="b border-indigo-500 p-xs">indigo 500</p>
+      <p class="b border-indigo-600 p-xs">indigo 600</p>
+      <p class="b border-indigo-700 p-xs">indigo 700</p>
+      <p class="b border-indigo-800 p-xs">indigo 800</p>
+      <p class="b border-indigo-900 p-xs">indigo 900</p>
+      <p class="b border-indigo-a100 p-xs">indigo A100</p>
+      <p class="b border-indigo-a200 p-xs">indigo A200</p>
+      <p class="b border-indigo-a400 p-xs">indigo A400</p>
+      <p class="b border-indigo-a700 p-xs">indigo A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-blue-500 p-xs"><p>Blue</p> <p class="text-right text-xxs">@blue-500</p></h3>
+      <p class="b border-blue-50 p-xs">blue 50</p>
+      <p class="b border-blue-100 p-xs">blue 100</p>
+      <p class="b border-blue-200 p-xs">blue 200</p>
+      <p class="b border-blue-300 p-xs">blue 300</p>
+      <p class="b border-blue-400 p-xs">blue 400</p>
+      <p class="b border-blue-500 p-xs">blue 500</p>
+      <p class="b border-blue-600 p-xs">blue 600</p>
+      <p class="b border-blue-700 p-xs">blue 700</p>
+      <p class="b border-blue-800 p-xs">blue 800</p>
+      <p class="b border-blue-900 p-xs">blue 900</p>
+      <p class="b border-blue-a100 p-xs">blue A100</p>
+      <p class="b border-blue-a200 p-xs">blue A200</p>
+      <p class="b border-blue-a400 p-xs">blue A400</p>
+      <p class="b border-blue-a700 p-xs">blue A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-light-blue-500 p-xs"><p>Light-blue</p> <p class="text-right text-xxs">@light-blue-500</p></h3>
+      <p class="b border-light-blue-50 p-xs">light-blue 50</p>
+      <p class="b border-light-blue-100 p-xs">light-blue 100</p>
+      <p class="b border-light-blue-200 p-xs">light-blue 200</p>
+      <p class="b border-light-blue-300 p-xs">light-blue 300</p>
+      <p class="b border-light-blue-400 p-xs">light-blue 400</p>
+      <p class="b border-light-blue-500 p-xs">light-blue 500</p>
+      <p class="b border-light-blue-600 p-xs">light-blue 600</p>
+      <p class="b border-light-blue-700 p-xs">light-blue 700</p>
+      <p class="b border-light-blue-800 p-xs">light-blue 800</p>
+      <p class="b border-light-blue-900 p-xs">light-blue 900</p>
+      <p class="b border-light-blue-a100 p-xs">light-blue A100</p>
+      <p class="b border-light-blue-a200 p-xs">light-blue A200</p>
+      <p class="b border-light-blue-a400 p-xs">light-blue A400</p>
+      <p class="b border-light-blue-a700 p-xs">light-blue A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-cyan-500 p-xs"><p>Cyan</p> <p class="text-right text-xxs">@cyan-500</p></h3>
+      <p class="b border-cyan-50 p-xs">cyan 50</p>
+      <p class="b border-cyan-100 p-xs">cyan 100</p>
+      <p class="b border-cyan-200 p-xs">cyan 200</p>
+      <p class="b border-cyan-300 p-xs">cyan 300</p>
+      <p class="b border-cyan-400 p-xs">cyan 400</p>
+      <p class="b border-cyan-500 p-xs">cyan 500</p>
+      <p class="b border-cyan-600 p-xs">cyan 600</p>
+      <p class="b border-cyan-700 p-xs">cyan 700</p>
+      <p class="b border-cyan-800 p-xs">cyan 800</p>
+      <p class="b border-cyan-900 p-xs">cyan 900</p>
+      <p class="b border-cyan-a100 p-xs">cyan A100</p>
+      <p class="b border-cyan-a200 p-xs">cyan A200</p>
+      <p class="b border-cyan-a400 p-xs">cyan A400</p>
+      <p class="b border-cyan-a700 p-xs">cyan A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="b border-teal-500 p-xs"><p>Teal</p> <p class="text-right text-xxs">@teal-500</p></h3>
+      <p class="b border-teal-50 p-xs">teal 50</p>
+      <p class="b border-teal-100 p-xs">teal 100</p>
+      <p class="b border-teal-200 p-xs">teal 200</p>
+      <p class="b border-teal-300 p-xs">teal 300</p>
+      <p class="b border-teal-400 p-xs">teal 400</p>
+      <p class="b border-teal-500 p-xs">teal 500</p>
+      <p class="b border-teal-600 p-xs">teal 600</p>
+      <p class="b border-teal-700 p-xs">teal 700</p>
+      <p class="b border-teal-800 p-xs">teal 800</p>
+      <p class="b border-teal-900 p-xs">teal 900</p>
+      <p class="b border-teal-a100 p-xs">teal A100</p>
+      <p class="b border-teal-a200 p-xs">teal A200</p>
+      <p class="b border-teal-a400 p-xs">teal A400</p>
+      <p class="b border-teal-a700 p-xs">teal A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-green-500 p-xs"><p>Green</p> <p class="text-right text-xxs">@green-500</p></h3>
+      <p class="b border-green-50 p-xs">green 50</p>
+      <p class="b border-green-100 p-xs">green 100</p>
+      <p class="b border-green-200 p-xs">green 200</p>
+      <p class="b border-green-300 p-xs">green 300</p>
+      <p class="b border-green-400 p-xs">green 400</p>
+      <p class="b border-green-500 p-xs">green 500</p>
+      <p class="b border-green-600 p-xs">green 600</p>
+      <p class="b border-green-700 p-xs">green 700</p>
+      <p class="b border-green-800 p-xs">green 800</p>
+      <p class="b border-green-900 p-xs">green 900</p>
+      <p class="b border-green-a100 p-xs">green A100</p>
+      <p class="b border-green-a200 p-xs">green A200</p>
+      <p class="b border-green-a400 p-xs">green A400</p>
+      <p class="b border-green-a700 p-xs">green A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-light-green-500 p-xs"><p>Light-green</p> <p class="text-right text-xxs">@light-green-500</p></h3>
+      <p class="b border-light-green-50 p-xs">light-green 50</p>
+      <p class="b border-light-green-100 p-xs">light-green 100</p>
+      <p class="b border-light-green-200 p-xs">light-green 200</p>
+      <p class="b border-light-green-300 p-xs">light-green 300</p>
+      <p class="b border-light-green-400 p-xs">light-green 400</p>
+      <p class="b border-light-green-500 p-xs">light-green 500</p>
+      <p class="b border-light-green-600 p-xs">light-green 600</p>
+      <p class="b border-light-green-700 p-xs">light-green 700</p>
+      <p class="b border-light-green-800 p-xs">light-green 800</p>
+      <p class="b border-light-green-900 p-xs">light-green 900</p>
+      <p class="b border-light-green-a100 p-xs">light-green A100</p>
+      <p class="b border-light-green-a200 p-xs">light-green A200</p>
+      <p class="b border-light-green-a400 p-xs">light-green A400</p>
+      <p class="b border-light-green-a700 p-xs">light-green A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-lime-500 p-xs"><p>Lime</p> <p class="text-right text-xxs">@lime-500</p></h3>
+      <p class="b border-lime-50 p-xs">lime 50</p>
+      <p class="b border-lime-100 p-xs">lime 100</p>
+      <p class="b border-lime-200 p-xs">lime 200</p>
+      <p class="b border-lime-300 p-xs">lime 300</p>
+      <p class="b border-lime-400 p-xs">lime 400</p>
+      <p class="b border-lime-500 p-xs">lime 500</p>
+      <p class="b border-lime-600 p-xs">lime 600</p>
+      <p class="b border-lime-700 p-xs">lime 700</p>
+      <p class="b border-lime-800 p-xs">lime 800</p>
+      <p class="b border-lime-900 p-xs">lime 900</p>
+      <p class="b border-lime-a100 p-xs">lime A100</p>
+      <p class="b border-lime-a200 p-xs">lime A200</p>
+      <p class="b border-lime-a400 p-xs">lime A400</p>
+      <p class="b border-lime-a700 p-xs">lime A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="b border-yellow-500 p-xs"><p>Yellow</p> <p class="text-right text-xxs">@yellow-500</p></h3>
+      <p class="b border-yellow-50 p-xs">yellow 50</p>
+      <p class="b border-yellow-100 p-xs">yellow 100</p>
+      <p class="b border-yellow-200 p-xs">yellow 200</p>
+      <p class="b border-yellow-300 p-xs">yellow 300</p>
+      <p class="b border-yellow-400 p-xs">yellow 400</p>
+      <p class="b border-yellow-500 p-xs">yellow 500</p>
+      <p class="b border-yellow-600 p-xs">yellow 600</p>
+      <p class="b border-yellow-700 p-xs">yellow 700</p>
+      <p class="b border-yellow-800 p-xs">yellow 800</p>
+      <p class="b border-yellow-900 p-xs">yellow 900</p>
+      <p class="b border-yellow-a100 p-xs">yellow A100</p>
+      <p class="b border-yellow-a200 p-xs">yellow A200</p>
+      <p class="b border-yellow-a400 p-xs">yellow A400</p>
+      <p class="b border-yellow-a700 p-xs">yellow A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-amber-500 p-xs"><p>Amber</p> <p class="text-right text-xxs">@amber-500</p></h3>
+      <p class="b border-amber-50 p-xs">amber 50</p>
+      <p class="b border-amber-100 p-xs">amber 100</p>
+      <p class="b border-amber-200 p-xs">amber 200</p>
+      <p class="b border-amber-300 p-xs">amber 300</p>
+      <p class="b border-amber-400 p-xs">amber 400</p>
+      <p class="b border-amber-500 p-xs">amber 500</p>
+      <p class="b border-amber-600 p-xs">amber 600</p>
+      <p class="b border-amber-700 p-xs">amber 700</p>
+      <p class="b border-amber-800 p-xs">amber 800</p>
+      <p class="b border-amber-900 p-xs">amber 900</p>
+      <p class="b border-amber-a100 p-xs">amber A100</p>
+      <p class="b border-amber-a200 p-xs">amber A200</p>
+      <p class="b border-amber-a400 p-xs">amber A400</p>
+      <p class="b border-amber-a700 p-xs">amber A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-orange-500 p-xs"><p>Orange</p> <p class="text-right text-xxs">@orange-500</p></h3>
+      <p class="b border-orange-50 p-xs">orange 50</p>
+      <p class="b border-orange-100 p-xs">orange 100</p>
+      <p class="b border-orange-200 p-xs">orange 200</p>
+      <p class="b border-orange-300 p-xs">orange 300</p>
+      <p class="b border-orange-400 p-xs">orange 400</p>
+      <p class="b border-orange-500 p-xs">orange 500</p>
+      <p class="b border-orange-600 p-xs">orange 600</p>
+      <p class="b border-orange-700 p-xs">orange 700</p>
+      <p class="b border-orange-800 p-xs">orange 800</p>
+      <p class="b border-orange-900 p-xs">orange 900</p>
+      <p class="b border-orange-a100 p-xs">orange A100</p>
+      <p class="b border-orange-a200 p-xs">orange A200</p>
+      <p class="b border-orange-a400 p-xs">orange A400</p>
+      <p class="b border-orange-a700 p-xs">orange A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-deep-orange-500 p-xs"><p>Deep-orange</p> <p class="text-right text-xxs">@deep-orange-500</p></h3>
+      <p class="b border-deep-orange-50 p-xs">deep-orange 50</p>
+      <p class="b border-deep-orange-100 p-xs">deep-orange 100</p>
+      <p class="b border-deep-orange-200 p-xs">deep-orange 200</p>
+      <p class="b border-deep-orange-300 p-xs">deep-orange 300</p>
+      <p class="b border-deep-orange-400 p-xs">deep-orange 400</p>
+      <p class="b border-deep-orange-500 p-xs">deep-orange 500</p>
+      <p class="b border-deep-orange-600 p-xs">deep-orange 600</p>
+      <p class="b border-deep-orange-700 p-xs">deep-orange 700</p>
+      <p class="b border-deep-orange-800 p-xs">deep-orange 800</p>
+      <p class="b border-deep-orange-900 p-xs">deep-orange 900</p>
+      <p class="b border-deep-orange-a100 p-xs">deep-orange A100</p>
+      <p class="b border-deep-orange-a200 p-xs">deep-orange A200</p>
+      <p class="b border-deep-orange-a400 p-xs">deep-orange A400</p>
+      <p class="b border-deep-orange-a700 p-xs">deep-orange A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="b border-brown-500 p-xs"><p>Brown</p> <p class="text-right text-xxs">@brown-500</p></h3>
+      <p class="b border-brown-50 p-xs">brown 50</p>
+      <p class="b border-brown-100 p-xs">brown 100</p>
+      <p class="b border-brown-200 p-xs">brown 200</p>
+      <p class="b border-brown-300 p-xs">brown 300</p>
+      <p class="b border-brown-400 p-xs">brown 400</p>
+      <p class="b border-brown-500 p-xs">brown 500</p>
+      <p class="b border-brown-600 p-xs">brown 600</p>
+      <p class="b border-brown-700 p-xs">brown 700</p>
+      <p class="b border-brown-800 p-xs">brown 800</p>
+      <p class="b border-brown-900 p-xs">brown 900</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-blue-grey-500 p-xs"><p>Blue-grey</p> <p class="text-right text-xxs">@blue-grey-500</p></h3>
+      <p class="b border-blue-grey-50 p-xs">blue-grey 50</p>
+      <p class="b border-blue-grey-100 p-xs">blue-grey 100</p>
+      <p class="b border-blue-grey-200 p-xs">blue-grey 200</p>
+      <p class="b border-blue-grey-300 p-xs">blue-grey 300</p>
+      <p class="b border-blue-grey-400 p-xs">blue-grey 400</p>
+      <p class="b border-blue-grey-500 p-xs">blue-grey 500</p>
+      <p class="b border-blue-grey-600 p-xs">blue-grey 600</p>
+      <p class="b border-blue-grey-700 p-xs">blue-grey 700</p>
+      <p class="b border-blue-grey-800 p-xs">blue-grey 800</p>
+      <p class="b border-blue-grey-900 p-xs">blue-grey 900</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="b border-grey-500 p-xs"><p>Grey</p> <p class="text-right text-xxs">@grey-500</p></h3>
+      <p class="b border-grey-50 p-xs">grey 50</p>
+      <p class="b border-grey-100 p-xs">grey 100</p>
+      <p class="b border-grey-200 p-xs">grey 200</p>
+      <p class="b border-grey-300 p-xs">grey 300</p>
+      <p class="b border-grey-400 p-xs">grey 400</p>
+      <p class="b border-grey-500 p-xs">grey 500</p>
+      <p class="b border-grey-600 p-xs">grey 600</p>
+      <p class="b border-grey-700 p-xs">grey 700</p>
+      <p class="b border-grey-800 p-xs">grey 800</p>
+      <p class="b border-grey-900 p-xs">grey 900</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="page-header">Material Text Colors</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <h3 class="color-red-500 p-xs"><p>Red</p></h3>
+      <p class="color-red-50 p-xs">red 50</p>
+      <p class="color-red-100 p-xs">red 100</p>
+      <p class="color-red-200 p-xs">red 200</p>
+      <p class="color-red-300 p-xs">red 300</p>
+      <p class="color-red-400 p-xs">red 400</p>
+      <p class="color-red-500 p-xs">red 500</p>
+      <p class="color-red-600 p-xs">red 600</p>
+      <p class="color-red-700 p-xs">red 700</p>
+      <p class="color-red-800 p-xs">red 800</p>
+      <p class="color-red-900 p-xs">red 900</p>
+      <p class="color-red-a100 p-xs">red A100</p>
+      <p class="color-red-a200 p-xs">red A200</p>
+      <p class="color-red-a400 p-xs">red A400</p>
+      <p class="color-red-a700 p-xs">red A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-pink-500 p-xs"><p>pink</p></h3>
+      <p class="color-pink-50 p-xs">pink 50</p>
+      <p class="color-pink-100 p-xs">pink 100</p>
+      <p class="color-pink-200 p-xs">pink 200</p>
+      <p class="color-pink-300 p-xs">pink 300</p>
+      <p class="color-pink-400 p-xs">pink 400</p>
+      <p class="color-pink-500 p-xs">pink 500</p>
+      <p class="color-pink-600 p-xs">pink 600</p>
+      <p class="color-pink-700 p-xs">pink 700</p>
+      <p class="color-pink-800 p-xs">pink 800</p>
+      <p class="color-pink-900 p-xs">pink 900</p>
+      <p class="color-pink-a100 p-xs">pink A100</p>
+      <p class="color-pink-a200 p-xs">pink A200</p>
+      <p class="color-pink-a400 p-xs">pink A400</p>
+      <p class="color-pink-a700 p-xs">pink A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-purple-500 p-xs"><p>purple</p></h3>
+      <p class="color-purple-50 p-xs">purple 50</p>
+      <p class="color-purple-100 p-xs">purple 100</p>
+      <p class="color-purple-200 p-xs">purple 200</p>
+      <p class="color-purple-300 p-xs">purple 300</p>
+      <p class="color-purple-400 p-xs">purple 400</p>
+      <p class="color-purple-500 p-xs">purple 500</p>
+      <p class="color-purple-600 p-xs">purple 600</p>
+      <p class="color-purple-700 p-xs">purple 700</p>
+      <p class="color-purple-800 p-xs">purple 800</p>
+      <p class="color-purple-900 p-xs">purple 900</p>
+      <p class="color-purple-a100 p-xs">purple A100</p>
+      <p class="color-purple-a200 p-xs">purple A200</p>
+      <p class="color-purple-a400 p-xs">purple A400</p>
+      <p class="color-purple-a700 p-xs">purple A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-deep-purple-500 p-xs"><p>Deep-purple</p></h3>
+      <p class="color-deep-purple-50 p-xs">deep-purple 50</p>
+      <p class="color-deep-purple-100 p-xs">deep-purple 100</p>
+      <p class="color-deep-purple-200 p-xs">deep-purple 200</p>
+      <p class="color-deep-purple-300 p-xs">deep-purple 300</p>
+      <p class="color-deep-purple-400 p-xs">deep-purple 400</p>
+      <p class="color-deep-purple-500 p-xs">deep-purple 500</p>
+      <p class="color-deep-purple-600 p-xs">deep-purple 600</p>
+      <p class="color-deep-purple-700 p-xs">deep-purple 700</p>
+      <p class="color-deep-purple-800 p-xs">deep-purple 800</p>
+      <p class="color-deep-purple-900 p-xs">deep-purple 900</p>
+      <p class="color-deep-purple-a100 p-xs">deep-purple A100</p>
+      <p class="color-deep-purple-a200 p-xs">deep-purple A200</p>
+      <p class="color-deep-purple-a400 p-xs">deep-purple A400</p>
+      <p class="color-deep-purple-a700 p-xs">deep-purple A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="color-indigo-500 p-xs"><p>Indigo</p></h3>
+      <p class="color-indigo-50 p-xs">indigo 50</p>
+      <p class="color-indigo-100 p-xs">indigo 100</p>
+      <p class="color-indigo-200 p-xs">indigo 200</p>
+      <p class="color-indigo-300 p-xs">indigo 300</p>
+      <p class="color-indigo-400 p-xs">indigo 400</p>
+      <p class="color-indigo-500 p-xs">indigo 500</p>
+      <p class="color-indigo-600 p-xs">indigo 600</p>
+      <p class="color-indigo-700 p-xs">indigo 700</p>
+      <p class="color-indigo-800 p-xs">indigo 800</p>
+      <p class="color-indigo-900 p-xs">indigo 900</p>
+      <p class="color-indigo-a100 p-xs">indigo A100</p>
+      <p class="color-indigo-a200 p-xs">indigo A200</p>
+      <p class="color-indigo-a400 p-xs">indigo A400</p>
+      <p class="color-indigo-a700 p-xs">indigo A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-blue-500 p-xs"><p>Blue</p></h3>
+      <p class="color-blue-50 p-xs">blue 50</p>
+      <p class="color-blue-100 p-xs">blue 100</p>
+      <p class="color-blue-200 p-xs">blue 200</p>
+      <p class="color-blue-300 p-xs">blue 300</p>
+      <p class="color-blue-400 p-xs">blue 400</p>
+      <p class="color-blue-500 p-xs">blue 500</p>
+      <p class="color-blue-600 p-xs">blue 600</p>
+      <p class="color-blue-700 p-xs">blue 700</p>
+      <p class="color-blue-800 p-xs">blue 800</p>
+      <p class="color-blue-900 p-xs">blue 900</p>
+      <p class="color-blue-a100 p-xs">blue A100</p>
+      <p class="color-blue-a200 p-xs">blue A200</p>
+      <p class="color-blue-a400 p-xs">blue A400</p>
+      <p class="color-blue-a700 p-xs">blue A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-light-blue-500 p-xs"><p>Light-blue</p></h3>
+      <p class="color-light-blue-50 p-xs">light-blue 50</p>
+      <p class="color-light-blue-100 p-xs">light-blue 100</p>
+      <p class="color-light-blue-200 p-xs">light-blue 200</p>
+      <p class="color-light-blue-300 p-xs">light-blue 300</p>
+      <p class="color-light-blue-400 p-xs">light-blue 400</p>
+      <p class="color-light-blue-500 p-xs">light-blue 500</p>
+      <p class="color-light-blue-600 p-xs">light-blue 600</p>
+      <p class="color-light-blue-700 p-xs">light-blue 700</p>
+      <p class="color-light-blue-800 p-xs">light-blue 800</p>
+      <p class="color-light-blue-900 p-xs">light-blue 900</p>
+      <p class="color-light-blue-a100 p-xs">light-blue A100</p>
+      <p class="color-light-blue-a200 p-xs">light-blue A200</p>
+      <p class="color-light-blue-a400 p-xs">light-blue A400</p>
+      <p class="color-light-blue-a700 p-xs">light-blue A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-cyan-500 p-xs"><p>Cyan</p></h3>
+      <p class="color-cyan-50 p-xs">cyan 50</p>
+      <p class="color-cyan-100 p-xs">cyan 100</p>
+      <p class="color-cyan-200 p-xs">cyan 200</p>
+      <p class="color-cyan-300 p-xs">cyan 300</p>
+      <p class="color-cyan-400 p-xs">cyan 400</p>
+      <p class="color-cyan-500 p-xs">cyan 500</p>
+      <p class="color-cyan-600 p-xs">cyan 600</p>
+      <p class="color-cyan-700 p-xs">cyan 700</p>
+      <p class="color-cyan-800 p-xs">cyan 800</p>
+      <p class="color-cyan-900 p-xs">cyan 900</p>
+      <p class="color-cyan-a100 p-xs">cyan A100</p>
+      <p class="color-cyan-a200 p-xs">cyan A200</p>
+      <p class="color-cyan-a400 p-xs">cyan A400</p>
+      <p class="color-cyan-a700 p-xs">cyan A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="color-teal-500 p-xs"><p>Teal</p></h3>
+      <p class="color-teal-50 p-xs">teal 50</p>
+      <p class="color-teal-100 p-xs">teal 100</p>
+      <p class="color-teal-200 p-xs">teal 200</p>
+      <p class="color-teal-300 p-xs">teal 300</p>
+      <p class="color-teal-400 p-xs">teal 400</p>
+      <p class="color-teal-500 p-xs">teal 500</p>
+      <p class="color-teal-600 p-xs">teal 600</p>
+      <p class="color-teal-700 p-xs">teal 700</p>
+      <p class="color-teal-800 p-xs">teal 800</p>
+      <p class="color-teal-900 p-xs">teal 900</p>
+      <p class="color-teal-a100 p-xs">teal A100</p>
+      <p class="color-teal-a200 p-xs">teal A200</p>
+      <p class="color-teal-a400 p-xs">teal A400</p>
+      <p class="color-teal-a700 p-xs">teal A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-green-500 p-xs"><p>Green</p></h3>
+      <p class="color-green-50 p-xs">green 50</p>
+      <p class="color-green-100 p-xs">green 100</p>
+      <p class="color-green-200 p-xs">green 200</p>
+      <p class="color-green-300 p-xs">green 300</p>
+      <p class="color-green-400 p-xs">green 400</p>
+      <p class="color-green-500 p-xs">green 500</p>
+      <p class="color-green-600 p-xs">green 600</p>
+      <p class="color-green-700 p-xs">green 700</p>
+      <p class="color-green-800 p-xs">green 800</p>
+      <p class="color-green-900 p-xs">green 900</p>
+      <p class="color-green-a100 p-xs">green A100</p>
+      <p class="color-green-a200 p-xs">green A200</p>
+      <p class="color-green-a400 p-xs">green A400</p>
+      <p class="color-green-a700 p-xs">green A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-light-green-500 p-xs"><p>Light-green</p></h3>
+      <p class="color-light-green-50 p-xs">light-green 50</p>
+      <p class="color-light-green-100 p-xs">light-green 100</p>
+      <p class="color-light-green-200 p-xs">light-green 200</p>
+      <p class="color-light-green-300 p-xs">light-green 300</p>
+      <p class="color-light-green-400 p-xs">light-green 400</p>
+      <p class="color-light-green-500 p-xs">light-green 500</p>
+      <p class="color-light-green-600 p-xs">light-green 600</p>
+      <p class="color-light-green-700 p-xs">light-green 700</p>
+      <p class="color-light-green-800 p-xs">light-green 800</p>
+      <p class="color-light-green-900 p-xs">light-green 900</p>
+      <p class="color-light-green-a100 p-xs">light-green A100</p>
+      <p class="color-light-green-a200 p-xs">light-green A200</p>
+      <p class="color-light-green-a400 p-xs">light-green A400</p>
+      <p class="color-light-green-a700 p-xs">light-green A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-lime-500 p-xs"><p>Lime</p></h3>
+      <p class="color-lime-50 p-xs">lime 50</p>
+      <p class="color-lime-100 p-xs">lime 100</p>
+      <p class="color-lime-200 p-xs">lime 200</p>
+      <p class="color-lime-300 p-xs">lime 300</p>
+      <p class="color-lime-400 p-xs">lime 400</p>
+      <p class="color-lime-500 p-xs">lime 500</p>
+      <p class="color-lime-600 p-xs">lime 600</p>
+      <p class="color-lime-700 p-xs">lime 700</p>
+      <p class="color-lime-800 p-xs">lime 800</p>
+      <p class="color-lime-900 p-xs">lime 900</p>
+      <p class="color-lime-a100 p-xs">lime A100</p>
+      <p class="color-lime-a200 p-xs">lime A200</p>
+      <p class="color-lime-a400 p-xs">lime A400</p>
+      <p class="color-lime-a700 p-xs">lime A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="color-yellow-500 p-xs"><p>Yellow</p></h3>
+      <p class="color-yellow-50 p-xs">yellow 50</p>
+      <p class="color-yellow-100 p-xs">yellow 100</p>
+      <p class="color-yellow-200 p-xs">yellow 200</p>
+      <p class="color-yellow-300 p-xs">yellow 300</p>
+      <p class="color-yellow-400 p-xs">yellow 400</p>
+      <p class="color-yellow-500 p-xs">yellow 500</p>
+      <p class="color-yellow-600 p-xs">yellow 600</p>
+      <p class="color-yellow-700 p-xs">yellow 700</p>
+      <p class="color-yellow-800 p-xs">yellow 800</p>
+      <p class="color-yellow-900 p-xs">yellow 900</p>
+      <p class="color-yellow-a100 p-xs">yellow A100</p>
+      <p class="color-yellow-a200 p-xs">yellow A200</p>
+      <p class="color-yellow-a400 p-xs">yellow A400</p>
+      <p class="color-yellow-a700 p-xs">yellow A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-amber-500 p-xs"><p>Amber</p></h3>
+      <p class="color-amber-50 p-xs">amber 50</p>
+      <p class="color-amber-100 p-xs">amber 100</p>
+      <p class="color-amber-200 p-xs">amber 200</p>
+      <p class="color-amber-300 p-xs">amber 300</p>
+      <p class="color-amber-400 p-xs">amber 400</p>
+      <p class="color-amber-500 p-xs">amber 500</p>
+      <p class="color-amber-600 p-xs">amber 600</p>
+      <p class="color-amber-700 p-xs">amber 700</p>
+      <p class="color-amber-800 p-xs">amber 800</p>
+      <p class="color-amber-900 p-xs">amber 900</p>
+      <p class="color-amber-a100 p-xs">amber A100</p>
+      <p class="color-amber-a200 p-xs">amber A200</p>
+      <p class="color-amber-a400 p-xs">amber A400</p>
+      <p class="color-amber-a700 p-xs">amber A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-orange-500 p-xs"><p>Orange</p></h3>
+      <p class="color-orange-50 p-xs">orange 50</p>
+      <p class="color-orange-100 p-xs">orange 100</p>
+      <p class="color-orange-200 p-xs">orange 200</p>
+      <p class="color-orange-300 p-xs">orange 300</p>
+      <p class="color-orange-400 p-xs">orange 400</p>
+      <p class="color-orange-500 p-xs">orange 500</p>
+      <p class="color-orange-600 p-xs">orange 600</p>
+      <p class="color-orange-700 p-xs">orange 700</p>
+      <p class="color-orange-800 p-xs">orange 800</p>
+      <p class="color-orange-900 p-xs">orange 900</p>
+      <p class="color-orange-a100 p-xs">orange A100</p>
+      <p class="color-orange-a200 p-xs">orange A200</p>
+      <p class="color-orange-a400 p-xs">orange A400</p>
+      <p class="color-orange-a700 p-xs">orange A700</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-deep-orange-500 p-xs"><p>Deep-orange</p></h3>
+      <p class="color-deep-orange-50 p-xs">deep-orange 50</p>
+      <p class="color-deep-orange-100 p-xs">deep-orange 100</p>
+      <p class="color-deep-orange-200 p-xs">deep-orange 200</p>
+      <p class="color-deep-orange-300 p-xs">deep-orange 300</p>
+      <p class="color-deep-orange-400 p-xs">deep-orange 400</p>
+      <p class="color-deep-orange-500 p-xs">deep-orange 500</p>
+      <p class="color-deep-orange-600 p-xs">deep-orange 600</p>
+      <p class="color-deep-orange-700 p-xs">deep-orange 700</p>
+      <p class="color-deep-orange-800 p-xs">deep-orange 800</p>
+      <p class="color-deep-orange-900 p-xs">deep-orange 900</p>
+      <p class="color-deep-orange-a100 p-xs">deep-orange A100</p>
+      <p class="color-deep-orange-a200 p-xs">deep-orange A200</p>
+      <p class="color-deep-orange-a400 p-xs">deep-orange A400</p>
+      <p class="color-deep-orange-a700 p-xs">deep-orange A700</p>
+    </div>
+  </div>
+  <div class="row mt-xl">
+    <div class="col-md-3">
+      <h3 class="color-brown-500 p-xs"><p>Brown</p></h3>
+      <p class="color-brown-50 p-xs">brown 50</p>
+      <p class="color-brown-100 p-xs">brown 100</p>
+      <p class="color-brown-200 p-xs">brown 200</p>
+      <p class="color-brown-300 p-xs">brown 300</p>
+      <p class="color-brown-400 p-xs">brown 400</p>
+      <p class="color-brown-500 p-xs">brown 500</p>
+      <p class="color-brown-600 p-xs">brown 600</p>
+      <p class="color-brown-700 p-xs">brown 700</p>
+      <p class="color-brown-800 p-xs">brown 800</p>
+      <p class="color-brown-900 p-xs">brown 900</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-blue-grey-500 p-xs"><p>Blue-grey</p></h3>
+      <p class="color-blue-grey-50 p-xs">blue-grey 50</p>
+      <p class="color-blue-grey-100 p-xs">blue-grey 100</p>
+      <p class="color-blue-grey-200 p-xs">blue-grey 200</p>
+      <p class="color-blue-grey-300 p-xs">blue-grey 300</p>
+      <p class="color-blue-grey-400 p-xs">blue-grey 400</p>
+      <p class="color-blue-grey-500 p-xs">blue-grey 500</p>
+      <p class="color-blue-grey-600 p-xs">blue-grey 600</p>
+      <p class="color-blue-grey-700 p-xs">blue-grey 700</p>
+      <p class="color-blue-grey-800 p-xs">blue-grey 800</p>
+      <p class="color-blue-grey-900 p-xs">blue-grey 900</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="color-grey-500 p-xs"><p>Grey</p></h3>
+      <p class="color-grey-50 p-xs">grey 50</p>
+      <p class="color-grey-100 p-xs">grey 100</p>
+      <p class="color-grey-200 p-xs">grey 200</p>
+      <p class="color-grey-300 p-xs">grey 300</p>
+      <p class="color-grey-400 p-xs">grey 400</p>
+      <p class="color-grey-500 p-xs">grey 500</p>
+      <p class="color-grey-600 p-xs">grey 600</p>
+      <p class="color-grey-700 p-xs">grey 700</p>
+      <p class="color-grey-800 p-xs">grey 800</p>
+      <p class="color-grey-900 p-xs">grey 900</p>
+    </div>
+  </div>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>

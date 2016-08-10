@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>UI-widgets</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg pb-no mb-no" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">widgets</h1>
+  </div>
+</div>
+<section class="panel panel-default no-shadow bb-none">
+  <header class="panel-heading">
+    <ul class="nav nav-tabs container" style="margin:-11px auto">
+      <li class="active"><a href="#public" data-toggle="tab">Public</a></li>
+      <li class=""><a href="#graphic" data-toggle="tab">图文模块</a></li>
+      <li><a href="#user" data-toggle="tab">User Widgets</a></li>
+      <li class=""><a href="#chat" data-toggle="tab">Chat</a></li>
+      <li class=""><a href="#commerce" data-toggle="tab">E-commerce</a></li>
+      <li class=""><a href="#Other" data-toggle="tab">Other</a></li>
+    </ul>
+  </header>
+  <div class="panel-body">
+    <div class="tab-content"> 
+      <!--tab-pane-->
+      <div class="tab-pane active" id="public">
+        <div class="container"> 
+          <!--Hero Widgets-->
+          <div class="row">
+            <h2 class="col-lg-12">Hero Widgets</h2>
+            <div class="col-sm-3">
+              <div class="hero-widget well well-sm">
+                <div class="icon"> <i class="fa fa-user"></i> </div>
+                <div class="text"> <var>3</var>
+                  <label class="text-muted">invited guests</label>
+                </div>
+                <div class="options"> <a href="javascript:;" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> Add a guest</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hero-widget well well-sm">
+                <div class="icon"> <i class="fa fa-star"></i> </div>
+                <div class="text"> <var>614</var>
+                  <label class="text-muted">page likes</label>
+                </div>
+                <div class="options"> <a href="javascript:;" class="btn btn-default btn-lg"><i class="fa fa-search"></i> View traffic</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hero-widget well well-sm">
+                <div class="icon"> <i class="fa fa-tags"></i> </div>
+                <div class="text"> <var>73</var>
+                  <label class="text-muted">total orders</label>
+                </div>
+                <div class="options"> <a href="javascript:;" class="btn btn-default btn-lg"><i class="fa fa-search"></i> View orders</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hero-widget well well-sm">
+                <div class="icon"> <i class="fa fa-cog"></i> </div>
+                <div class="text"> <var>75%</var>
+                  <label class="text-muted">profile complete</label>
+                </div>
+                <div class="options"> <a href="javascript:;" class="btn btn-default btn-lg"><i class="fa fa-wrench"></i> Edit profile</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="graphic">
+        <div class="container">
+          <h2 class="page-header">Bookmarks Reading List</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well well-sm">
+                <div class="row">
+                  <div class="col-xs-3 col-md-3 text-center"> <img src="../../assets/images/slider/s2.jpg" class="img-rounded img-responsive" alt="" /> </div>
+                  <div class="col-xs-9 col-md-9 section-box">
+                    <h2> Bootsnipp <a href="http://bootsnipp.com/" target="_blank"><i class="fa fa-link"> </i></a> </h2>
+                    <p> Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                    <hr>
+                    <div class="row rating-desc">
+                      <div class="col-md-12"> <i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i>(36)<span class="separator ph-sm">|</span> <i class="fa fa-comment fa-fw text-success"></i>(100 Comments) </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="well well-sm">
+                <div class="row">
+                  <div class="col-xs-3 col-md-3 text-center"> <img src="../../assets/images/slider/s4.jpg" class="img-rounded img-responsive" alt="" /> </div>
+                  <div class="col-xs-9 col-md-9 section-box">
+                    <h2> jQuery2DotNet <a href="http://www.jquery2dotnet.com/" target="_blank"><i class="fa fa-link"></i></a> </h2>
+                    <p> Cool jQuery, CSS3,HTML5, MVC and C#  tutorials with examples</p>
+                    <hr>
+                    <div class="row rating-desc">
+                      <div class="col-md-12"> <i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw text-danger"></i><i class="fa fa-heart fa-fw"></i><i class="fa fa-heart fa-fw"></i>(36)<span class="separator ph-sm">|</span> <i class="fa fa-comment fa-fw text-success"></i>(100 Comments) </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <h2>Recent Comments Admin Panel</h2>
+            <div class="panel panel-default widget">
+              <div class="panel-heading">
+                <h3 class="panel-title"> <i class="fa fa-comment"></i> Recent Comments <span class="label label-info pull-right"> 78</span></h3>
+              </div>
+              <div class="panel-body p-no">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-1"> <img src="../../assets/images/avatar/avatar.png" class="img-circle img-responsive" alt="" /></div>
+                      <div class="col-xs-10 col-md-11">
+                        <div> <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html"> Google Style Login Page Design Using Bootstrap</a>
+                          <div class="mic-info"> By: <a href="#">Bhaumik Patel</a> on 2 Aug 2013 </div>
+                        </div>
+                        <div class="comment-text"> Awesome design </div>
+                        <div class="action">
+                          <button type="button" class="btn btn-primary btn-xs" title="Edit"> <i class="fa fa-pencil"></i> </button>
+                          <button type="button" class="btn btn-success btn-xs" title="Approved"> <i class="fa fa-check"></i> </button>
+                          <button type="button" class="btn btn-danger btn-xs" title="Delete"> <i class="fa fa-trash-o"></i> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-1"> <img src="../../assets/images/avatar/avatar.png" class="img-circle img-responsive" alt="" /></div>
+                      <div class="col-xs-10 col-md-11">
+                        <div> <a href="http://bootsnipp.com/BhaumikPatel/snippets/Obgj">Admin Panel Quick Shortcuts</a>
+                          <div class="mic-info"> By: <a href="#">Bhaumik Patel</a> on 11 Nov 2013 </div>
+                        </div>
+                        <div class="comment-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim </div>
+                        <div class="action">
+                          <button type="button" class="btn btn-primary btn-xs" title="Edit"> <i class="fa fa-pencil"></i> </button>
+                          <button type="button" class="btn btn-success btn-xs" title="Approved"> <i class="fa fa-check"></i> </button>
+                          <button type="button" class="btn btn-danger btn-xs" title="Delete"> <i class="fa fa-trash-o"></i> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-1"> <img src="../../assets/images/avatar/avatar.png" class="img-circle img-responsive" alt="" /></div>
+                      <div class="col-xs-10 col-md-11">
+                        <div> <a href="http://bootsnipp.com/BhaumikPatel/snippets/4ldn">Cool Sign Up</a>
+                          <div class="mic-info"> By: <a href="#">Bhaumik Patel</a> on 11 Nov 2013 </div>
+                        </div>
+                        <div class="comment-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim </div>
+                        <div class="action">
+                          <button type="button" class="btn btn-primary btn-xs" title="Edit"> <i class="fa fa-pencil"></i> </button>
+                          <button type="button" class="btn btn-success btn-xs" title="Approved"> <i class="fa fa-check"></i> </button>
+                          <button type="button" class="btn btn-danger btn-xs" title="Delete"> <i class="fa fa-trash-o"></i> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-sm btn-block" role="button"><i class="fa fa-refresh"></i> More</a> </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <h2 class="page-header">Metro Flat UI</h2>
+            <div class="col-md-4">
+              <div class="widget widget-success jumbotron p-no">
+                <div class="jumbotron-photo"><img src="../../assets/images/carousel/10.jpg" class="img-responsive"></div>
+                <div class="jumbotron-contents p-lg">
+                  <h2>HTML Structure</h2>
+                  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-4">
+                  <section class="widget widget-warning bg-danger p-md">
+                    <div class="text-center mv-sm"> <a href="#" class="thumb-lg"> <img src="../../assets/images/avatar/avatar.png" class="img-circle img-rotate"> </a>
+                      <div>
+                        <div class="h3 mv-xs">John.Smith</div>
+                        <small class="text-muted"><i class="fa fa-map-marker"></i> London, UK</small> </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col-xs-6"> <a href="#"> <span class="mb-xs h4 block">245</span> <small class="text-muted">Followers</small> </a> </div>
+                      <div class="col-xs-6"> <a href="#"> <span class="mb-xs h4 block">55</span> <small class="text-muted">Following</small> </a> </div>
+                    </div>
+                    <div class="text-center"><a href="#" class="btn btn-round btn-warning btn-block"><i class="fa fa-eye"></i> Follow </a></div>
+                  </section>
+                  <div class="widget widget-danger shadow-box mt-md pb-md red-line">
+                    <div class="widget-header"><a href="#"> <img src="../../assets/images/post/post-cover.jpg" alt="Image 4" class="img-responsive"> </a></div>
+                    <div class="widget-body">
+                      <div class="label_left"> <a href="#"><span class="label-icon fa-stack fa-2x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-flag fa-stack-1x fa-inverse"></i> </span></a></div>
+                      <div class="label_center"> <a href="#"><span class="label-icon fa-stack fa-2x text-danger"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-user fa-stack-1x fa-inverse"></i> </span></a></div>
+                      <div class="label_right"> <a href="#"><span class="label-icon fa-stack fa-2x text-success"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-check fa-stack-1x fa-inverse"></i> </span></a></div>
+                      <h2>scarabaeidae</h2>
+                      <p>Rezonum &amp; Collections</p>
+                      <a class="btn btn-success btn-round"><i class="fa fa-shopping-cart fa-fw"></i>buy it now</a> </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="widget widget-dark shadow-box green-line"> <img src="../../assets/images/post/pic1.jpg" class="img-responsive">
+                    <div class="widget-body">
+                      <h3>ios games / slots</h3>
+                      <p>Written by <a href="#">eiusmod tempor incididunt</a> </p>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                      <div class="ui-group-buttons">
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <div class="or or-lg"></div>
+                        <button type="button" class="btn btn-success btn-lg">Large button</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <h2 class="page-header">Information Card</h2>
+            <div class="col-md-4">
+              <div class="info-card"> <img src="../../assets/images/slider/s1.jpg" style="width:100%"/>
+                <div class="info-card-details animate">
+                  <div class="info-card-header">
+                    <h1> Robert McIntosh </h1>
+                    <h3> aka Mouse0270 </h3>
+                  </div>
+                  <div class="info-card-detail"> 
+                    <!-- Description -->
+                    <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
+                    <div class="social"> <a href="https://www.facebook.com/rem.mcintosh" class="btn btn-info btn-circle social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="https://twitter.com/Mouse0270" class="btn btn-primary btn-circle social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="https://github.com/mouse0270" class="btn btn-success btn-circle social-icon github animate"><span class="fa fa-github-alt"></span></a> <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="btn btn-warning btn-circle social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> <a href="www.linkedin.com/in/remcintosh/" class="btn btn-danger btn-circle social-icon linkedin animate"><span class="fa fa-linkedin"></span></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card full"> <img src="../../assets/images/slider/s2.jpg" style="width:100%"/>
+                <div class="info-card-details animate">
+                  <div class="info-card-header">
+                    <h1> Caroline Samantha Henderson </h1>
+                    <h3> aka not a real person </h3>
+                  </div>
+                  <div class="info-card-detail"> 
+                    <!-- Description -->
+                    <p>People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing that you are the beholder. This empowers us to find beauty in places where others have not dared to look including inside ourselves.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget">
+                <div class="info-card hover-show"> <img src="../../assets/images/slider/s1.jpg" style="width:100%"/>
+                  <div class="info-card-details animate">
+                    <div class="info-card-header">
+                      <h1> Robert McIntosh </h1>
+                      <h3> aka Mouse0270 </h3>
+                    </div>
+                    <div class="info-card-detail"> 
+                      <!-- Description -->
+                      <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
+                      <div class="social"> <a href="https://www.facebook.com/rem.mcintosh" class="btn btn-info btn-circle social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="https://twitter.com/Mouse0270" class="btn btn-primary btn-circle social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="https://github.com/mouse0270" class="btn btn-success btn-circle social-icon github animate"><span class="fa fa-github-alt"></span></a> <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="btn btn-warning btn-circle social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> <a href="www.linkedin.com/in/remcintosh/" class="btn btn-danger btn-circle social-icon linkedin animate"><span class="fa fa-linkedin"></span></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-footer">
+                  <p class="meta"><span class="text-muted mr-md"><i class="fa fa-clock-o fa-fw"></i>2014-09-22</span><span class="text-muted mr-md"><i class="fa fa-eye fa-fw"></i>阅读(484)</span> <span class="text-muted mr-md"><a href="http://www.daqianduan.com/5609.html#comments"><i class="fa fa-comments-o fa-fw"></i>评论(2)</a></span></p>
+                  <hr>
+                  <div class="dropup prelative overshow">
+                    <div class="media dropdown-toggle" data-toggle="dropdown"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                      <div class="pull-right text-danger mt-sm"> <i class="fa fa-circle"></i> </div>
+                      <div class="media-body">
+                        <div><a href="#">Lauren Taylor</a></div>
+                        <small class="text-muted">click to Dropdown</small> </div>
+                    </div>
+                    <div class="dropdown-menu no-bgcolor no-border no-shadow" >
+                      <div class="poptip poptip-white">
+                        <div class="poptip-container">
+                          <div class="poptip-arrow poptip-arrow-bl full"> <em></em> <span></span> </div>
+                          <div class="poptip-content">
+                            <div class="media"> <a class="pull-left" href="#"> <img class="img-circle img-rotate thumb-lg" src="../../assets/images/avatar/avatar.png"> </a>
+                              <div class="media-body">
+                                <h4 class="media-heading">Hardik Sondagar <small> India</small></h4>
+                                <h5>Software Developer at <a href="http://gridle.in">Gridle.in</a></h5>
+                                <div class="social"> <a href="https://www.facebook.com/rem.mcintosh" class="btn btn-info btn-circle social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="https://twitter.com/Mouse0270" class="btn btn-primary btn-circle social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="https://github.com/mouse0270" class="btn btn-success btn-circle social-icon github animate"><span class="fa fa-github-alt"></span></a> <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="btn btn-warning btn-circle social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> <a href="www.linkedin.com/in/remcintosh/" class="btn btn-danger btn-circle social-icon linkedin animate"><span class="fa fa-linkedin"></span></a> </div>
+                                <hr class="inner-separator">
+                                <div class="action"><a class="btn btn-success btn-sm mr-md"><i class="fa fa-plus fa-fw"></i>加关注</a><a class="btn btn-primary btn-sm"><i class="fa fa-envelope-o fa-fw"></i>发私信</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/widget--> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget">
+                <div class="info-card hover-show"> <img src="../../assets/images/slider/s1.jpg" style="width:100%"/>
+                  <div class="info-card-details animate">
+                    <div class="info-card-header">
+                      <h1> Robert McIntosh </h1>
+                      <h3> aka Mouse0270 </h3>
+                    </div>
+                    <div class="info-card-detail"> 
+                      <!-- Description -->
+                      <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-footer">
+                  <p class="meta"><span class="text-muted mr-md"><i class="fa fa-clock-o fa-fw"></i>2014-09-22</span><span class="text-muted mr-md"><i class="fa fa-eye fa-fw"></i>阅读(484)</span> <span class="text-muted mr-md"><a href="http://www.daqianduan.com/5609.html#comments"><i class="fa fa-comments-o fa-fw"></i>评论(2)</a></span></p>
+                  <hr>
+                  <div class="media dropup prelative overshow"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                    <div class="pull-right text-danger mt-sm"> <i class="fa fa-circle"></i> </div>
+                    <div class="media-body dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                      <div><a href="#">Lauren Taylor</a></div>
+                      <small class="text-muted">Dropdown on Hover Plugin Demo</small> </div>
+                    <div class="dropdown-menu no-bgcolor no-border no-shadow" >
+                      <div class="poptip poptip-white">
+                        <div class="poptip-container">
+                          <div class="poptip-arrow poptip-arrow-bl full"> <em></em> <span></span> </div>
+                          <div class="poptip-content">
+                            <div class="media"> <a class="pull-left" href="#"> <img class="img-circle img-rotate thumb-lg" src="../../assets/images/avatar/avatar.png"> </a>
+                              <div class="media-body">
+                                <h4 class="media-heading">Hardik Sondagar <small> India</small></h4>
+                                <h5>Software Developer at <a href="http://gridle.in">Gridle.in</a></h5>
+                                <div class="social"> <a href="https://www.facebook.com/rem.mcintosh" class="btn btn-info btn-circle social-icon facebook animate"><span class="fa fa-facebook"></span></a> <a href="https://twitter.com/Mouse0270" class="btn btn-primary btn-circle social-icon twitter animate"><span class="fa fa-twitter"></span></a> <a href="https://github.com/mouse0270" class="btn btn-success btn-circle social-icon github animate"><span class="fa fa-github-alt"></span></a> <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="btn btn-warning btn-circle social-icon google-plus animate"><span class="fa fa-google-plus"></span></a> <a href="www.linkedin.com/in/remcintosh/" class="btn btn-danger btn-circle social-icon linkedin animate"><span class="fa fa-linkedin"></span></a> </div>
+                                <hr class="inner-separator">
+                                <div class="action"><a class="btn btn-success btn-sm mr-md"><i class="fa fa-plus fa-fw"></i>加关注</a><a class="btn btn-primary btn-sm"><i class="fa fa-envelope-o fa-fw"></i>发私信</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/widget--> 
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <h2 class="page-header">Blog Post List with photo</h2>
+          <div class="well">
+            <div class="media clearfix"> <a class="pull-left" href="#"> <img class="media-object thumb-xl" src="../../assets/images/slider/s1.jpg"> </a>
+              <div class="media-body">
+                <h4 class="media-heading">Receta 1</h4>
+                <p class="text-right">By Francisco</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                  Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                  dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                  Aliquam in felis sit amet augue.</p>
+                <ul class="list-inline list-unstyled">
+                  <li><span><i class="fa fa-calendar"></i> 2 days, 8 hours </span></li>
+                  <li>|</li>
+                  <span><i class="fa fa-comment"></i> 2 comments</span>
+                  <li>|</li>
+                  <li> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-o"></span> </li>
+                  <li>|</li>
+                  <li> 
+                    <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ --> 
+                    <span><i class="fa fa-facebook-square"></i></span> <span><i class="fa fa-twitter-square"></i></span> <span><i class="fa fa-google-plus-square"></i></span> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="well">
+            <div class="media clearfix"> <a class="pull-left" href="#"> <img class="media-object thumb-xl" src="../../assets/images/slider/s1.jpg"> </a>
+              <div class="media-body">
+                <h4 class="media-heading">Receta 2</h4>
+                <p class="text-right">By Anailuj</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                  Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                  dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                  Aliquam in felis sit amet augue.</p>
+                <ul class="list-inline list-unstyled">
+                  <li><span><i class="fa fa-calendar"></i> 2 days, 8 hours </span></li>
+                  <li>|</li>
+                  <span><i class="fa fa-comment"></i> 2 comments</span>
+                  <li>|</li>
+                  <li> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-o"></span> </li>
+                  <li>|</li>
+                  <li> 
+                    <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ --> 
+                    <span><i class="fa fa-facebook-square"></i></span> <span><i class="fa fa-twitter-square"></i></span> <span><i class="fa fa-google-plus-square"></i></span> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Vote for your favorite</h1>
+            <div class="list-group"> <a href="#" class="list-group-item active clearfix">
+              <div class="media col-md-2">
+                <figure class="pull-left"> <img class="media-object img-rounded img-responsive thumb-xl" src="../../assets/images/slider/s1.jpg" alt="placehold.it/350x250" > </figure>
+              </div>
+              <div class="col-md-7">
+                <h4 class="list-group-item-heading"> List group heading </h4>
+                <p class="list-group-item-text"> Qui diam libris ei, vidisse incorrupte at mel. His euismod salutandi dissentiunt eu. Habeo offendit ea mea. Nostro blandit sea ea, viris timeam molestiae an has. At nisl platonem eum. 
+                  Vel et nonumy gubergren, ad has tota facilis probatus. Ea legere legimus tibique cum, sale tantas vim ea, eu vivendo expetendis vim. Voluptua vituperatoribus et mel, ius no elitr deserunt mediocrem. Mea facilisi torquatos ad. </p>
+              </div>
+              <div class="col-md-3 text-center">
+                <h2> 14240 <small class="text-white"> votes </small></h2>
+                <button type="button" class="btn btn-default btn-lg btn-block"> Vote Now! </button>
+                <div class="stars"> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-o"></span> </div>
+                <p> Average 4.5 <small> / </small> 5 </p>
+              </div>
+              </a> <a href="#" class="list-group-item clearfix">
+              <div class="media col-md-2">
+                <figure class="pull-left"> <img class="media-object img-rounded img-responsive thumb-xl" src="../../assets/images/slider/s1.jpg" alt="placehold.it/350x250" > </figure>
+              </div>
+              <div class="col-md-7">
+                <h4 class="list-group-item-heading"> List group heading </h4>
+                <p class="list-group-item-text"> Eu eum corpora torquatos, ne postea constituto mea, quo tale lorem facer no. Ut sed odio appetere partiendo, quo meliore salutandi ex. Vix an sanctus vivendo, sed vocibus accumsan petentium ea. 
+                  Sed integre saperet at, no nec debet erant, quo dico incorrupte comprehensam ut. Et minimum consulatu ius, an dolores iracundia est, oportere vituperata interpretaris sea an. Sed id error quando indoctum, mel suas saperet at. </p>
+              </div>
+              <div class="col-md-3 text-center">
+                <h2> 12424 <small> votes </small></h2>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Vote Now!</button>
+                <div class="stars"> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-o"></span> </div>
+                <p> Average 3.9 <small> / </small> 5 </p>
+              </div>
+              </a>
+              </div>
+          </div>
+        </div>
+        <!--/container--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="user">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-sm-6">
+                  <section class="panel panel-default">
+                    <header class="panel-heading bg-light no-border">
+                      <div class="clearfix"> <a href="#" class="pull-left thumb-md avatar mr-sm"> <img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"> </a>
+                        <div>
+                          <div class="h3 mv-xs"> John.Smith <i class="fa fa-circle text-success pull-right text-xs mt-md"></i> </div>
+                          <small class="text-muted">Art director</small> </div>
+                      </div>
+                    </header>
+                    <div class="list-group no-radius alt"> <a class="list-group-item" href="#"> <span class="badge bg-success">25</span> <i class="fa fa-comment icon-muted"></i> Messages </a> <a class="list-group-item" href="#"> <span class="badge bg-info">16</span> <i class="fa fa-envelope icon-muted"></i> Inbox </a> <a class="list-group-item" href="#"> <span class="badge bg-light">5</span> <i class="fa fa-eye icon-muted"></i> Profile visits </a> </div>
+                  </section>
+                  <section class="panel panel-info">
+                    <div class="panel-body"> <a href="#" class="thumb pull-right ml-xs mt-xs avatar"> <img src="../../assets/images/avatar/avatar.png" alt="..." class="img-circle"> <i class="on md b-white bottom"></i> </a>
+                      <div> <a href="#" class="text-info">@Mike Mcalidek <i class="icon-twitter"></i></a> <small class="block text-muted">2,415 followers / 225 tweets</small> <a href="#" class="btn btn-xs btn-success m-t-xs">Follow</a> </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group"> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge badge-empty">201</span> <i class="fa fa-envelope icon-muted fa-fw"></i> Inbox </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">5021</span> <i class="fa fa-eye icon-muted fa-fw"></i> Profile visits </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-success">14</span> <i class="fa fa-phone icon-muted fa-fw"></i> Call </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-dark">20</span> <i class="fa fa-comments-o icon-muted fa-fw"></i> Messages </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-warning">14</span> <i class="fa fa-bookmark icon-muted fa-fw"></i> Bookmarks </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">30</span> <i class="fa fa-bell icon-muted fa-fw"></i> Notifications </a> <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-danger">10</span> <i class="fa fa-clock-o icon-muted fa-fw"></i> Watch </a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <section class="scrollable">
+                <div class="text-center mv-sm"> <a href="#" class="thumb-lg"> <img src="../../assets/images/avatar/avatar.png" class="img-circle"> </a>
+                  <div>
+                    <div class="h3 mv-xs">John.Smith</div>
+                    <small class="text-muted"><i class="fa fa-map-marker"></i> London, UK</small> </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-xs-6"> <a href="#"> <span class="mb-xs h4 block">245</span> <small class="text-muted">Followers</small> </a> </div>
+                  <div class="col-xs-6"> <a href="#"> <span class="mb-xs h4 block">55</span> <small class="text-muted">Following</small> </a> </div>
+                </div>
+                <div class="btn-group btn-group-justified mt-sm"> <a class="btn btn-round btn-success" data-toggle="button"> <span class="text"> <i class="fa fa-eye"></i> Follow </span> <span class="text-active"> <i class="fa fa-eye"></i> Following </span> </a> <a class="btn btn-round btn-dark"> <i class="fa fa-comment-o"></i> Chat </a> </div>
+              </section>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <section class="panel panel-default">
+                <header class="panel-heading">
+                  <div class="input-group text-sm">
+                    <input type="text" class="input-sm form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </header>
+                <ul class="list-group alt">
+                  <li class="list-group-item">
+                    <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                      <div class="pull-right text-success mt-sm"> <i class="fa fa-circle"></i> </div>
+                      <div class="media-body">
+                        <div><a href="#">Chris Fox</a></div>
+                        <small class="text-muted">about 2 minutes ago</small> </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                      <div class="pull-right text-muted mt-sm"> <i class="fa fa-circle"></i> </div>
+                      <div class="media-body">
+                        <div><a href="#">Amanda Conlan</a></div>
+                        <small class="text-muted">about 2 hours ago</small> </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                      <div class="pull-right text-warning mt-sm"> <i class="fa fa-circle"></i> </div>
+                      <div class="media-body">
+                        <div><a href="#">Dan Doorack</a></div>
+                        <small class="text-muted">3 days ago</small> </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="John said" class="img-circle"></span>
+                      <div class="pull-right text-danger mt-sm"> <i class="fa fa-circle"></i> </div>
+                      <div class="media-body">
+                        <div><a href="#">Lauren Taylor</a></div>
+                        <small class="text-muted">about 2 minutes ago</small> </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <h2>User Detail</h2>
+                <div class="media"> <a class="pull-left" href="#"> <img class="img-circle img-rotate" src="../../assets/images/avatar/avatar.png" style="width: 100px;height:100px;"> </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Hardik Sondagar <small> India</small></h4>
+                    <h5>Software Developer at <a href="http://gridle.in">Gridle.in</a></h5>
+                    <hr style="margin:8px auto">
+                    <span class="label label-default">HTML5/CSS3</span> <span class="label label-default">jQuery</span> <span class="label label-info">CakePHP</span> <span class="label label-default">Android</span> </div>
+                </div>
+              </div>
+              <div class="row mt-md">
+                <div class="well well-sm">
+                  <div class="media"> <a class="thumbnail pull-left" href="#"> <img class="media-object thumb-md" src="../../assets/images/avatar/avatar.png"> </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">First Last Name</h4>
+                      <p><span class="label label-info">888 photos</span> <span class="label label-warning">150 followers</span></p>
+                      <p> <a href="#" class="btn btn-xs btn-default"><span class="fa fa-comment"></span> Message</a> <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-heart"></span> Favorite</a> <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-ban-circle"></span> Unfollow</a> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/container-->
+        <div class="container">
+          <h3>User Profile in Modal window</h3>
+          <div class="well">
+            <center>
+              <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="../../assets/images/avatar/avatar.png" name="aboutme" width="140" height="140" class="img-circle"></a>
+              <h3>Joe Sixpack</h3>
+              <em>click my face for more</em>
+            </center>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                  <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="../../assets/images/avatar/avatar.png" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+                    <span><strong>Skills: </strong></span> <span class="label label-warning">HTML5/CSS</span> <span class="label label-info">Adobe CS 5.5</span> <span class="label label-info">Microsoft Office</span> <span class="label label-success">Windows XP, Vista, 7</span>
+                  </center>
+                  <hr>
+                  <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                  </center>
+                  <p><a title="Facebook" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a> <a title="Twitter" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a> <a title="Google+" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x"></i></span></a> <a title="Linkedin" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a> <a title="Reddit" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-reddit fa-stack-1x"></i></span></a> <a title="WordPress" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-wordpress fa-stack-1x"></i></span></a> <a title="Digg" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-digg fa-stack-1x"></i></span></a> <a title="Stumbleupon" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-stumbleupon fa-stack-1x"></i></span></a><a title="E-mail" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x"></i></span></a> <a title="Print" href=""><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-print fa-stack-1x"></i></span></a></p>
+                </div>
+                <div class="modal-footer">
+                  <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <h3>User Profile Widget</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="well well-sm">
+                <div class="row">
+                  <div class="col-sm-6 col-md-4"> <img src="../../assets/images/slider/s2.jpg" alt="" class="img-rounded img-responsive" /> </div>
+                  <div class="col-sm-6 col-md-8">
+                    <h4> Bhaumik Patel</h4>
+                    <small><cite title="San Francisco, USA">San Francisco, USA <i class="fa fa-map-marker fa-fw text-muted"> </i></cite></small>
+                    <p> <i class="fa fa-envelope fa-fw text-muted"></i>email@example.com <br />
+                      <i class="fa fa-globe fa-fw text-muted"></i><a href="http://www.jquery2dotnet.com">www.jquery2dotnet.com</a> <br />
+                      <i class="fa fa-gift fa-fw text-muted"></i>June 02, 1988</p>
+                    <!-- Split button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary"> Social</button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span><span class="sr-only">Social</span> </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://plus.google.com/+Jquery2dotnet/posts">Google +</a></li>
+                        <li><a href="https://www.facebook.com/jquery2dotnet">Facebook</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Github</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container-->
+        <div class="container">
+          <h3>Flat user profile UI</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="well profile clearfix">
+                <div class="col-sm-12">
+                  <div class="col-xs-12 col-sm-8">
+                    <h2>Nicole Pearson</h2>
+                    <p><strong>About: </strong> Web Designer / UI. </p>
+                    <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+                    <p><strong>Skills: </strong> <span class="label label-info">html5</span> <span class="label label-primary">css3</span> <span class="label label-success">jquery</span> <span class="label label-danger">bootstrap3</span> </p>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 text-center">
+                    <figure> <img src="../../assets/images/avatar/avatar.png" alt="" class="img-circle img-responsive thumb-lg">
+                      <figcaption class="ratings">
+                        <p>Ratings <a href="#"> <span class="fa fa-star"></span> </a> <a href="#"> <span class="fa fa-star"></span> </a> <a href="#"> <span class="fa fa-star"></span> </a> <a href="#"> <span class="fa fa-star"></span> </a> <a href="#"> <span class="fa fa-star-o"></span> </a> </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <hr class="inner-separator">
+                <div class="col-xs-12">
+                  <div class="col-xs-12 col-sm-4 emphasis text-center">
+                    <h2><strong> 20,7K </strong></h2>
+                    <p><small>Followers</small></p>
+                    <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 emphasis text-center">
+                    <h2><strong>245</strong></h2>
+                    <p><small>Following</small></p>
+                    <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 emphasis text-center">
+                    <h2><strong>43</strong></h2>
+                    <p><small>Snippets</small></p>
+                    <div class="btn-group dropup">
+                      <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                      <ul class="dropdown-menu text-left" role="menu">
+                        <li><a href="#"><span class="fa fa-envelope fa-fw"></span> Send an email </a></li>
+                        <li><a href="#"><span class="fa fa-list fa-fw"></span> Add or remove from a list </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-warning fa-fw"></span>Report this user for spam</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/container--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="chat">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6"> 
+              <!-- chat -->
+              <section class="panel panel-default">
+                <header class="panel-heading">Chat</header>
+                <section class="chat-list panel-body">
+                  <article id="chat-id-1" class="chat-item left"> <a href="#" class="pull-left thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" alt="..."></a>
+                    <section class="chat-body">
+                      <div class="panel b-light text-sm mb-none">
+                        <div class="panel-body"> <span class="arrow left"></span>
+                          <p class="mb-none">Hi John, What's up...</p>
+                        </div>
+                      </div>
+                      <small class="text-muted"><i class="fa fa-ok text-success"></i> 2 minutes ago</small> </section>
+                  </article>
+                  <article id="chat-id-2" class="chat-item right"> <a href="#" class="pull-right thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" class="img-circle" alt="..."></a>
+                    <section class="chat-body">
+                      <div class="panel bg-light text-sm mb-none">
+                        <div class="panel-body"> <span class="arrow right"></span>
+                          <p class="mb-none">Lorem ipsum dolor sit amet, conse <br>
+                            adipiscing eli...<br>
+                            :)</p>
+                        </div>
+                      </div>
+                      <small class="text-muted">1 minutes ago</small> </section>
+                  </article>
+                </section>
+                <footer class="panel-footer"> 
+                  <!-- chat form -->
+                  <article class="chat-item" id="chat-form"> <a class="pull-left thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" class="img-circle" alt="..."></a>
+                    <section class="chat-body">
+                      <form action="index.html" class="mb-none">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Say something">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">SEND</button>
+                          </span> </div>
+                      </form>
+                    </section>
+                  </article>
+                </footer>
+              </section>
+              <!-- /chat -->
+              <section class="panel panel-default">
+                <header class="panel-heading"> <span class="label bg-dark">15</span> Inbox </header>
+                <section class="panel-body slim-scroll" data-height="230px" data-size="10px">
+                  <article class="media"> <span class="pull-left thumb-sm"><img src="../../assets/images/avatar/avatar.png" alt="..."></span>
+                    <div class="media-body block">
+                      <div class="pull-right media-xs text-center text-muted"> <strong class="h4">12:18</strong><br>
+                        <small class="label bg-light">pm</small> </div>
+                      <a href="#" class="h4">Bootstrap 3 released</a> <small class="block"><a href="#" class="">John Smith</a> <span class="label label-success">Circle</span></small> <small class="block m-t-sm">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</small> </div>
+                  </article>
+                  <div class="line pull-in"></div>
+                  <article class="media"> <span class="pull-left thumb-sm"><i class="fa fa-file-o fa-3x icon-muted"></i></span>
+                    <div class="media-body block">
+                      <div class="pull-right media-xs text-center text-muted"> <strong class="h4">17</strong><br>
+                        <small class="label bg-light">feb</small> </div>
+                      <a href="#" class="h4">Bootstrap documents</a> <small class="block"><a href="#" class="">John Smith</a> <span class="label label-info">Friends</span></small> <small class="block m-t-sm">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</small> </div>
+                  </article>
+                  <div class="line pull-in"></div>
+                  <article class="media">
+                    <div class="media-body block">
+                      <div class="pull-right media-xs text-center text-muted"> <strong class="h4">09</strong><br>
+                        <small class="label bg-light">jan</small> </div>
+                      <a href="#" class="h4 text-success">Mobile first html/css framework</a> <small class="block m-t-sm">Bootstrap, Ratchet</small> </div>
+                  </article>
+                </section>
+              </section>
+            </div>
+            <div class="col-lg-6"> 
+              <!-- .comment-list -->
+              <section class="comment-list block">
+                <article id="comment-id-1" class="comment-item"> <a class="pull-left thumb-sm avatar"> <img src="../../assets/images/avatar/avatar.png" class="img-circle" alt="..."> </a> <span class="arrow left"></span>
+                  <section class="comment-body panel panel-default">
+                    <header class="panel-heading bg-white"> <a href="#">John smith</a>
+                      <label class="label bg-info m-l-xs">Editor</label>
+                      <span class="text-muted m-l-sm pull-right"> <i class="fa fa-clock-o"></i> Just now </span> </header>
+                    <div class="panel-body">
+                      <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</div>
+                      <div class="comment-action m-t-sm"> <a href="#" data-toggle="class" class="btn btn-default btn-xs active"> <i class="fa fa-star-o text-muted text"></i> <i class="fa fa-star text-danger text-active"></i> Like </a> <a href="#comment-form" class="btn btn-default btn-xs"> <i class="fa fa-mail-reply text-muted"></i> Reply </a> </div>
+                    </div>
+                  </section>
+                </article>
+                <!-- .comment-reply -->
+                <article id="comment-id-2" class="comment-item comment-reply"> <a class="pull-left thumb-sm avatar"> <img src="../../assets/images/avatar/avatar.png" alt="..."> </a> <span class="arrow left"></span>
+                  <section class="comment-body panel panel-default text-sm">
+                    <div class="panel-body"> <span class="text-muted m-l-sm pull-right"> <i class="fa fa-clock-o"></i> 10m ago </span> <a href="#">Mika Sam</a>
+                      <label class="label bg-dark m-l-xs">Admin</label>
+                      Report this comment is helpful </div>
+                  </section>
+                </article>
+                <!-- / .comment-reply -->
+                <article id="comment-id-3" class="comment-item"> <a class="pull-left thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" alt="..."></a> <span class="arrow left"></span>
+                  <section class="comment-body panel panel-default">
+                    <header class="panel-heading"> <a href="#">By me</a>
+                      <label class="label bg-success m-l-xs">User</label>
+                      <span class="text-muted m-l-sm pull-right"> <i class="fa fa-clock-o"></i> 1h ago </span> </header>
+                    <div class="panel-body">
+                      <div>This comment was posted by you.</div>
+                      <div class="comment-action m-t-sm"> <a href="#comment-id-3" data-dismiss="alert" class="btn btn-default btn-xs"> <i class="fa fa-trash-o text-muted"></i> Remove </a> </div>
+                    </div>
+                  </section>
+                </article>
+                <article id="comment-id-4" class="comment-item"> <a class="pull-left thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" alt="..."></a> <span class="arrow left"></span>
+                  <section class="comment-body panel panel-default">
+                    <header class="panel-heading"> <a href="#">Peter</a>
+                      <label class="label bg-primary m-l-xs">Vip</label>
+                      <span class="text-muted m-l-sm pull-right"> <i class="fa fa-clock-o"></i> 2hs ago </span> </header>
+                    <div class="panel-body">
+                      <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+                      <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit...</div>
+                      <div class="comment-action m-t-sm"> <a href="#" data-toggle="class" class="btn btn-default btn-xs"> <i class="fa fa-star-o text-muted text"></i> <i class="fa fa-star text-danger text-active"></i> Like </a> <a href="#comment-form" class="btn btn-default btn-xs"><i class="fa fa-mail-reply text-muted"></i> Reply</a> </div>
+                    </div>
+                  </section>
+                </article>
+                <!-- comment form -->
+                <article class="comment-item media" id="comment-form"> <a class="pull-left thumb-sm avatar"><img src="../../assets/images/avatar/avatar.png" alt="..."></a>
+                  <section class="media-body block">
+                    <form action="index.html" class="mb-none">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Input your comment here">
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">POST</button>
+                        </span> </div>
+                    </form>
+                  </section>
+                </article>
+              </section>
+              <!-- / .comment-list --> 
+            </div>
+          </div>
+        </div>
+        <!--/container--> 
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="commerce">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-lg-12">Shopping Cart Panel BS 3</h2>
+            <div class="col-lg-12">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <div class="panel-title">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
+                      </div>
+                      <div class="col-xs-6">
+                        <button type="button" class="btn btn-primary btn-sm btn-block"> <i class="fa fa-share fa-fw"></i> Continue shopping </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-xs-2"><img data-src="holder.js/200x200" class="img-responsive" alt="" /> </div>
+                    <div class="col-xs-4">
+                      <h4 class="product-name"><strong>Product name</strong></h4>
+                      <h4><small>Product description</small></h4>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="col-xs-6 text-right">
+                        <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                      </div>
+                      <div class="col-xs-4">
+                        <input type="text" class="form-control input-sm" value="1">
+                      </div>
+                      <div class="col-xs-2">
+                        <button type="button" class="btn btn-link btn-xs"> <i class="fa fa-trash-o"></i> </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-xs-2"><img data-src="holder.js/200x200" class="img-responsive" alt="" /> </div>
+                    <div class="col-xs-4">
+                      <h4 class="product-name"><strong>Product name</strong></h4>
+                      <h4><small>Product description</small></h4>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="col-xs-6 text-right">
+                        <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                      </div>
+                      <div class="col-xs-4">
+                        <input type="text" class="form-control input-sm" value="1">
+                      </div>
+                      <div class="col-xs-2">
+                        <button type="button" class="btn btn-link btn-xs"> <i class="fa fa-trash-o"></i> </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="text-center">
+                      <div class="col-xs-9">
+                        <h6 class="text-right">Added items?</h6>
+                      </div>
+                      <div class="col-xs-3">
+                        <button type="button" class="btn btn-default btn-sm btn-block"> Update cart </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="row text-center">
+                    <div class="col-xs-9">
+                      <h4 class="text-right">Total <strong>$50.00</strong></h4>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-success btn-block"> Checkout </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/row--> 
+        </div>
+        <!--/container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Payment Receipt BS3</h2>
+              <div class="well">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                    <strong>Elf Cafe</strong> <br>
+                    2135 Sunset Blvd <br>
+                    Los Angeles, CA 90026 <br>
+                    <abbr title="Phone">P:</abbr> (213) 484-6829
+                    </address>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p> <em>Date: 1st November, 2013</em> </p>
+                    <p> <em>Receipt #: 34522677W</em> </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="text-center">
+                    <h1>Receipt</h1>
+                  </div>
+                  </span>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>#</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="col-md-9"><em>Baked Rodopa Sheep Feta</em>
+                          </h4></td>
+                        <td class="col-md-1" style="text-align: center"> 2 </td>
+                        <td class="col-md-1 text-center">$13</td>
+                        <td class="col-md-1 text-center">$26</td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-9"><em>Lebanese Cabbage Salad</em>
+                          </h4></td>
+                        <td class="col-md-1" style="text-align: center"> 1 </td>
+                        <td class="col-md-1 text-center">$8</td>
+                        <td class="col-md-1 text-center">$8</td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-9"><em>Baked Tart with Thyme and Garlic</em>
+                          </h4></td>
+                        <td class="col-md-1" style="text-align: center"> 3 </td>
+                        <td class="col-md-1 text-center">$16</td>
+                        <td class="col-md-1 text-center">$48</td>
+                      </tr>
+                      <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td class="text-right"><p> <strong>Subtotal: </strong> </p>
+                          <p> <strong>Tax: </strong> </p></td>
+                        <td class="text-center"><p> <strong>$6.94</strong> </p>
+                          <p> <strong>$6.94</strong> </p></td>
+                      </tr>
+                      <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td class="text-right"><h4><strong>Total: </strong></h4></td>
+                        <td class="text-center text-danger"><h4><strong>$31.53</strong></h4></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn btn-success btn-lg btn-block btn-round"> Pay Now   <i class="fa fa-chevron-right"></i> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/tab-pane--> 
+      <!--tab-pane-->
+      <div class="tab-pane" id="Other"> </div>
+      <!--/tab-pane--> 
+    </div>
+  </div>
+</section>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+<script src="../../lib/bootstrap/extend/hover-dropdown/bootstrap-hover-dropdown.min.js"></script> 
+<!--图像占位符--> 
+<script src="../../lib/modules/holder/holder.min.js"></script>
+</body>
+</html>

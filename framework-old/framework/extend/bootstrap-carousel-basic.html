@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="zh-CN"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="zh-CN">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>bootstrap-extend-carousel-basic</title>
+<meta name="author" content="晓旭" />
+<meta name="author url" content="http://www.iwebued.com" />
+<!-- Bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../../lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<link href="../docs.css" rel="stylesheet">
+<!--<script type='text/javascript' src='http://libs.baidu.com/jquery/2.0.3/jquery.js'></script>-->
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="../../lib/js/jquery-1.9.1.min.js"><\/script>'); 
+</script>
+<script type="text/javascript" src="../../lib/js/modernizr.js"></script>
+<!--[if lt IE 9]><script src="../../lib/bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../lib/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../lib/bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="../../lib/js/html5shiv.min.js"></script>
+	<script src="../../lib/js/respond.min.js"></script>
+<![endif]-->
+<!-- fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-inverse navbar-static-top bs-nav mb-no" id="header" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="../index.html" class="navbar-brand">前端框架</a> </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ui Kit<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../ui/ui-grid.html">Grid</a></li>
+            <li><a href="../ui/ui-basic.html">Basic style</a></li>
+            <li><a href="../ui/ui-alerts.html">Alerts</a></li>
+            <li><a href="../ui/ui-animations.html">Animations</a></li>
+            <li><a href="../ui/ui-blockquotes.html">Blockquotes</a></li>
+            <li><a href="../ui/ui-box-offers.html">Box offers</a></li>
+            <li><a href="../ui/ui-buttons.html">Buttons</a></li>
+            <li><a href="../ui/ui-callouts.html">Callouts</a></li>
+            <li><a href="../ui/ui-colors.html">Colors</a></li>            
+            <li><a href="../ui/ui-components.html">Components</a></li>
+            <li><a href="../ui/ui-forms.html">Forms</a></li>
+            <li><a href="../ui/ui-hint-css.html">Hint.css</a></li>
+            <li><a href="../ui/ui-icons.html">Icons图标</a></li>
+            <li><a href="../ui/ui-lists.html">Lists列表</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-menu-default.html">导航</a></li>
+                <li><a href="../ui/ui-menu-navbar.html">导航条</a></li>
+                <li><a href="../ui/ui-menu-theme.html">导航theme</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-pagination.html">Paginations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Panel面板</a>
+              <ul class="dropdown-menu">
+                <li><a href="../ui/ui-panel.html">Panel basic</a></li>
+                <li><a href="../ui/ui-panel-promo.html">panel promo</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../ui/ui-poptip.html">Poptip</a></li>
+            <li><a href="../ui/ui-pricing-tables.html">Pricing Tables</a></li>
+            <li><a href="../ui/ui-responsive-table.html">Responsive Table</a></li>
+            <li><a href="../ui/ui-text.html">文字Text</a></li>
+            <li><a href="../ui/ui-thumbnail.html">Thumbnails缩略图</a></li>
+            <li><a href="../ui/ui-tiles-progress-bar.html">Tiles progressBar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Timeline</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../ui/ui-timeline-basic.html">Timeline Basic</a></li>
+                <li> <a href="../ui/ui-timeline-easy.html">Timeline Easy</a></li>
+                <li><a href="../ui/ui-timeline-responsive.html">Timeline Responsive</a></li>
+                <li><a href="../ui/ui-timeline-responsive-with-images.html">Timeline Responsive With Images</a></li>
+                <li><a href="../ui/ui-timeline-single-column.html">Timeline Single Column</a></li>
+              </ul>
+            </li>
+            <li><a href="../ui/ui-typography.html">Typography排版</a></li>
+            <li><a href="../ui/ui-widgets.html">Widgets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 拓展组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../extend/bootstrap-backto-top.html">返回顶部</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Carousel轮播</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-carousel-basic.html">carousel-basic</a></li>
+                <li><a href="../extend/bootstrap-carousel-flat.html">carousel-flat</a></li>
+                <li><a href="../extend/bootstrap-carousel-gallery.html">carousel-gallery</a></li>
+                <li><a href="../extend/bootstrap-carousel-metro.html">carousel-metro</a></li>
+                <li><a href="../extend/bootstrap-carousel-news.html">carousel-news</a></li>
+                <li><a href="../extend/bootstrap-carousel-side.html">carousel-side</a></li>
+                <li><a href="../extend/bootstrap-carousel-slide.html">carousel-slide</a></li>
+                <li><a href="../extend/bootstrap-carousel-timer.html">carousel-timer</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Datatables</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-datatables-four-buttons.html">pagination_four_buttons</a></li>
+                <li><a href="../extend/bootstrap-datatables-full.html">pagination_full</a></li>
+                <li><a href="../extend/bootstrap-datatables-normal.html">pagination_normal</a></li>
+                <li><a href="../extend/bootstrap-datatables-two-buttons.html">pagination_two_buttons</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-datetimepicker.html">Bootstrap Datetimepicker</a></li>
+            <li><a href="../extend/bootstrap-editable.html">Bootstrap editable</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Bootstrap Forms</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-form-validation.html">form-validation</a></li>
+                <li><a href="../extend/bootstrap-form-wizard.html">form-wizard</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-google-plus-styled-post.html">google-plus-styled-post</a></li>
+            <li><a href="../extend/bootstrap-magnify.html">Bootstrap Magnify放大镜</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">弹窗</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-modal.html">Bootstrap modal模态框</a></li>
+                <li><a href="../extend/bootstrap-dialog.html">对话框</a></li>
+                <li><a href="../extend/bootstrap-notify.html">notify</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-maxlength.html">Bootstrap Maxlength</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">pagescroll</a>
+              <ul class="dropdown-menu">
+                <li> <a href="../extend/bootstrap-nav-dot-pagenav.html">dot-pagenav-basic</a></li>
+                <li><a href="../extend/bootstrap-nav-dot-pagenav-full.html">dot-pagenav-full</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">导航菜单</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-nav-fixed-side.html">nav-fixed-side</a></li>
+                <li><a href="../extend/bootstrap-nav-fullpage-dropdown.html">Wap端全屏下拉导航</a></li>
+                <li><a href="../extend/bootstrap-nav-hover-dropdown.html">nav-hover-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-lateral-slide-menu.html">侧栏展开导航</a></li>
+                <li><a href="../extend/bootstrap-nav-mega-menu.html">nav-mega-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-minimal-menu.html">minimal-menu</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-dropdown.html">multilevel-dropdown</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-css.html">multilevel-navbar-css</a></li>
+                <li><a href="../extend/bootstrap-nav-multilevel-navbar-js.html">multilevel-navbar-js</a></li>
+                <li><a href="../extend/bootstrap-nav-sideMenu.html">sideMenu</a></li>
+                <li><a href="../extend/bootstrap-nav-svbtl-menu.html">Svbtle Inspired Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-vertical-affix-menu.html">Vertical Affix Menu</a></li>
+                <li><a href="../extend/bootstrap-nav-with-search.html">Nav With Search</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-pageAlerts.html">pageAlerts</a></li>
+            <li><a href="../extend/bootstrap-panel.html">panel</a></li>
+            <li><a href="../extend/bootstrap-popovers.html">Bootstrap Popovers</a></li>
+            <li><a href="../extend/bootstrap-progressbar.html">Bootstrap progressbar</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">tabs标签页</a>
+              <ul class="dropdown-menu">
+                <li><a href="../extend/bootstrap-tabs.html">bootstrap-tabs</a></li>
+                <li><a href="../extend/bootstrap-response-tabs.html">response tabs</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../extend/bootstrap-responsive-breadcrumbs.html">响应式面包屑导航</a></li>
+            <li><a href="../extend/bootstrap-sweetalert.html">sweetalert</a></li>
+            <li><a href="../extend/bootstrap-tokenfield.html">bootstrap-tokenfield</a></li>
+            <li><a href="../extend/bootstrap-tour.html">Bootstrap Tour引导</a></li>
+            <li><a href="../extend/bootstrap-tree.html">tree</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web组件<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Backstretch背景</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-backstretch-basic.html">Backstretch basic</a></li>
+                <li><a href="../modules/modules-backstretch-click.html">Backstretch click</a></li>
+                <li><a href="../modules/modules-backstretch-slideshow.html">Backstretch slideshow</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="javascript:;">Header头部</a>
+              <ul class="dropdown-menu">
+                <li><a href="../modules/modules-AnimatedHeader.html">AnimatedHeader</a></li>
+                <li><a href="../modules/modules-headhesive.html">headhesive.js</a></li>
+                <li><a href="../modules/modules-headroom.html">Headroom.js</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="../modules/modules-gifplayer.html">gif图片播放器</a></li>
+            <li><a href="../modules/modules-github-repo.html">引用Github资源</a></li>
+            <li><a href="../modules/modules-highcharts.html">Highcharts图表</a></li>
+            <li><a href="../modules/modules-holder.html">图像占位符</a></li>
+            <li><a href="../modules/modules-prettify.html">Prettify代码高亮</a></li>
+            <li><a href="../modules/modules-slidernav.html">sliderNav字母导航</a></li>
+            <li><a href="../modules/modules-TabStylesInspiration.html">TabStylesInspiration</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../page/page-dashboard.html">dashboard</a></li>
+            <li><a href="../page/page-login.html">login</a></li>
+            <li><a href="../page/page-register.html">register</a></li>
+            <li><a href="../page/page-404.html">404</a></li>
+            <li><a href="../page/page-profile.html">Profile</a></li>
+            <li><a href="../page/page-wapLayout.html">wapLayout</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">资源<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../resource/res-front-end.html">前端资源</a></li>
+            <li><a href="../resource/res-responsive.html">响应式资源</a></li>
+            <li><a href="../resource/res-wap.html">移动端资源</a></li>
+            <li><a href="../resource/res-navigate.html">网址导航</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../docs/bootstrap/index.htm" target="_blank">Bootstrap Docs</a> </li>
+            <li><a href="../../docs/fontawesome/index.htm" target="_blank">Font Awesome Docs</a> </li>
+            <li><a href="../../docs/owl.carousel/index.html" target="_blank">owl.carousel</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.iwebued.com/" target="_blank">易唯设计</a></li>
+        <li><a href="http://blog.iwebued.com/" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /header --> 
+<!-- main -->
+<div class="bs-header bg bb mb-lg" id="content">
+  <div class="container">
+    <h1 class="hl-xxl">carousel-basic</h1>
+  </div>
+</div>
+<div class="container">
+  <h3 class="page-header">testimonial carousel</h3>
+  <div class="row">
+    <div class="col-md-12" data-wow-delay="0.2s">
+      <div class="carousel slide testimonial-carousel" data-ride="carousel" id="testimonial-carousel"> 
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#testimonial-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="../../assets/images/avatar/avatar.png" alt=""> </li>
+          <li data-target="#testimonial-carousel" data-slide-to="1"><img class="img-responsive" src="../../assets/images/avatar/avatar2.png" alt=""> </li>
+          <li data-target="#testimonial-carousel" data-slide-to="2"><img class="img-responsive" src="../../assets/images/avatar/avatar3.png" alt=""> </li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner text-center"> 
+          
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev --> 
+        <a data-slide="prev" href="#testimonial-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#testimonial-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="page-header">Fade Quote Carousel</h2>
+  <section id="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="quote text-center text-muted"><i class="fa fa-quote-left fa-4x"></i></div>
+          <div class="carousel slide fade-quote-carousel" id="fade-quote-carousel" data-ride="carousel" data-interval="3000"> 
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                </blockquote>
+                <div class="profile-circle text-center"><img src="../../assets/images/avatar/avatar.png" class="img-circle"></div>
+              </div>
+              <div class="item">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                </blockquote>
+                <div class="profile-circle text-center"><img src="../../assets/images/avatar/avatar.png" class="img-circle"></div>
+              </div>
+              <div class="item">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                </blockquote>
+                <div class="profile-circle text-center"><img src="../../assets/images/avatar/avatar.png" class="img-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="carousel-reviews broun-block">
+  <div class="container">
+    <h2 class="text-white">Carousel Reviews</h2>
+    <div class="row">
+      <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-md-4 col-sm-6">
+              <div class="block-text prelative zmin"> <a title="" href="#">Hercules</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar1.png" class="img-circle thumb-md"> <a title="" href="#">Anna</a> <i>from Glasgow, Scotland</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">The Purge: Anarchy</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these." </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar2.png" class="img-circle thumb-md"> <a title="" href="#">Ella Mentree</a> <i>United States</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span> </span></div>
+                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar3.png" class="img-circle thumb-md"> <a title="" href="#">Rannynm</a> <i>Indonesia</i> </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-md-4 col-sm-6">
+              <div class="block-text prelative zmin"> <a title="" href="#">Hercules</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar1.png" class="img-circle thumb-md"> <a title="" href="#">Anna</a> <i>from Glasgow, Scotland</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">The Purge: Anarchy</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these." </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar2.png" class="img-circle thumb-md"> <a title="" href="#">Ella Mentree</a> <i>United States</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span> </span></div>
+                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar3.png" class="img-circle thumb-md"> <a title="" href="#">Rannynm</a> <i>Indonesia</i> </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-md-4 col-sm-6">
+              <div class="block-text prelative zmin"> <a title="" href="#">Hercules</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar1.png" class="img-circle thumb-md"> <a title="" href="#">Anna</a> <i>from Glasgow, Scotland</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">The Purge: Anarchy</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span> </span></div>
+                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these." </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar2.png" class="img-circle thumb-md"> <a title="" href="#">Ella Mentree</a> <i>United States</i> </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text prelative zmin"> <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="pv-md">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span> </span></div>
+                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+                <div class="poptip-arrow poptip-arrow-bc zmin"> <em></em> <span></span></div>
+              </div>
+              <div class="person-text prelative"> <img src="../../assets/images/avatar/avatar3.png" class="img-circle thumb-md"> <a title="" href="#">Rannynm</a> <i>Indonesia</i> </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev"> <span class="fa fa-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next"> <span class="fa fa-chevron-right"></span> </a> </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+      <h2>Responsive Quote Carousel BS3</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide quote-carousel" data-ride="carousel" id="quote-carousel"> 
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner"> 
+          
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center"> <img class="img-circle" src="../../assets/images/avatar/avatar.png" style="width: 100px;height:100px;"> </div>
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center"> <img class="img-circle" src="../../assets/images/avatar/avatar.png" style="width: 100px;height:100px;"> </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center"> <img class="img-circle" src="../../assets/images/avatar/avatar.png" style="width: 100px;height:100px;"> </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                  <small>Someone famous</small> </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev --> 
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="page-header">Simple Carousel</h2>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="Carousel" class="carousel slide simple-carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#Carousel" data-slide-to="1"></li>
+          <li data-target="#Carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+            </div>
+            <!--.row--> 
+          </div>
+          <!--.item-->
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+            </div>
+            <!--.row--> 
+          </div>
+          <!--.item-->
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+              <div class="col-md-3"><a href="#" class="thumbnail"><img src="../../assets/images/carousel/10.jpg" alt="Image" style="max-width:100%;" class="img-responsive"></a></div>
+            </div>
+            <!--.row--> 
+          </div>
+          <!--.item--> 
+          
+        </div>
+        <!--.carousel-inner--> 
+        <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a> <a data-slide="next" href="#Carousel" class="right carousel-control">›</a> </div>
+      <!--.Carousel--> 
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="row">
+      <div class="col-md-9">
+        <h3> Carousel Product Cart Slider</h3>
+      </div>
+      <div class="col-md-3"> 
+        <!-- Controls -->
+        <div class="controls pull-right hidden-xs"> <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic" data-slide="prev"></a> <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic" data-slide="next"></a> </div>
+      </div>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel"> 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Sample Product</h5>
+                      <h5 class="cost-text-color"> $199.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> <i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="fa fa-star"></i> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Product Example</h5>
+                      <h5 class="cost-text-color"> $249.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Next Sample Product</h5>
+                      <h5 class="cost-text-color"> $149.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> <i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="fa fa-star"></i> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Product with Variants</h5>
+                      <h5 class="cost-text-color"> $199.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> <i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="fa fa-star"></i> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Grouped Product</h5>
+                      <h5 class="cost-text-color"> $249.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="col-item thumbnail">
+                <div class="photo"> <img src="../../assets/images/carousel/9.jpg" class="img-responsive" alt="a" /> </div>
+                <div class="info">
+                  <div class="row">
+                    <div class="cost col-md-6">
+                      <h5> Product with Variants</h5>
+                      <h5 class="cost-text-color"> $149.99</h5>
+                    </div>
+                    <div class="rating hidden-sm col-md-6"> <i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="cost-text-color fa fa-star"></i><i class="cost-text-color fa fa-star"> </i><i class="fa fa-star"></i> </div>
+                  </div>
+                  <div class="separator clear-left">
+                    <p class="btn-add"> <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                    <p class="btn-details"> <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="adv-section bg-green-500">
+  <div class="container">
+    <h1 class="text-center text-white text-uppercase mb-lg">why chose us</h1>
+    <div class="row">
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">01</h1>
+                  <hr>
+                  <p class="text-left text-md">100%  Factory Founded In 2004</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">ASTA Remanufacture laser printer consumables, cover HP/CANON/SAMSUNG/XEROX/LEXMARK/BROTHER/DELL and so on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">02</h1>
+                  <hr>
+                  <p class="text-left text-md">More Than 7years OEM·Service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">we would do better than our competitors and bring our clients more profit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">03</h1>
+                  <hr>
+                  <p class="text-left text-md">Strict Quality Control</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">Four times quality control: Incoming Material, Production online, final Quality,Outgoing quality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/row-->
+    <div class="row">
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">04</h1>
+                  <hr>
+                  <p class="text-left text-md">Professional R & D Team</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">We have professional quality control and R&D department to strictly manufacture each product, Ensure each product is tested before down off production line.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">05</h1>
+                  <hr>
+                  <p class="text-left text-md">Quality Assurance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">We guarantee that our defective rate of black is within 1%,for the common models,within 0.5%,and within 3% for the color toner cartridge.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mv-lg">
+        <div class="widget bg-white">
+          <div class="carousel tiles-carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="../../assets/images/bg/slide1.jpg" class="img-responsive">
+                <div class="carousel-caption bg-orange-500">
+                  <h1 class="fa-5x">06</h1>
+                  <hr>
+                  <p class="text-left text-md">Perfect production line</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-carousel-footer p-md">
+            <p class="text-break">150,000 pcs per month.We now have 10 production lines,and hve flexible production line to make quick action to satisfy the urgent customized requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/row--> 
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <h1 class="page-header">tiles-carousel</h1>
+    <div class="col-md-4">
+      <div class="jumbotron p-no">
+        <div class="carousel tiles-carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active"> <img src="../../assets/images/slider/slider1.jpg" class="img-responsive">
+              <div class="carousel-caption bg-green-500">
+                <h1>01</h1>
+                <hr>
+                <p>Cras justo odio, dapibus ac facilisis in.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron-contents p-lg">
+          <h2>HTML Structure</h2>
+          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <h2>CSS Structure</h2>
+          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /main --> 
+<!-- footer -->
+<footer class="bs-footer bg bt pv-md mt-xxl" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links list-inline text-center">
+      <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=841995980&site=qq&menu=yes"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-info"></i>
+          <i class="so-qq fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href="http://t.qq.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="so-tengxunweibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>     
+      <li><a target="_blank" href="http://weibo.com/iwebued/"><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-danger"></i>
+          <i class="so-weibo fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="so-alipay fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      <li><a target="_blank" href=""><span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x text-success"></i>
+          <i class="so-taobao fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+    </ul>
+    <p class="text-center mt-lg">© 2015 版权所有 iwebued.com</p>
+  </div>
+  <a id="backto-top" href="#" class="btn btn-primary backto-top" role="button" title="返回顶部">
+<i class="fa fa-angle-up"></i></a>
+</footer>
+<!-- /footer --> 
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap/extend/app.js"></script>
+</body>
+</html>
