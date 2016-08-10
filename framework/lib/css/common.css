@@ -383,15 +383,17 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 /*----------------------------------------------------
  * position
  *---------------------------------------------------*/
-.fixed { /*position: fixed*/ }
-.abs { position: absolute }
-.relative { position: relative }
-.static { position: static }
+.ps-fixed { position: fixed }
+.ps-abs { position: absolute }
+.ps-relative { position: relative }
+.ps-static { position: static }
 /*------------------- fixed --------------------*/
 .fixed-left { position: fixed; left: 0; top: 0; bottom: 0; }
 .fixed-right { position: fixed; right: 0; top: 0; bottom: 0; }
 .fixed-top { position: fixed; left: 0; right: 0; top: 0; }
 .fixed-bottom { position: fixed; left: 0; right: 0; bottom: 0; }
+/*绝对居中*/
+.fixed-center { position: fixed; left: 0;right:0; top: 50%; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -o-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%);text-align: center; }
 /*------------------- absolute -----------------------------*/
 .abs-left { position: absolute; left: 0; top: 0; bottom: 0; width: 100% }
 .abs-right { position: absolute; right: 0; top: 0; bottom: 0; width: 100% }
