@@ -7,10 +7,8 @@
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>AdminLTE 2 | Badge Cards</title>
+  <title>AdminLTE 2 | Alerts</title>
   <link data-include="../common/head.html">
-  <!-- component style -->
-  <link rel="stylesheet" href="../../lib/css/cards.css">
 </head>
 
 <body class="hold-transition skin-blue-light sidebar-mini fixed">
@@ -298,105 +296,214 @@
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
-        <h1>Badge Cards</h1>
+        <h1>Alerts</h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li><a href="#">Cards</a></li>
-          <li class="active">Badge Cards</li>
+          <li><a href="#">Components</a></li>
+          <li class="active">Alerts</li>
         </ol>
       </section>
       <!-- Main content -->
       <section class="content">
-        <!-- main -->
-        <div class="block">
-          <h2 class="page-header">Little offers with colors and radius</h2>
-          <div class="row">
-            <div class="col-xs-3">
-              <div class="offer offer-default">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> A default offer </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="offer offer-success">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> A success offer </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="offer offer-primary">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> A primary-radius </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="offer offer-info">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> An info offer </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
-              </div>
-            </div>
+        <div class="box box-solid">
+          <div class="box-header with-border">
+            <i class="fa fa-text-width"></i>
+            <h3 class="box-title">巨幕</h3>
           </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <div class="offer offer-warning">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> A warning offer </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="offer offer-danger">
-                <div class="shape shape-tr">
-                  <div class="shape-text"> top </div>
-                </div>
-                <div class="offer-content">
-                  <h3 class="lead"> A danger-radius </h3>
-                  <p> And a little description.
-                    <br> and so one </p>
-                </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <p>如果需要让巨幕组件的宽度与浏览器宽度一致并且没有圆角，请把此组件放在所有 <code>.container</code> 元素的外面，并在组件内部添加一个 <code>.container</code> 元素。</p>
+            <div class="jumbotron">
+              <div class="container">
+                <h1>巨幕</h1>
+                <p class="lead">这是一个轻量、灵活的组件，它能延伸至整个浏览器视口来展示网站上的关键内容。</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="block">
-          <h2 class="page-header">Bootstrap Badger</h2>
-          <div class="badger-left" data-badger="Badger default (left)"> Block with badger 1 </div>
-          <div class="badger-right badger-info" data-badger="Badger info (right)"> Block with badger 2 </div>
-          <div class="badger-left badger-danger" data-badger="Badger danger (left)"> Block with badger 3 </div>
-          <div class="badger-right badger-warning" data-badger="Badger warning (right)"> Block with badger 4 </div>
-          <div class="badger-left badger-success" data-badger="Badger success (left)"> Block with badger 5 </div>
-          <div class="badger-right badger-inverse" data-badger="Badger inverse (right)"> Block with badger 6 </div>
+          <h1 class="page-header">default style</h1>
+          <div class="alert well" role="alert"> <strong>Alert Well!</strong> This alert needs your attention, but it's not super important. </div>
+          <div class="alert alert-info" role="alert"> <strong>Info Message!</strong> This alert needs your attention, but it's not super important. </div>
+          <div class="alert alert-success" role="alert"> <strong>Success Message!</strong> You successfully read this important alert message. </div>
+          <div class="alert alert-warning" role="alert"> <strong>Warning Message!</strong> Better check yourself, you're not looking too good. </div>
+          <div class="alert alert-danger" role="alert"> <strong>Danger Message!</strong> Change a few things up and try submitting again. </div>
         </div>
-        <!-- /main -->
+        <div class="block">
+          <h1 class="page-header">可关闭的警告框</h1>
+          <p>务必给 <code>&lt;button&gt;</code> 元素添加 <code>data-dismiss="alert"</code> 属性。</p>
+          <div class="bs-example">
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
+          </div>
+        </div>
+        <div class="block">
+          <h1 class="page-header">警告框中的链接</h1>
+          <p>用 <code>.alert-link</code> 工具类，可以为链接设置与当前警告框相符的颜色。</p>
+          <div class="bs-example">
+            <div class="alert alert-info" role="alert"> <strong>Info Message!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important. </div>
+            <div class="alert alert-success" role="alert"> <strong>Success Message!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
+            <div class="alert alert-warning" role="alert"> <strong>Warning Message!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>. </div>
+            <div class="alert alert-danger" role="alert"> <strong>Danger Message!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again. </div>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="col-md-12 page-header">Alerts Messages</h1>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-info">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-info-circle"></i> <strong>Info Message</strong>
+              <hr class="inner-separator">
+              <p> This alert needs your attention, but it's not super important.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-check"></i> <strong>Success Message</strong>
+              <hr class="inner-separator">
+              <p> You successfully read this important alert message.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-warning">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-dot-circle-o"></i> <strong>Warning Message</strong>
+              <hr class="inner-separator">
+              <p> Best check yo self, you're not looking too good.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-danger">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-hand-o-right"></i> <strong>Danger Message</strong>
+              <hr class="inner-separator">
+              <p> Change a few things up and try submitting again.</p>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <h3 class="page-header">Cool Alerts Alternate Color</h3>
+          <div class="alert alert-info dark alert-dismissable"> <i class="fa fa-certificate fa-fw"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+            <strong>Info Message!</strong> Custom <a href="http://www.jquery2dotnet.com" target="_blank" class="alert-link">alert</a> message box with cool color</div>
+          <div class="alert alert-success dark alert-dismissable"> <i class="fa fa-certificate fa-fw"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+            <strong>Success Message!</strong> Custom <a href="http://www.jquery2dotnet.com" target="_blank" class="alert-link">alert</a> message box with cool color</div>
+          <div class="alert alert-warning dark alert-dismissable"> <i class="fa fa-certificate fa-fw"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+            <strong>Warning Message!</strong> Custom <a href="http://www.jquery2dotnet.com" target="_blank" class="alert-link">alert</a> message box with cool color</div>
+          <div class="alert alert-danger dark alert-dismissable"> <i class="fa fa-certificate fa-fw"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+            <strong>Danger Message!</strong> Custom <a href="http://www.jquery2dotnet.com" target="_blank" class="alert-link">alert</a> message box with cool color</div>
+        </div>
+        <div class="block">
+          <h3 class="page-header">Block Style Alerts</h3>
+          <p> <code>Alerts can handle more than 1 line of text!</code> </p>
+          <div class="alert well alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Alert Well!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-default" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Info Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-info" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Success Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-success" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Warning Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-warning" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Danger Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-danger" href="#">Okay</a> </p>
+          </div>
+        </div>
+        <div class="block mt-5x">
+          <h2>callout</h2>
+          <h3>Default Style</h3>
+          <div class="callout callout-info">
+            <h4>callout callout-info</h4>
+            <p>callout callout-info</p>
+          </div>
+          <div class="callout callout-primary">
+            <h4>callout callout-primary</h4>
+            <p>callout callout-primary</p>
+          </div>
+          <div class="callout callout-success">
+            <h4>callout callout-success</h4>
+            <p>callout callout-success</p>
+          </div>
+          <div class="callout callout-warning">
+            <h4>callout callout-warning</h4>
+            <p>callout callout-warning</p>
+          </div>
+          <div class="callout callout-danger">
+            <h4>callout callout-danger</h4>
+            <p>callout callout-danger</p>
+          </div>
+          <h3>Dark color Style</h3>
+          <div class="callout callout-info dark">
+            <h4>callout callout-info</h4>
+            <p>callout callout-info</p>
+          </div>
+          <div class="callout callout-primary dark">
+            <h4>callout callout-primary</h4>
+            <p>callout callout-primary</p>
+          </div>
+          <div class="callout callout-success dark">
+            <h4>callout callout-success</h4>
+            <p>callout callout-success</p>
+          </div>
+          <div class="callout callout-warning dark">
+            <h4>callout callout-warning</h4>
+            <p>callout callout-warning</p>
+          </div>
+          <div class="callout callout-danger dark">
+            <h4>callout callout-danger</h4>
+            <p>callout callout-danger</p>
+          </div>
+          <h3>No Background Style</h3>
+          <div class="callout callout-info no-bg">
+            <h4>callout callout-info</h4>
+            <p>callout callout-info</p>
+          </div>
+          <div class="callout callout-primary no-bg">
+            <h4>callout callout-primary</h4>
+            <p>callout callout-primary</p>
+          </div>
+          <div class="callout callout-success no-bg">
+            <h4>callout callout-success</h4>
+            <p>callout callout-success</p>
+          </div>
+          <div class="callout callout-warning no-bg">
+            <h4>callout callout-warning</h4>
+            <p>callout callout-warning</p>
+          </div>
+          <div class="callout callout-danger no-bg">
+            <h4>callout callout-danger</h4>
+            <p>callout callout-danger</p>
+          </div>
+        </div>
       </section>
       <!-- /.content -->
     </div>
