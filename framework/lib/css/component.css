@@ -585,3 +585,54 @@ p.text-quote:after { font-family: Arial, Helvetica, sans-serif; content: '\201d'
 .alert-danger.dark, .alert-error.dark { border-color: #d73925;background-color: #dd4b39 !important;color: #fff; }
 .alert-warning.dark { border-color: #e08e0b;background-color: #f39c12 !important;color: #fff; }
 .alert-info.dark { border-color: #00acd6;background-color: #00c0ef !important;color: #fff; }
+/*
+ * Component: anli
+ * ----------------
+ */
+.anli { }
+.anli blockquote { border-left: 0px solid #EEEEEE; margin: 0; padding: 0; }
+.anli blockquote p { background-color: #E1E5EA; font-size: 15px; line-height: 1.35; margin: 0; padding: 33px 22px 28px 26px; position: relative; text-indent: 37px; }
+.anli blockquote p i { color: #A0ABB0; font-size: 28px; left: -7px; line-height: 1.2; overflow: hidden; position: absolute; top: 23px; }
+.anli blockquote p:after { border-color: #C2CCD4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); border-style: solid; border-width: 34px 34px 0 0; bottom: -34px; content: ""; display: block; position: absolute; right: 0; text-indent: 0; }
+.anli blockquote cite { color: #777777; display: block; font-size: 12px; font-style: normal; margin-top: 32px; padding-left: 26px; text-transform: uppercase; }
+.anli blockquote cite strong { color: #1A1A1A; display: block; font-size: 16px; text-transform: none; }
+.anli blockquote cite span { display: block; }
+/*
+ * Component: comments-number
+ * ----------------
+ */
+.comments-number { position: absolute; right: 15px; top: 20px; padding: 2px 12px; background: #EA4C89; color: #fff }
+.comments-number:after { content: ""; position: absolute; left: 50%; margin-left: -2px; top: 15px; border: 8px dashed transparent; border-left: 8px solid #EA4C89; border-right-width: 0 }
+.comments-number:hover { background: #474e5d; color: #fff; }
+.comments-number:hover:after { border-left-color: #474e5d }
+/*
+ * Component: cat
+ * ----------------
+ */
+.cat{
+	color: #fff;
+	background-color: #45BCF9;
+	padding: 3px 6px;
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	margin-right: 6px;
+}
+.cat:hover{
+	opacity: 0.85;
+	filter:alpha(opacity=85);
+}
+.cat i{
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	right: -4px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-left: 4px solid #45BCF9;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
