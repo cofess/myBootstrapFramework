@@ -70,13 +70,13 @@
 .ui-group-buttons .btn:last-child { border-top-right-radius: .25em; border-bottom-right-radius: .25em; padding-left: 15px }
 /*.ui-group-buttons end here*/
 /*Button components*/
-.text-active, .active > .text, .active > .auto .text , .collapsed > .text, .collapsed > .auto .text { display: none !important; }
+.text-active, .active > .text, .active > .auto .text, .collapsed > .text, .collapsed > .auto .text { display: none !important; }
 .active > .text-active, .active > .auto .text-active, .collapsed > .text-active, .collapsed > .auto .text-active { display: inline-block !important; }
 /*Button components end here*/
 /*squared square buttons*/
 .btn-squared { border-radius: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 .btn-squared.btn-primary { background: none; border: 3px solid #428bca; color: #428bca; }
-.btn-squared.btn-primary:hover, .btn-squared.btn-primary:active { color: #FFF; background: #428bca;  border-color: #428bca;  }
+.btn-squared.btn-primary:hover, .btn-squared.btn-primary:active { color: #FFF; background: #428bca; border-color: #428bca; }
 .btn-squared.btn-success { background: none; border: 3px solid #5cb85c; color: #5cb85c; }
 .btn-squared.btn-success:hover, .btn-squared.btn-success:active { color: #FFF; background: #47a447; }
 .btn-squared.btn-info { background: none; border: 3px solid #5bc0de; color: #5bc0de; }

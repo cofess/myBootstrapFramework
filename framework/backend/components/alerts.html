@@ -305,23 +305,6 @@
       </section>
       <!-- Main content -->
       <section class="content">
-        <div class="box box-solid">
-          <div class="box-header with-border">
-            <i class="fa fa-text-width"></i>
-            <h3 class="box-title">巨幕</h3>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <p>如果需要让巨幕组件的宽度与浏览器宽度一致并且没有圆角，请把此组件放在所有 <code>.container</code> 元素的外面，并在组件内部添加一个 <code>.container</code> 元素。</p>
-            <div class="jumbotron">
-              <div class="container">
-                <h1>巨幕</h1>
-                <p class="lead">这是一个轻量、灵活的组件，它能延伸至整个浏览器视口来展示网站上的关键内容。</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="block">
           <h1 class="page-header">default style</h1>
           <div class="alert well" role="alert"> <strong>Alert Well!</strong> This alert needs your attention, but it's not super important. </div>
@@ -329,6 +312,22 @@
           <div class="alert alert-success" role="alert"> <strong>Success Message!</strong> You successfully read this important alert message. </div>
           <div class="alert alert-warning" role="alert"> <strong>Warning Message!</strong> Better check yourself, you're not looking too good. </div>
           <div class="alert alert-danger" role="alert"> <strong>Danger Message!</strong> Change a few things up and try submitting again. </div>
+          <div class="alert alert-info alert-dismissible dark" role="alert"> 
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <strong>Info Message!</strong> This alert needs your attention, but it's not super important. 
+          </div>
+          <div class="alert alert-success alert-dismissible dark" role="alert"> 
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <strong>Success Message!</strong> You successfully read this important alert message. 
+          </div>
+          <div class="alert alert-warning alert-dismissible dark" role="alert"> 
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <strong>Warning Message!</strong> Better check yourself, you're not looking too good. 
+          </div>
+          <div class="alert alert-danger alert-dismissible dark" role="alert"> 
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <strong>Danger Message!</strong> Change a few things up and try submitting again. 
+          </div>
         </div>
         <div class="block">
           <h1 class="page-header">可关闭的警告框</h1>
@@ -347,6 +346,10 @@
             <div class="alert alert-success" role="alert"> <strong>Success Message!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
             <div class="alert alert-warning" role="alert"> <strong>Warning Message!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>. </div>
             <div class="alert alert-danger" role="alert"> <strong>Danger Message!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again. </div>
+            <div class="alert alert-info dark" role="alert"> <strong>Info Message!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important. </div>
+            <div class="alert alert-success dark" role="alert"> <strong>Success Message!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
+            <div class="alert alert-warning dark" role="alert"> <strong>Warning Message!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>. </div>
+            <div class="alert alert-danger dark" role="alert"> <strong>Danger Message!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again. </div>
           </div>
         </div>
         <div class="row">
@@ -383,6 +386,38 @@
               <p> Change a few things up and try submitting again.</p>
             </div>
           </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-info dark">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-info-circle"></i> <strong>Info Message</strong>
+              <hr class="inner-separator">
+              <p> This alert needs your attention, but it's not super important.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-success dark">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-check"></i> <strong>Success Message</strong>
+              <hr class="inner-separator">
+              <p> You successfully read this important alert message.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-warning dark">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-dot-circle-o"></i> <strong>Warning Message</strong>
+              <hr class="inner-separator">
+              <p> Best check yo self, you're not looking too good.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="alert alert-danger dark">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> ×</button>
+              <i class="fa fa-hand-o-right"></i> <strong>Danger Message</strong>
+              <hr class="inner-separator">
+              <p> Change a few things up and try submitting again.</p>
+            </div>
+          </div>          
         </div>
         <div class="block">
           <h3 class="page-header">Cool Alerts Alternate Color</h3>
@@ -437,6 +472,34 @@
             <br>
             <p> <a class="btn btn-danger" href="#">Okay</a> </p>
           </div>
+          <div class="alert alert-info alert-dismissable dark">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Info Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-info" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-success alert-dismissable dark">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Success Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-success" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-warning alert-dismissable dark">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Warning Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-warning" href="#">Okay</a> </p>
+          </div>
+          <div class="alert alert-danger alert-dismissable dark">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Danger Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in eveniet sapiente error fuga tenetur ex ea dignissimos voluptas ab molestiae eos totam quo dolorem maxime illo neque quia itaque.</p>
+            <br>
+            <p> <a class="btn btn-danger" href="#">Okay</a> </p>
+          </div>          
         </div>
         <div class="block mt-5x">
           <h2>callout</h2>

@@ -26,7 +26,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1;
 }
-.icon-left {margin: 7px 14px 0 0 !important;float: left !important;}
+.icon-left { margin: 7px 14px 0 0 !important; float: left !important; }
 /*pull*/
 .pull-in { margin-left: 15px; margin-right: 15px; }
 .pull-out { margin: -10px -15px; }
@@ -72,7 +72,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .bg-no { background: none!important; }
 .bg-alpha { background-color: transparent!important }
 .bg-inverse, .bg-inverse a { color: #fff; }
-.btn.bg-inverse:hover, .btn.bg-inverse:focus, .btn.bg-inverse.focus{color:rgba(255,255,255,0.8)}
+.btn.bg-inverse:hover, .btn.bg-inverse:focus, .btn.bg-inverse.focus { color: rgba(255,255,255,0.8) }
 .bg { background-color: #f6f6f6!important }
 .bg-main { background-color: #00AA88!important }
 .bg-sub { background-color: #00AAEE!important }
@@ -393,7 +393,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .fixed-top { position: fixed; left: 0; right: 0; top: 0; }
 .fixed-bottom { position: fixed; left: 0; right: 0; bottom: 0; }
 /*绝对居中*/
-.fixed-center { position: fixed; left: 0;right:0; top: 50%; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -o-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%);text-align: center; }
+.fixed-center { position: fixed; left: 0; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -o-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); text-align: center; }
 /*------------------- absolute -----------------------------*/
 .abs-left { position: absolute; left: 0; top: 0; bottom: 0; width: 100% }
 .abs-right { position: absolute; right: 0; top: 0; bottom: 0; width: 100% }
@@ -415,7 +415,7 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
  * width and height
  *---------------------------------------------------*/
 .w-auto { width: auto!important }
-.w-full, .w-full img { width: 100%!important;max-width: 100%!important }
+.w-full, .w-full img { width: 100%!important; max-width: 100%!important }
 /*min width*/
 .mwidth-6x { min-width: 576px; display: inline-block }
 .mwidth-5x { min-width: 400px; display: inline-block }
@@ -471,11 +471,11 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .text-indent, .text-indent p, .text-indent div { text-indent: 2em;/*缩进*/ }
 /*text wrap*/
 .text-nowrap { /*display: block;*/ max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; -moz-binding: url('ellipsis.xml'); /*兼容火狐浏览器*/ }
-.text-nowrap-1x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; -webkit-box-flex: 1;line-height: 24px;height: 24px;word-break: break-all !important; word-wrap: break-word !important; }
-.text-nowrap-2x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 24px;height: 48px;word-break: break-all !important; word-wrap: break-word !important;}
-.text-nowrap-3x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-height: 24px;height: 72px;word-break: break-all !important; word-wrap: break-word !important;}
-.text-nowrap-4x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-height: 24px;height: 96px;word-break: break-all !important; word-wrap: break-word !important;}
-.text-nowrap-5x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-height: 24px;height: 120px;word-break: break-all !important; word-wrap: break-word !important;}
+.text-nowrap-1x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; -webkit-box-flex: 1; line-height: 24px; height: 24px; word-break: break-all !important; word-wrap: break-word !important; }
+.text-nowrap-2x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 24px; height: 48px; word-break: break-all !important; word-wrap: break-word !important; }
+.text-nowrap-3x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-height: 24px; height: 72px; word-break: break-all !important; word-wrap: break-word !important; }
+.text-nowrap-4x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-height: 24px; height: 96px; word-break: break-all !important; word-wrap: break-word !important; }
+.text-nowrap-5x { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-height: 24px; height: 120px; word-break: break-all !important; word-wrap: break-word !important; }
 /*----------------------------------------------------
  * thumb
  *---------------------------------------------------*/
@@ -489,4 +489,3 @@ img, canvas, iframe, video, svg { max-width: 100%; height: auto }
 .thumb-6x { width: 320px; display: inline-block; }
 .thumb-wrapper { padding: 2px; border: 1px solid #dbe2e7; }
 .thumb img, .thumb-0x img, .thumb-1x img, .thumb-2x img, .thumb-3x img, .thumb-4x img, .thumb-5x img, .thumb-6x img, .thumb-btn img { height: auto; max-width: 100%; vertical-align: middle; }
-
