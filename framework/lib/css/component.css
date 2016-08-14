@@ -579,12 +579,12 @@ p.text-quote:after { font-family: Arial, Helvetica, sans-serif; content: '\201d'
 .alert .icon { margin-right: 10px; }
 .alert .close { color: #000; opacity: 0.2; filter: alpha(opacity=20); }
 .alert .close:hover { opacity: 0.5; filter: alpha(opacity=50); }
-.alert .alert-link:hover,.alert .alert-link:focus{text-decoration: underline;}
+.alert .alert-link:hover, .alert .alert-link:focus { text-decoration: underline; }
 .alert.dark a { color: #fff; }
-.alert-success.dark { border-color: #008d4c;background-color: #00a65a !important;color: #fff; }
-.alert-danger.dark, .alert-error.dark { border-color: #d73925;background-color: #dd4b39 !important;color: #fff; }
-.alert-warning.dark { border-color: #e08e0b;background-color: #f39c12 !important;color: #fff; }
-.alert-info.dark { border-color: #00acd6;background-color: #00c0ef !important;color: #fff; }
+.alert-success.dark { border-color: #008d4c; background-color: #00a65a !important; color: #fff; }
+.alert-danger.dark, .alert-error.dark { border-color: #d73925; background-color: #dd4b39 !important; color: #fff; }
+.alert-warning.dark { border-color: #e08e0b; background-color: #f39c12 !important; color: #fff; }
+.alert-info.dark { border-color: #00acd6; background-color: #00c0ef !important; color: #fff; }
 /*
  * Component: anli
  * ----------------
@@ -598,6 +598,29 @@ p.text-quote:after { font-family: Arial, Helvetica, sans-serif; content: '\201d'
 .anli blockquote cite strong { color: #1A1A1A; display: block; font-size: 16px; text-transform: none; }
 .anli blockquote cite span { display: block; }
 /*
+ * Component: label_icon
+ * ----------------
+ */
+.label_center, .label_right, .label_left { position: relative; background: transparent; text-align: center; }
+.label_center .label-icon { position: absolute; left: 50%; top: -30px; margin-left: -14px; display: inline-block; }
+.label_center .label-icon.fa-lg { left: 50%; top: -35px; margin-left: -18px; }
+.label_center .label-icon.fa-2x { left: 50%; top: -45px; margin-left: -28px; }
+.label_center .label-icon.fa-3x { left: 50%; top: -55px; margin-left: -42px; }
+.label_center .label-icon.fa-4x { left: 50%; top: -65px; margin-left: -56px; }
+.label_center .label-icon.fa-5x { left: 50%; top: -75px; margin-left: -70px; }
+.label_right .label-icon { position: absolute; right: 10px; top: -30px; display: inline-block; }
+.label_right .label-icon.fa-lg { top: -35px; }
+.label_right .label-icon.fa-2x { top: -45px; }
+.label_right .label-icon.fa-3x { top: -55px; }
+.label_right .label-icon.fa-4x { top: -65px; }
+.label_right .label-icon.fa-5x { top: -75px; }
+.label_left .label-icon { position: absolute; left: 10px; top: -30px; display: inline-block; }
+.label_left .label-icon.fa-lg { top: -35px; }
+.label_left .label-icon.fa-2x { top: -45px; }
+.label_left .label-icon.fa-3x { top: -55px; }
+.label_left .label-icon.fa-4x { top: -65px; }
+.label_left .label-icon.fa-5x { top: -75px; }
+/*
  * Component: comments-number
  * ----------------
  */
@@ -609,30 +632,6 @@ p.text-quote:after { font-family: Arial, Helvetica, sans-serif; content: '\201d'
  * Component: cat
  * ----------------
  */
-.cat{
-	color: #fff;
-	background-color: #45BCF9;
-	padding: 3px 6px;
-	font-size: 12px;
-	display: inline-block;
-	position: relative;
-	top: -2px;
-	margin-right: 6px;
-}
-.cat:hover{
-	opacity: 0.85;
-	filter:alpha(opacity=85);
-}
-.cat i{
-	position: absolute;
-	top: 50%;
-	margin-top: -4px;
-	right: -4px;
-	display: inline-block;
-	width: 0;
-	height: 0;
-	vertical-align: middle;
-	border-left: 4px solid #45BCF9;
-	border-top: 4px solid transparent;
-	border-bottom: 4px solid transparent;
-}
+.cat { color: #fff; background-color: #45BCF9; padding: 3px 6px; font-size: 12px; display: inline-block; position: relative; top: -2px; margin-right: 6px; }
+.cat:hover { opacity: 0.85; filter: alpha(opacity=85); }
+.cat i { position: absolute; top: 50%; margin-top: -4px; right: -4px; display: inline-block; width: 0; height: 0; vertical-align: middle; border-left: 4px solid #45BCF9; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
