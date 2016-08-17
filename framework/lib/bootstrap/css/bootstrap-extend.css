@@ -1,3 +1,6 @@
+/* PAGINATION */
+.pagination > li > a { background: #fafafa; color: #666; }
+.pagination.pagination-flat > li > a { border-radius: 0 !important; }
 /*pagination*/
 .pagination-basic{border-radius: 0!important}
 .pagination-basic > li:first-child > a, .pagination-basic > li:first-child > span{border-radius: 0!important}
