@@ -70,7 +70,7 @@ _border-color: tomato; _filter: chroma(color=tomato); /* http://blog.sina.com.cn
 /* ie9 filter */
 :root .poptip-shadow { FILTER: none\9; }
 /*no bgcolor*/
-.poptip .poptip-container.no-bgcolor { color: #563d7c;background-color:#fff!important; }
+.poptip .poptip-container.no-bgcolor { color: #563d7c; background-color: #fff!important; }
 .poptip .poptip-container.no-bgcolor .poptip-arrow-lc span, .poptip .poptip-container.no-bgcolor .poptip-arrow-lt.full span, .poptip .poptip-container.no-bgcolor .poptip-arrow-lb.full span { border-right-color: #fff; }
 .poptip .poptip-container.no-bgcolor .poptip-arrow-rc span, .poptip .poptip-container.no-bgcolor .poptip-arrow-rt.full span, .poptip .poptip-container.no-bgcolor .poptip-arrow-rb.full span { border-left-color: #fff; }
 .poptip .poptip-container.no-bgcolor .poptip-arrow-tc span, .poptip .poptip-container.no-bgcolor .poptip-arrow-tl.full span, .poptip .poptip-container.no-bgcolor .poptip-arrow-tr.full span { border-bottom-color: #fff; }

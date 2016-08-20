@@ -9,7 +9,7 @@ hr.inner-separator { clear: both; margin-top: 10px; margin-bottom: 10px; border:
 .divider .dividerBox .fa { font-size: 13px; color: #D5D5D5; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .colored-line { height: 1px; width: 70px; margin: auto; margin-top: 10px; margin-bottom: 10px; }
 /* prodigystudio - dropcaps component */
-.dropcap::first-letter { float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;text-align: center; font-size: 36px; font-size: 3.6rem;padding: 10px 25px;margin: 5px 20px 5px 0; }
+.dropcap::first-letter { float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; text-align: center; font-size: 36px; font-size: 3.6rem; padding: 10px 25px; margin: 5px 20px 5px 0; }
 .dropcap.circle::first-letter { background: #fcfcfc; border: 1px solid #ddd; -webkit-border-radius: 500px; -moz-border-radius: 500px; -ms-border-radius: 500px; -o-border-radius: 500px; border-radius: 500px; }
 .dropcap.square::first-letter { background: #fcfcfc; border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 .dropcap.has-bg::first-letter { background: #E74C3C; color: #fff; border: none!important }
