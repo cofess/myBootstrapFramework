@@ -1,14 +1,17 @@
 /*
- * Component: Button
- * -----------------
- */
-.btn { border-radius: 3px; -webkit-box-shadow: none; box-shadow: none; border: 1px solid transparent; }
-.btn.uppercase { text-transform: uppercase; }
-.btn.btn-flat { border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-width: 1px; }
+* Button:Base Style
+*
+*/
+.btn { border-radius: 3px; -webkit-box-shadow: none; box-shadow: none; border: 1px solid transparent;-webkit-transition-property: all; transition-property: all; -webkit-transition-duration: .3s; transition-duration: .3s; }
 .btn:active { -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 .btn:focus { outline: none; }
-.btn.btn-file { position: relative; overflow: hidden; }
-.btn.btn-file > input[type='file'] { position: absolute; top: 0; right: 0; min-width: 100%; min-height: 100%; font-size: 100px; text-align: right; opacity: 0; filter: alpha(opacity=0); outline: none; background: white; cursor: inherit; display: block; }
+.btn[class*='bg-']:hover { -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2); box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2); }
+.btn.btn-flat { border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-width: 1px; }
+.btn-link { -webkit-box-shadow: none; box-shadow: none; }
+/*
+* Button:Base Colors
+*
+*/
 .btn-default { background-color: #f4f4f4; color: #444; border-color: #ddd; }
 .btn-default:hover, .btn-default:active, .btn-default.hover { background-color: #e7e7e7; }
 .btn-primary { background-color: #3c8dbc; border-color: #367fa9; }
@@ -21,15 +24,132 @@
 .btn-danger:hover, .btn-danger:active, .btn-danger.hover { background-color: #d73925; }
 .btn-warning { background-color: #f39c12; border-color: #e08e0b; }
 .btn-warning:hover, .btn-warning:active, .btn-warning.hover { background-color: #e08e0b; }
-.btn-outline { border: 1px solid #fff; background: transparent; color: #fff; }
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active { color: rgba(255, 255, 255, 0.7); border-color: rgba(255, 255, 255, 0.7); }
-.btn-link { -webkit-box-shadow: none; box-shadow: none; }
-.btn[class*='bg-']:hover { -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2); box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2); }
+.btn-dark { color: #fff !important; background-color: #5a6a7a; border-color: #5a6a7a; }
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open .dropdown-toggle.btn-dark { color: #fff !important; background-color: #4f5d6b; border-color: #495663; }
+.btn-dark:active, .btn-dark.active, .open .dropdown-toggle.btn-dark { background-image: none; }
+.btn-dark.disabled, .btn-dark.disabled:hover, .btn-dark.disabled:focus, .btn-dark.disabled:active, .btn-dark.disabled.active, .btn-dark[disabled], .btn-dark[disabled]:hover, .btn-dark[disabled]:focus, .btn-dark[disabled]:active, .btn-dark[disabled].active, fieldset[disabled] .btn-dark, fieldset[disabled] .btn-dark:hover, fieldset[disabled] .btn-dark:focus, fieldset[disabled] .btn-dark:active, fieldset[disabled] .btn-dark.active { background-color: #5a6a7a; border-color: #5a6a7a; }
+/*
+* Button:Base Tyography
+*
+*/
+.btn-uppercase { text-transform: uppercase; }
+.btn-lowercase { text-transform: lowercase; }
+.btn-capitalize { text-transform: capitalize; }
+.btn-small-caps { font-variant: small-caps; }
+/*
+* Button:File Button
+*
+*/
+.btn.btn-file { position: relative; overflow: hidden; }
+.btn.btn-file > input[type='file'] { position: absolute; top: 0; right: 0; min-width: 100%; min-height: 100%; font-size: 100px; text-align: right; opacity: 0; filter: alpha(opacity=0); outline: none; background: white; cursor: inherit; display: block; }
+/*
+* Button:App Button
+*
+*/
 .btn-app { border-radius: 3px; position: relative; padding: 20px 5px; margin: 0 0 10px 10px; min-width: 80px; height: 80px; text-align: center; color: #666; border: 1px solid #ddd; background-color: #f4f4f4; font-size: 12px; }
 .btn-app > .fa, .btn-app > .glyphicon, .btn-app > .ion { font-size: 20px; display: block; }
 .btn-app:hover { background: #f4f4f4; color: #444; border-color: #aaa; }
 .btn-app:active, .btn-app:focus { -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 .btn-app > .badge { position: absolute; top: -3px; right: -10px; font-size: 10px; font-weight: 400; }
+/*
+* Button:Outline Button
+*
+*/
+.btn-outline { color: #563d7c; background-color: transparent; border-color: #563d7c; }
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active { color: #fff; background-color: #563d7c; border-color: #563d7c; }
+.btn-default.btn-outline { color: #333; background-color: transparent; border-color: #ccc }
+.btn-default.btn-outline:hover, .btn-default.btn-outline:focus, .btn-default.btn-outline:active { color: #333; background-color: #e6e6e6; border-color: #ccc }
+.btn-info.btn-outline { color: #5bc0de; background-color: transparent; border-color: #5bc0de }
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active { color: #fff; background-color: #5bc0de; border-color: #5bc0de }
+.btn-primary.btn-outline { color: #428bca; background-color: transparent; border-color: #428bca }
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active { color: #fff; background-color: #428bca; border-color: #428bca }
+.btn-success.btn-outline { color: #5cb85c; background-color: transparent; border-color: #5cb85c }
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active { color: #fff; background-color: #5cb85c; border-color: #5cb85c }
+.btn-warning.btn-outline { color: #f0ad4e; background-color: transparent; border-color: #f0ad4e }
+.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active { color: #fff; background-color: #f0ad4e; border-color: #f0ad4e }
+.btn-danger.btn-outline { color: #d9534f; background-color: transparent; border-color: #d9534f }
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active { color: #fff; background-color: #d9534f; border-color: #d9534f }
+.btn-dark.btn-outline { color: #5a6a7a!important; background-color: transparent; border-color: #5a6a7a; }
+.btn-dark.btn-outline:hover, .btn-dark.btn-outline:focus, .btn-dark.btn-outline:active { color: #fff!important; background-color: #5a6a7a; border-color: #5a6a7a }
+.btn-white.btn-outline { color: #fff!important; background-color: transparent; border-color: #fff; }
+.btn-white.btn-outline:hover, .btn-dark.btn-outline:focus, .btn-dark.btn-outline:active { color: #333!important; background-color: #fff; border-color: #fff }
+/*
+* Button:Shadow Button
+*
+*/
+.btn-lg.btn-shadow { padding: 13px 35px 17px; }
+.btn-default.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #ccc; box-shadow: inset 0 -3px 0 #ccc; }
+.btn-info.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #319FB4; box-shadow: inset 0 -3px 0 #319FB4; border: 0; }
+.btn-primary.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #2a6496; box-shadow: inset 0 -3px 0 #2a6496; border: 0; }
+.btn-success.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #2A9637; box-shadow: inset 0 -3px 0 #2A9637; border: 0; }
+.btn-warning.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #96662A; box-shadow: inset 0 -3px 0 #96662A; border: 0; }
+.btn-danger.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #96332A; box-shadow: inset 0 -3px 0 #96332A; border: 0; }
+.btn-dark.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #555; box-shadow: inset 0 -3px 0 #555; border: 0; }
+/*
+* Button:Round Button
+*
+*/
+.btn-round { border-radius: 1.25em; }
+/*
+* Button:Circle Button
+*
+*/
+.btn-circle { width: 30px; height: 30px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429; border-radius: 15px; }
+.btn-circle.btn-lg { width: 50px; height: 50px; padding: 10px 16px; font-size: 18px; line-height: 1.33; border-radius: 25px; }
+.btn-circle.btn-xl { width: 70px; height: 70px; padding: 10px 16px; font-size: 24px; line-height: 1.33; border-radius: 35px; }
+/*btn-circle end here*/
+.btn-icon { padding: 2px 15px 2px 2px; border-radius:50px;}
+.btn-icon.icon-right { padding: 2px 2px 2px 15px; border-radius:50px;}
+.btn-icon .icon { padding:8px; background:#ffffff; margin-right:4px; }
+.btn-icon.icon-right .icon { margin-left:4px;margin-right:0;}
+/*
+* Button:Label Button
+*
+*/
+.btn-label {padding-top: 0;padding-bottom: 0;}
+.btn-label .icon { position: relative; left: -12px; display: inline-block; padding: 10px 15px; background: rgba(0,0,0,0.15); border-radius: 3px 0 0 3px; }
+.btn-label .icon-right{left:auto;right:-12px;} 
+.btn-label.btn-lg .icon{left: -16px;padding: 18px 20px;}
+.btn-label.btn-sm .icon{left: -12px;padding: 6px 12px;}
+.btn-label.btn-xs .icon{left: -6px;padding: 4px 10px;}
+.btn-label.btn-lg .icon-right{left:auto;right:-16px;} 
+.btn-label.btn-sm .icon-right{left:auto;right:-12px;} 
+.btn-label.btn-xs .icon-right{left:auto;right:-6px;} 
+
+/*btn-label end here*/
+/*.ui-group-buttons*/
+.ui-group-buttons .or { position: relative; float: left; width: .3em; height: 1.3em; z-index: 3; font-size: 12px }
+.ui-group-buttons .or:before { position: absolute; top: 50%; left: 50%; content: 'or'; background-color: #fff; margin-top: -.1em; margin-left: -.9em; width: 1.8em; height: 1.8em; line-height: 1.55; color: #333; font-style: normal; font-weight: 400; text-align: center; border-radius: 500px; -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.1); box-shadow: 0 0 0 1px rgba(0,0,0,0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box }
+.ui-group-buttons .or:after { position: absolute; top: 0; left: 0; content: ' '; width: .3em; height: 2.84em; }
+.ui-group-buttons .or.or-lg { height: 1.3em; font-size: 16px }
+.ui-group-buttons .or.or-lg:after { height: 2.85em }
+.ui-group-buttons .or.or-sm { height: 1em }
+.ui-group-buttons .or.or-sm:after { height: 2.5em }
+.ui-group-buttons .or.or-xs { height: .25em }
+.ui-group-buttons .or.or-xs:after { height: 1.84em; z-index: -1000 }
+.ui-group-buttons { display: inline-block; vertical-align: middle }
+.ui-group-buttons:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.ui-group-buttons .btn { float: left; border-radius: 0 }
+.ui-group-buttons .btn:first-child { margin-left: 0; border-top-left-radius: .25em; border-bottom-left-radius: .25em; padding-right: 15px }
+.ui-group-buttons .btn:last-child { border-top-right-radius: .25em; border-bottom-right-radius: .25em; padding-left: 15px }
+/*.ui-group-buttons end here*/
+/*Button components*/
+.text-active, .active > .text, .active > .auto .text, .collapsed > .text, .collapsed > .auto .text { display: none !important; }
+.active > .text-active, .active > .auto .text-active, .collapsed > .text-active, .collapsed > .auto .text-active { display: inline-block !important; }
+/*Button components end here*/
+/*squared square buttons*/
+.btn-squared { border-radius: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.btn-squared.btn-primary { background: none; border: 3px solid #428bca; color: #428bca; }
+.btn-squared.btn-primary:hover, .btn-squared.btn-primary:active { color: #FFF; background: #428bca; border-color: #428bca; }
+.btn-squared.btn-success { background: none; border: 3px solid #5cb85c; color: #5cb85c; }
+.btn-squared.btn-success:hover, .btn-squared.btn-success:active { color: #FFF; background: #47a447; }
+.btn-squared.btn-info { background: none; border: 3px solid #5bc0de; color: #5bc0de; }
+.btn-squared.btn-info:hover, .btn-squared.btn-info:active { color: #FFF; background: #39b3d7; }
+.btn-squared.btn-warning { background: none; border: 3px solid #f0ad4e; color: #f0ad4e; }
+.btn-squared.btn-warning:hover, .btn-squared.btn-warning:active { color: #FFF; background: #ed9c28; }
+.btn-squared.btn-danger { background: none; border: 3px solid #d9534f; color: #d9534f; }
+.btn-squared.btn-danger:hover, .btn-squared.btn-danger:active { color: #FFF; background: #d2322d; }
+/*squared square buttons end here*/
 /*
  * Social Buttons for Bootstrap
  *
@@ -178,82 +298,3 @@
 .btn-yahoo:active, .btn-yahoo.active, .open > .dropdown-toggle.btn-yahoo { color: #ffffff; background-color: #500a6f; border-color: rgba(0, 0, 0, 0.2); }
 .btn-yahoo:active, .btn-yahoo.active, .open > .dropdown-toggle.btn-yahoo { background-image: none; }
 .btn-yahoo .badge { color: #720e9e; background-color: #ffffff; }
-/*btn dark*/
-.btn-dark { color: #fff !important; background-color: #5a6a7a; border-color: #5a6a7a; }
-.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open .dropdown-toggle.btn-dark { color: #fff !important; background-color: #4f5d6b; border-color: #495663; }
-.btn-dark:active, .btn-dark.active, .open .dropdown-toggle.btn-dark { background-image: none; }
-.btn-dark.disabled, .btn-dark.disabled:hover, .btn-dark.disabled:focus, .btn-dark.disabled:active, .btn-dark.disabled.active, .btn-dark[disabled], .btn-dark[disabled]:hover, .btn-dark[disabled]:focus, .btn-dark[disabled]:active, .btn-dark[disabled].active, fieldset[disabled] .btn-dark, fieldset[disabled] .btn-dark:hover, fieldset[disabled] .btn-dark:focus, fieldset[disabled] .btn-dark:active, fieldset[disabled] .btn-dark.active { background-color: #5a6a7a; border-color: #5a6a7a; }
-/*btn dark end here*/
-/*round button*/
-.btn-round { border-radius: 1.25em; }
-/*outline button*/
-.btn-outline { color: #563d7c; background-color: transparent; border-color: #563d7c; }
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active { color: #fff; background-color: #563d7c; border-color: #563d7c; }
-.btn-default.btn-outline { color: #333; background-color: transparent; border-color: #ccc }
-.btn-default.btn-outline:hover, .btn-default.btn-outline:focus, .btn-default.btn-outline:active { color: #333; background-color: #e6e6e6; border-color: #ccc }
-.btn-info.btn-outline { color: #5bc0de; background-color: transparent; border-color: #5bc0de }
-.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active { color: #fff; background-color: #5bc0de; border-color: #5bc0de }
-.btn-primary.btn-outline { color: #428bca; background-color: transparent; border-color: #428bca }
-.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active { color: #fff; background-color: #428bca; border-color: #428bca }
-.btn-success.btn-outline { color: #5cb85c; background-color: transparent; border-color: #5cb85c }
-.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active { color: #fff; background-color: #5cb85c; border-color: #5cb85c }
-.btn-warning.btn-outline { color: #f0ad4e; background-color: transparent; border-color: #f0ad4e }
-.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active { color: #fff; background-color: #f0ad4e; border-color: #f0ad4e }
-.btn-danger.btn-outline { color: #d9534f; background-color: transparent; border-color: #d9534f }
-.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active { color: #fff; background-color: #d9534f; border-color: #d9534f }
-.btn-dark.btn-outline { color: #5a6a7a!important; background-color: transparent; border-color: #5a6a7a; }
-.btn-dark.btn-outline:hover, .btn-dark.btn-outline:focus, .btn-dark.btn-outline:active { color: #fff!important; background-color: #5a6a7a; border-color: #5a6a7a }
-.btn-white.btn-outline { color: #fff!important; background-color: transparent; border-color: #fff; }
-.btn-white.btn-outline:hover, .btn-dark.btn-outline:focus, .btn-dark.btn-outline:active { color: #333!important; background-color: #fff; border-color: #fff }
-/*shadow button*/
-.btn-lg.btn-shadow { padding: 13px 35px 17px; }
-.btn-default.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #ccc; box-shadow: inset 0 -3px 0 #ccc; }
-.btn-info.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #319FB4; box-shadow: inset 0 -3px 0 #319FB4; border: 0; }
-.btn-primary.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #2a6496; box-shadow: inset 0 -3px 0 #2a6496; border: 0; }
-.btn-success.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #2A9637; box-shadow: inset 0 -3px 0 #2A9637; border: 0; }
-.btn-warning.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #96662A; box-shadow: inset 0 -3px 0 #96662A; border: 0; }
-.btn-danger.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #96332A; box-shadow: inset 0 -3px 0 #96332A; border: 0; }
-.btn-dark.btn-shadow { -webkit-box-shadow: inset 0 -3px 0 #555; box-shadow: inset 0 -3px 0 #555; border: 0; }
-/*shadow button end here*/
-/*btn-circle*/
-.btn-circle { width: 30px; height: 30px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429; border-radius: 15px; }
-.btn-circle.btn-lg { width: 50px; height: 50px; padding: 10px 16px; font-size: 18px; line-height: 1.33; border-radius: 25px; }
-.btn-circle.btn-xl { width: 70px; height: 70px; padding: 10px 16px; font-size: 24px; line-height: 1.33; border-radius: 35px; }
-/*btn-circle end here*/
-/*btn-label*/
-.btn-label { position: relative; left: -12px; display: inline-block; padding: 6px 12px; background: rgba(0,0,0,0.15); border-radius: 3px 0 0 3px; }
-.btn-labeled { padding-top: 0; padding-bottom: 0; }
-/*btn-label end here*/
-/*.ui-group-buttons*/
-.ui-group-buttons .or { position: relative; float: left; width: .3em; height: 1.3em; z-index: 3; font-size: 12px }
-.ui-group-buttons .or:before { position: absolute; top: 50%; left: 50%; content: 'or'; background-color: #fff; margin-top: -.1em; margin-left: -.9em; width: 1.8em; height: 1.8em; line-height: 1.55; color: #333; font-style: normal; font-weight: 400; text-align: center; border-radius: 500px; -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.1); box-shadow: 0 0 0 1px rgba(0,0,0,0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box }
-.ui-group-buttons .or:after { position: absolute; top: 0; left: 0; content: ' '; width: .3em; height: 2.84em; }
-.ui-group-buttons .or.or-lg { height: 1.3em; font-size: 16px }
-.ui-group-buttons .or.or-lg:after { height: 2.85em }
-.ui-group-buttons .or.or-sm { height: 1em }
-.ui-group-buttons .or.or-sm:after { height: 2.5em }
-.ui-group-buttons .or.or-xs { height: .25em }
-.ui-group-buttons .or.or-xs:after { height: 1.84em; z-index: -1000 }
-.ui-group-buttons { display: inline-block; vertical-align: middle }
-.ui-group-buttons:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
-.ui-group-buttons .btn { float: left; border-radius: 0 }
-.ui-group-buttons .btn:first-child { margin-left: 0; border-top-left-radius: .25em; border-bottom-left-radius: .25em; padding-right: 15px }
-.ui-group-buttons .btn:last-child { border-top-right-radius: .25em; border-bottom-right-radius: .25em; padding-left: 15px }
-/*.ui-group-buttons end here*/
-/*Button components*/
-.text-active, .active > .text, .active > .auto .text, .collapsed > .text, .collapsed > .auto .text { display: none !important; }
-.active > .text-active, .active > .auto .text-active, .collapsed > .text-active, .collapsed > .auto .text-active { display: inline-block !important; }
-/*Button components end here*/
-/*squared square buttons*/
-.btn-squared { border-radius: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.btn-squared.btn-primary { background: none; border: 3px solid #428bca; color: #428bca; }
-.btn-squared.btn-primary:hover, .btn-squared.btn-primary:active { color: #FFF; background: #428bca; border-color: #428bca; }
-.btn-squared.btn-success { background: none; border: 3px solid #5cb85c; color: #5cb85c; }
-.btn-squared.btn-success:hover, .btn-squared.btn-success:active { color: #FFF; background: #47a447; }
-.btn-squared.btn-info { background: none; border: 3px solid #5bc0de; color: #5bc0de; }
-.btn-squared.btn-info:hover, .btn-squared.btn-info:active { color: #FFF; background: #39b3d7; }
-.btn-squared.btn-warning { background: none; border: 3px solid #f0ad4e; color: #f0ad4e; }
-.btn-squared.btn-warning:hover, .btn-squared.btn-warning:active { color: #FFF; background: #ed9c28; }
-.btn-squared.btn-danger { background: none; border: 3px solid #d9534f; color: #d9534f; }
-.btn-squared.btn-danger:hover, .btn-squared.btn-danger:active { color: #FFF; background: #d2322d; }
-/*squared square buttons end here*/
