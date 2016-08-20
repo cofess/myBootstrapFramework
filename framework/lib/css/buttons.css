@@ -129,11 +129,11 @@
 *
 */
 .btn-label { padding-top: 0; padding-bottom: 0; }
-.btn-label .icon { position: relative; left: -12px; display: inline-block; padding: 10px 15px; background: rgba(0,0,0,0.15); border-radius: 3px 0 0 3px; }
+.btn-label .icon { position: relative; left: -12px; display: inline-block; padding: 10px 12px; background: rgba(0,0,0,0.15); border-radius: 3px 0 0 3px; }
 .btn-label .icon-right { left: auto; right: -12px; }
 .btn-label.btn-lg .icon { left: -16px; padding: 18px 20px; }
-.btn-label.btn-sm .icon { left: -12px; padding: 6px 12px; }
-.btn-label.btn-xs .icon { left: -6px; padding: 4px 10px; }
+.btn-label.btn-sm .icon { left: -12px; padding: 6px 10px; }
+.btn-label.btn-xs .icon { left: -6px; padding: 4px 6px; }
 .btn-label.btn-lg .icon-right { left: auto; right: -16px; }
 .btn-label.btn-sm .icon-right { left: auto; right: -12px; }
 .btn-label.btn-xs .icon-right { left: auto; right: -6px; }
