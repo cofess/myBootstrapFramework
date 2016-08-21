@@ -9,15 +9,22 @@
 .btn.btn-flat { border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-width: 1px; }
 .btn-link { -webkit-box-shadow: none; box-shadow: none; }
 /*
+* Button:Round Button
+*
+*/
+.btn-round { -moz-border-radius: 1.25em!important; -webkit-border-radius: 1.25em!important; border-radius: 1.25em!important; overflow: hidden }
+.btn-circle { -moz-border-radius: 50%!important; -webkit-border-radius: 50%!important; border-radius: 50%!important; overflow: hidden }
+.btn-circle { width: 30px; height: 30px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429;}
+/*
 * Button Sizes
 *
 */
-.btn-5x { font-size: 28px; height: 70px; line-height: 70px; padding: 0 70px; }
-.btn-4x { font-size: 24px; height: 60px; line-height: 60px; padding: 0 60px; }
-.btn-3x { font-size: 20px; height: 50px; line-height: 50px; padding: 0 50px; }
-.btn-2x { font-size: 16px; height: 40px; line-height: 40px; padding: 0 40px; }
-.btn-1x { font-size: 12px; height: 30px; line-height: 30px; padding: 0 30px; }
-.btn-0x { font-size: 9.6px; height: 24px; line-height: 24px; padding: 0 24px; }
+.btn-0x { width: 24px; height: 24px; padding: 6px 0; font-size: 10px; text-align: center;line-height: 1.0;}
+.btn-1x { width: 30px; height: 30px; padding: 6px 0; font-size: 12px; text-align: center;}
+.btn-2x { width: 48px; height: 48px; padding: 8px 12px; font-size: 20px; text-align: center;}
+.btn-3x { width: 64px; height: 64px; padding: 10px 16px; font-size: 28px; text-align: center;}
+.btn-4x { width: 72px; height: 72px; padding: 10px 16px; font-size: 30px; text-align: center; }
+.btn-5x { width: 80px; height: 80px; padding: 10px 16px; font-size: 30px; text-align: center; }
 /*
 * Button:Base Colors
 *
@@ -108,18 +115,9 @@
 .btn-danger.btn-shadow.btn-lg { -webkit-box-shadow: inset 0 -5px 0 #96332A; box-shadow: inset 0 -5px 0 #96332A; border: 0; }
 .btn-dark.btn-shadow.btn-lg { -webkit-box-shadow: inset 0 -5px 0 #555; box-shadow: inset 0 -5px 0 #555; border: 0; }
 /*
-* Button:Round Button
+* Button:Icon Button
 *
 */
-.btn-round { border-radius: 1.25em; }
-/*
-* Button:Circle Button
-*
-*/
-.btn-circle { width: 30px; height: 30px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429; border-radius: 15px; }
-.btn-circle.btn-lg { width: 50px; height: 50px; padding: 10px 16px; font-size: 20px; line-height: 1.33; border-radius: 25px; }
-.btn-circle.btn-xl { width: 70px; height: 70px; padding: 10px 16px; font-size: 28px; line-height: 1.33; border-radius: 35px; }
-/*btn-circle end here*/
 .btn-icon { padding: 2px 15px 2px 2px; border-radius: 50px; }
 .btn-icon.icon-right { padding: 2px 2px 2px 15px; border-radius: 50px; }
 .btn-icon .icon { padding: 8px; background: #ffffff; margin-right: 4px; }
